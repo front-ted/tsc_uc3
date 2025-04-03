@@ -48,49 +48,39 @@ body {
     background: url('../img/bt2_hv.png');
 }
 
-/* .painel-2 {
-    background: url('../img/info.png');
+
+
+.painel-2 {
+    background: url('../img/info.png') no-repeat;
     width: 585px;
     height: 451px;
-    margin: auto;
-    border: none;
+    margin: 30px auto;
+    position: relative;
 }
 
-.botao-tradicional{
-    width: 585px;
-    height: 451px;
-    margin: auto;
+.painel-2 button {
+    position: absolute;
     border: none;
-} 
-
-.botao-tradicional:hover {
-    background: url('../img/info_bt1.png');
-    width: 585px;
-    height: 451px;
-    margin: auto;
+    background: transparent;
+    height: 69px;
+    width: 305px;
+    transform: rotate(-32deg);
 }
 
-.botao-moderna:hover {
-    background: url('../img/info_bt2.png');
-    width: 585px;
-    height: 451px;
-    margin: auto;
-    border: none;
+.botao-tradicional {
+    left: 19%;
+    top: 15%;
 }
 
+.botao-moderna {
+    top: 23%;
+    right: 15%;
+}
 
-
-.botao-contemporanea:hover {
-    background: url('../img/info_bt3.png');
-    width: 585px;
-    height: 451px;
-    margin: auto;
-    border: none;
-} */
-
-
-
-
+.botao-contemporanea {
+    top: 34%;
+    right: 3%;
+}
 
 
 
@@ -228,9 +218,6 @@ body {
 
 @media screen and (max-width: 500px) {
 
-
-
-
     .painel-1 {
         display: flex;
         flex-direction: column;
@@ -243,6 +230,29 @@ body {
         gap: 15px;
     }
 
+    .painel-2 {
+        transform: scale(0.7);
+        margin-left: -29%;
+        margin-top: -10%;
+        margin-bottom: -3%;
+    }
 
+}
 
+@media screen and (max-width: 414px) {
+    .painel-2 {
+        transform: scale(0.6);
+        margin-left: -29%;
+        margin-top: -15%;
+        margin-bottom: -4%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .painel-2 {
+        transform: scale(0.6);
+        margin-left: -41%;
+        margin-top: -26%;
+        margin-bottom: -4%;
+    }
 }

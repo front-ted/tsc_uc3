@@ -405,16 +405,10 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <p>Esse é o nível mais alto da administração e envolve a formulação de diretrizes para o
-                                    futuro da empresa. A gestão estratégica é responsável por definir os <b>objetivos a
-                                        longo prazo</b> e as <b>políticas gerais da organização</b>, como missão, visão
-                                    e valores. As
-                                    decisões tomadas nesse nível afetam toda a empresa e têm impacto duradouro. Seus
-                                    cargos mais comuns são diretores, conselheiros, CEO (<i>Chief Executive Officer</i>)
-                                    e
-                                    outros membros da alta administração. Exemplo: o <b>CEO</b> e o <b>Conselho de
-                                        Administração</b>
-                                    decidem expandir as operações para um novo mercado internacional. </p>
+                                <p>Existem as seguintes divisões dentro da estrutura tradicional: linear ou militar,
+                                    <i>staff-and-line</i>, funcional e colegiada. Essas estruturas focam basicamente em
+                                    atividades, procedimentos, departamentos, formas de dividir o trabalho e hierarquia.
+                                </p>
                                 <div class="modal-footer">
                                     <button type="button" class="botao hvr-grow-shadow"
                                         data-bs-dismiss="modal">Fechar</button>
@@ -434,16 +428,10 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <p>Esse é o nível mais alto da administração e envolve a formulação de diretrizes para o
-                                    futuro da empresa. A gestão estratégica é responsável por definir os <b>objetivos a
-                                        longo prazo</b> e as <b>políticas gerais da organização</b>, como missão, visão
-                                    e valores. As
-                                    decisões tomadas nesse nível afetam toda a empresa e têm impacto duradouro. Seus
-                                    cargos mais comuns são diretores, conselheiros, CEO (<i>Chief Executive Officer</i>)
-                                    e
-                                    outros membros da alta administração. Exemplo: o <b>CEO</b> e o <b>Conselho de
-                                        Administração</b>
-                                    decidem expandir as operações para um novo mercado internacional. </p>
+                                <p>O foco dessa estrutura são as pessoas, ou seja, o relacionamento interpessoal em que
+                                    aparece a formatação informal com características relacionadas à liderança, à
+                                    resolução de conflitos, aos valores etc. As estruturas são com base em função
+                                    principal e produtos. </p>
                                 <div class="modal-footer">
                                     <button type="button" class="botao hvr-grow-shadow"
                                         data-bs-dismiss="modal">Fechar</button>
@@ -458,21 +446,14 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModal6Label">Estrutura moderna </h5>
+                                <h5 class="modal-title" id="exampleModal6Label">Estrutura contemporânea </h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <p>Esse é o nível mais alto da administração e envolve a formulação de diretrizes para o
-                                    futuro da empresa. A gestão estratégica é responsável por definir os <b>objetivos a
-                                        longo prazo</b> e as <b>políticas gerais da organização</b>, como missão, visão
-                                    e valores. As
-                                    decisões tomadas nesse nível afetam toda a empresa e têm impacto duradouro. Seus
-                                    cargos mais comuns são diretores, conselheiros, CEO (<i>Chief Executive Officer</i>)
-                                    e
-                                    outros membros da alta administração. Exemplo: o <b>CEO</b> e o <b>Conselho de
-                                        Administração</b>
-                                    decidem expandir as operações para um novo mercado internacional. </p>
+                                <p>Já na estrutura contemporânea, há estruturas com base em projeto, matriz, equipe,
+                                    grupo-tarefa e colateral. Essa estrutura baseia-se no cliente e na busca de
+                                    clientes, bem como na manutenção de parcerias com fornecedores. </p>
                                 <div class="modal-footer">
                                     <button type="button" class="botao hvr-grow-shadow"
                                         data-bs-dismiss="modal">Fechar</button>
@@ -481,8 +462,20 @@
                         </div>
                     </div>
                 </div>
-
-
+                <p>
+                    Sobre a distribuição das áreas e as funções administrativas e operacionais, podem ser citados os
+                    organogramas verticais e horizontais, pois o tipo de organograma utilizado pela empresa depende do
+                    modelo de gestão adotado por ela. Portanto, para serem definidas áreas e funções, primeiramente é
+                    preciso observar os organogramas citados.
+                </p>
+                <h4> Organograma vertical</h4>
+                <p>
+                    O modelo de organograma vertical representa a hierarquia clássica, com departamentos/cargos
+                    iniciando na
+                    parte superior, seguindo no centro e finalizando na base do organograma. Os departamentos ou os
+                    cargos
+                    que estão acima são aqueles que têm mais poder de decisão.
+                </p>
 
 
 
@@ -540,6 +533,30 @@
             $("body").prognroll();
         });
     </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('pre code').forEach((el) => {
+                hljs.highlightElement(el);
+            });
+        });
+        $(".painel-2 button").mouseleave(function () {
+            $(".painel-2").css('background-image', 'url(img/info.png)');
+        })
+        $(".botao-tradicional").mouseover(function () {
+            $(".painel-2").css('background-image', 'url(img/info_bt1.png)');
+        })
+        $(".botao-moderna").mouseover(function () {
+            $(".painel-2").css('background-image', 'url(img/info_bt2.png)');
+        })
+        $(".botao-contemporanea").mouseover(function () {
+            $(".painel-2").css('background-image', 'url(img/info_bt3.png)');
+        })
+    </script>
+
+
+
 
     <!-- Handtalk -->
     <script>
