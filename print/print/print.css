@@ -463,7 +463,10 @@
     padding-left: 40px;
   }
 
-
+  .texto-borda {
+    border: #969494 2px solid !important;
+    padding: 10px;
+  }
 
 
 
