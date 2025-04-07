@@ -58,8 +58,13 @@
     margin-right: 15%;
 }
 
+.figura-4{
+    margin-top: -10%;
+}
 
-
+.margem-abaixo{
+    margin-bottom: 10%;
+}
 
 
 
@@ -164,7 +169,9 @@
         margin: auto;
     }
 
-
+    .figura-4 {
+        margin-top: unset;
+    }
 
 
 
@@ -181,7 +188,9 @@
     .figura-1 {
         margin-left: 15%;
     }
-
+    .figura-4 {
+        margin-top: -10%;
+    }
 
 }
 
@@ -210,6 +219,9 @@
         align-items: center;
         margin-top: 5%;
         gap: 50px;
+    }
+    .figura-4{
+        margin-top: 2%;
     }
 }
 
