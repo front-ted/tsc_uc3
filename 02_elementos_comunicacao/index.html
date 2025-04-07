@@ -1,195 +1,639 @@
 <!doctype html>
 <html lang="pt-br">
-    <head>
-        <!-- Inserir o tíutlo do conhecimento na tag title -->
-        <title>Título do conhecimento</title>
-        <!-- Meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS v5.0.2 -->
-        <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="../assets/fa/css/all.min.css">
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="../assets/css/animate.min.css" />
-        <!-- hover.css https://ianlunn.github.io/Hover/ -->
-        <link rel="stylesheet" href="../assets/css/hover-min.css" />
-        <!--Splide - slideshow-->
-        <link rel="stylesheet" href="../assets/css/splide.min.css">
-        <!-- Preloader -->
-        <link rel="stylesheet" href="../assets/css/preloader.css">
-        <!-- Áudio customizado -->
-        <link rel="stylesheet" href="../assets/css/player.css">
-        <!-- Estilos do template -->
-        <link rel="stylesheet" href="../assets/css/cores.css">
-        <link rel="stylesheet" href="../print/print/print.css">
-        <link rel="stylesheet" href="../assets/css/template.css">
-    
-    </head>
-    <body class="bg-claro">
-        <!-- Preloader OBRIGATÓRIO -->
-        <div class="preloader">
-            <div class="anim"></div>
-            <p>Aguarde enquanto o conteúdo é carregado.</p>
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Título do conhecimento</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../assets/css/splide.min.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../assets/css/cores.css">
+    <link rel="stylesheet" href="../print/print/print.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body class="bg-claro">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Técnico em Secretariado</h1>
+                <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"
+                    aria-hidden="true"></div>
+            </div>
         </div>
-        <!-- Marca d'água OBRIGATÓRIA -->
-        <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
-
-        <header id="topo">
-            <div class="topo-logo">
-                <div class="container">
-                    <h1 id="nome-curso" class="only-print">Técnico em Secretariado</h1> 
-                    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()" aria-hidden="true"></div>  
+    </header>
+    <!--Menu lateral-->
+    <button class="bt-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+        aria-controls="offcanvasWithBackdrop">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Técnico em Qualidade</h5>
+            <button type="button" class="bt-fecharmenu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav id="nav-offcanvas" class="offcanvas-body">
+            <ul>
+                <li><a href="#titulo1">Elementos de comunicação </a></li>
+                <li><a href="#titulo2">Contexto </a></li>
+                <li><a href="#titulo3">Emissor e receptor </a></li>
+                <li><a href="#titulo4">Canal </a></li>
+                <li><a href="#titulo5">Ruído </a></li>
+                <li><a href="#titulo6">Mensagem </a></li>
+                <li><a href="#titulo7"><i>Feedback</i> </a></li>
+                <li><a href="#titulo8">Encerramento </a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <div class="layer-preta no-print"></div>
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <section class="paginas">
+            <div class="container pagina">
+                <h2 id="titulo1">Elementos de comunicação: contexto, emissor, receptor, canal, mensagem, ruídos e
+                    <i>feedback</i>
+                </h2>
+                <p>
+                    O primeiro passo para entender o complexo movimento da comunicação é compreender que sua qualidade
+                    depende da eficácia das relações entre as pessoas na organização.
+                </p>
+                <div class="grafismo">
+                    <div class="destaque gradiente icone nota">
+                        <p>
+                            Como profissional técnico em secretariado, você deve considerar a comunicação nos processos
+                            de negociação para apresentação de projetos, estilos de liderança, manutenção da motivação e
+                            sobretudo atendimento aos clientes (tanto internos quanto externos).
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <!--Menu lateral-->
-        <button class="bt-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Técnico em Qualidade</h5>
-                <button type="button" class="bt-fecharmenu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <nav id="nav-offcanvas" class="offcanvas-body">
-                <ul>
-                    <li><a href="#titulo1">Lorem ipsum</a></li>
-                    <li><a href="#titulo2">Lorem ipsum</a></li>
-                    <li><a href="#titulo3">Lorem ipsum dolor sit amet dolor sit amet</a></li>
-                    <li><a href="#titulo4">Lorem ipsum</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
-        <section id="booklet">  
-            <div class="layer-preta no-print"></div>    
-            <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
-            <section class="paginas">
-                <div class="container pagina">
-                    
-                    <h2 id="titulo1">h2 - Título do conteúdo</h2>
-                    <div class="row mb-5">
-                        <div class="col-4">
-                        <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
-                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
-                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
-                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
-                        </div>
-                        </div>
-                        <div class="col-8">
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                <div class="no-print mt-5 mb-5" aria-hidden="true">
+                    <img src="img/img1.png" class="img-fluid ilustracao mx-auto d-block">
+                </div>
+                <p>
+                    O processo de comunicação é uma extensão da linguagem e, como tal, um componente fundamental da
+                    condição
+                    humana, conforme explica Maximiano (2011, p. 304). Toda vez que as pessoas se comunicam, elas
+                    reafirmam
+                    condições humanas, visando mobilizar uma complexidade de competências. Tais competências podem ser
+                    desenvolvidas e aprimoradas com o passar do tempo, conforme aprendizados da vida, e no mundo
+                    profissional, estão relacionadas ao intelecto, à capacidade de expressão e de interpretação, ao
+                    domínio
+                    das emoções, à energia física etc.
+                </p>
+                <p>
+                    Mesmo em situações em que não ocorre interação, ou seja, nos momentos de comunicação escrita, muitas
+                    das
+                    competências citadas anteriormente também são mobilizadas. Por exemplo, quando você prepara um
+                    relatório
+                    para uma reunião, uma apresentação para um evento, um <i>e-mail</i> para um cliente, as competências
+                    de
+                    comunicação estão sendo utilizadas. Portanto, quanto mais você as utiliza em diversos processos,
+                    mais
+                    elas são desenvolvidas.
+                </p>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                        <img class="img-fluid d-block no-print figura-1" src="img/persona_questao.png">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-7 col-lg-7	col-xl-7 col-xxl-7">
+                        <p class="texto-diferente">
+                            O que o técnico em secretariado precisa conhecer para desenvolver a comunicação nas
+                            atividades de recepção e atendimento a clientes externos e internos?
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-5">
+                    Primeiramente, de acordo com Maximiano (2011, p. 304), <b>“comunicação é um processo que compreende
+                        a
+                        transmissão de informação e de significados”.</b> Sem transmissão de informação e, por
+                    conseguinte, produção
+                    de significado, não ocorre comunicação efetiva. Logo, em todo processo de comunicação, sempre
+                    existirão
+                    os seguintes elementos: contexto, emissor, receptor, canal, mensagem, ruído e <i>feedback</i>.
+                </p>
+                <p>Observe a figura a seguir com a indicação dos elementos de interação:</p>
+                <figure class="my-5">
+                    <img src="img/figura_01.png" class="img-fluid mx-auto p-2 mb-3 d-block ilustracao radius print"
+                        alt="Imagem">
+                    <figcaption class="figure-caption text-center">Componentes de um processo ou sistema de comunicação
+                        <br>
+                        Fonte: Senac EAD (2025)
+                    </figcaption>
+                </figure>
+                <div class="acessivel visually-hidden no-print">
+                    <p>
+                        Ilustração exibindo dois homens em lados opostos. Acima do primeiro homem, há um balão de fala
+                        com a
+                        frase: “Você vai ser promovido!”, acima do segundo homem, um balão de fala com a frase “Meu
+                        Deus,
+                        vou ser demitido!”. Entre eles há as palavras “ruído” e “mensagem”. Logo abaixo, há as palavras
+                        “emissor”, “feedback” e “receptor” e abaixo delas, “codifica”, “código” e “decodifica”.
+                    </p>
+                </div>
+                <h3 id="titulo2">Contexto</h3>
+                <p>
+                    O contexto da organização tem relação direta com o tipo de comunicação a ser desenvolvida. Imagine,
+                    por
+                    exemplo, uma indústria, uma escola, uma empresa moderna e uma empresa tradicional. A produção da
+                    comunicação, em cada uma delas, acontece de formas diferentes, seja com relação à comunicação
+                    interna,
+                    seja com relação à comunicação externa. O que todo profissional deve fazer é estudar o ambiente
+                    (contexto) para saber as formas de comunicação que estão estabelecidas naquele local.
+                </p>
+                <div class="grafismo">
+                    <div class="destaque gradiente icone refletir">
+                        <p>
+                            Você já pensou sobre como você se comunica com os seus amigos? Como você se comunica com os
+                            seus
+                            colegas de trabalho?
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                        <img class="img-fluid d-block no-print figura-2" src="img/img2.png">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-7 col-lg-7	col-xl-7 col-xxl-7 texto-2">
+                        <p>
+                            O tipo de comunicação utilizado com líderes em ambientes organizacionais, na maioria das
+                            situações, é mais formal. Portanto, quanto mais você observar e entender o contexto,
+                            adequando a
+                            forma de comunicação, mais efetivo você será ao se comunicar.
+                        </p>
+                        <p>Clique ou toque para visualizar o conteúdo.</p>
+                    </div>
+                </div>
+                <div class="painel-comunicacao no-print">
+                    <button type="button" class="botao-interna" data-bs-toggle="modal" data-bs-target="#modal1">
+                        <h4 class="sr-only no-print">Comunicação interna</h4>
+                    </button>
+                    <button type="button" class="botao-externa" data-bs-toggle="modal" data-bs-target="#modal2">
+                        <h4 class="sr-only no-print">Comunicação externa</h4>
+                    </button>
+                </div>
+                <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModal1Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModal1Label">Comunicação interna </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-                            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                            <div class="modal-body">
+                                <p>A comunicação interna está relacionada à troca de mensagens no ambiente
+                                    organizacional. As formas estabelecidas (escritas ou faladas) representam o processo
+                                    de circulação de informações e podem ser classificadas em vertical ascendente,
+                                    vertical descendente e horizontal. O contexto da empresa é que define a forma (ou as
+                                    formas) de comunicação estabelecida.</p>
+                                <ul>
+                                    <li>
+                                        Vertical ascendente: os colaboradores se comunicam com os líderes, informando
+                                        problemas, demonstrando resultados, entre outros.
+                                    </li>
+                                    <li>
+                                        Vertical descendente: o movimento de comunicação é feito dos líderes para os
+                                        liderados (políticas, estratégias, <i>feedbacks</i> etc.).
+                                    </li>
+                                    <li>Horizontal: a comunicação acontece entre pessoas do mesmo nível hierárquico.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Uma forma não exclui a outra. Elas podem coexistir em uma mesma organização.
+                                    Contudo,
+                                    dependendo do contexto da empresa e das características encontradas nela, uma forma
+                                    de
+                                    comunicação pode se destacar em relação a outra.
+                                </p>
+                                <div class="modal-footer">
+                                    <button type="button" class="botao hvr-grow-shadow"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                            </div>
-                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                            </div>
-                        </div>
                         </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-
-                    <h3 id="titulo2">h3 - Subtítulo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-
-                    <h3 id="titulo3">h3 - Subtítulo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-
-                    <h3 id="titulo4">h3 - Subtítulo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                
-                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
                 </div>
-            </section>
-            <!-- Paginação-->
-            <footer class="text-center no-print d-flex justify-content-center mx-auto">
-                <ul class="pagination">
-    
-                </ul>
-            </footer>   
+
+                <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModal2Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModal2Label">Comunicação externa </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Com relação à comunicação externa, devem ser considerados os vários receptores,
+                                    desde
+                                    clientes e fornecedores até a sociedade de forma ampla. Nesse contexto, a
+                                    comunicação
+                                    traduz para as pessoas a imagem da empresa. Pense, por exemplo, na mudança de
+                                    contexto.
+                                    O mundo segue um movimento acelerado de troca de informações. Portanto, muitas
+                                    empresas
+                                    têm buscado se adaptar às novas exigências de mercado. Da mesma forma, os
+                                    profissionais
+                                    devem procurar compreender os contextos em que estão inseridos para que possam atuar
+                                    de
+                                    acordo com as formas de comunicação estabelecidas na empresa.
+                                </p>
+                                <div class="modal-footer">
+                                    <button type="button" class="botao hvr-grow-shadow"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-7 col-lg-7	col-xl-7 col-xxl-7">
+                        <h3 id="titulo3">Emissor e receptor</h3>
+                        <p>
+                            Toda forma de comunicação exige uma fonte: o emissor. Ele é responsável por transmitir uma
+                            mensagem por algum meio. Além dele e do meio, precisa-se também de um destino, ou seja, de
+                            um
+                            receptor da mensagem. Segundo Maximiano (2011, p. 304), antes de transmitir, a fonte
+                            codifica a
+                            mensagem, convertendo-a em símbolos, os quais são representados por idiomas, sons, letras,
+                            números e outros tipos de sinais.
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                        <img class="img-fluid d-block no-print figura-3" src="img/img3.png">
+                    </div>
+                </div>
+                <div class="grafismo">
+                    <div class="destaque gradiente icone nota">
+                        <p>
+                            Como futuro técnico em secretariado, você desenvolverá diferentes formas de atendimento a
+                            clientes, como por telefone, por escrito, por videoconferência etc. Sendo assim, no caso, o
+                            emissor é o profissional que realiza a ligação telefônica, envia o <i>e-mail</i> ou inicia a
+                            videoconferência; e o receptor, aquele que atende ao telefone, recebe o <i>e-mail</i> ou
+                            aceita a
+                            videoconferência.
+                        </p>
+                    </div>
+                </div>
+                <p class="text-center texto-diferente2">
+                    Em todas as situações, há aquele que fala, escreve ou emite uma mensagem para aquele que a recebe a
+                    partir de um canal.
+                </p>
+                <p>
+                    Em um dos extremos, está o receptor, ou seja, aquele que decodifica a mensagem; e do outro, o
+                    emissor,
+                    desde que os dois estejam utilizando o mesmo sistema de símbolos.
+                </p>
+
+                <h3 id="titulo4">Canal</h3>
+                <p>
+                    As mensagens, no entanto, são trocadas entre os sujeitos por meio de um canal (ou meio de
+                    comunicação),
+                    por exemplo: conversação, telefonema, <i>e-mail</i>, memorando, circular, textos em aplicativos de
+                    mensagem
+                    etc.
+                </p>
+                <p>
+                    Conforme o tamanho e as características da empresa, os canais são definidos. Para cada tipo de
+                    empresa,
+                    existem soluções diferentes para a circulação das informações.
+                </p>
+                <div class="grafismo">
+                    <div class="destaque gradiente icone importante">
+                        <p>
+                            Para definir o canal mais adequado à empresa, deve-se ter um pensamento estratégico sobre as
+                            pessoas envolvidas, a visão e a missão da empresa, os princípios organizacionais, o tipo de
+                            informação que circula e os custos envolvidos. Conforme a análise desses fatores, as
+                            empresas
+                            selecionam os canais mais adequados.
+                        </p>
+                    </div>
+                </div>
+                <a role="button" href="" target="_blank" class="bt-objeto d-block mx-auto my-5 shadow radius no-print">
+                    <span class="camada-blur"></span>
+                    <span class="sr-only">Acesse</span>
+                </a>
+                <div class="acessivel visually-hidden print">
+                    <p>
+                        Imagine que você atua em uma pequena empresa familiar. Quais seriam os canais de comunicação
+                        mais
+                        indicados para ela? Em razão do contexto reduzido e da proximidade das pessoas, o mais indicado
+                        seria que as informações circulassem diretamente (comunicações horizontal e vertical). Além
+                        disso, a
+                        empresa em questão também poderia utilizar a comunicação por escrito, que é formal e segue
+                        padrões
+                        de escrita.
+                    </p>
+                </div>
+                <a role="button" href="" target="_blank" class="bt-objeto d-block mx-auto my-5 shadow radius no-print">
+                    <span class="camada-blur"></span>
+                    <span class="sr-only">Acesse</span>
+                </a>
+                <div class="acessivel visually-hidden print">
+                    <p>
+                        Agora, imagine que você atua em uma empresa multinacional, ou seja, de grande porte. O contato
+                        entre
+                        as pessoas e os setores pode ocorrer inclusive entre diferentes países, em idiomas diferentes.
+                        Nesses casos, a tecnologia da informação pode ser uma solução (videoconferências, por exemplo).
+                        Porém, da mesma forma, os registros escritos também são utilizados e seguem padrões e normativas
+                        estabelecidos.
+                    </p>
+                </div>
+                <p>
+                    Portanto, considere sempre a pesquisa para o seu desenvolvimento profissional. Observe o ambiente de
+                    trabalho em que você está inserido e reconheça os canais de comunicação. Com relação aos registros
+                    escritos, pesquise as exigências da empresa, para que você consiga assim ampliar a sua habilidade de
+                    comunicação.
+                </p>
+                <h3 id="titulo5"> Ruído</h3>
+                <p>
+                    Todo processo de comunicação está sujeito a ruídos e interferências. Tais eventos são responsáveis,
+                    muitas vezes, por distorcer a mensagem e, em outras situações, impedir a transmissão e a recepção
+                    eficazes da informação.
+                </p>
+                <div class="grafismo">
+                    <div class="destaque gradiente icone importante">
+                        <p>
+                            Segundo Maximiano (2011, p. 305), ruídos e interferências nada mais são do que o excesso de
+                            mensagens que disputam a atenção dos destinatários; a desatenção por parte do receptor; as
+                            dificuldades de expressão ou a utilização de linguagem incorreta por parte do emissor; e os
+                            ruídos propriamente ditos no ambiente ou nos canais de comunicação.
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    Ruídos, interferências, barreiras e outros nomes que podem ser atribuídos àqueles que interferem no
+                    processo de comunicação devem ser observados e minimizados.
+                </p>
+                <div class="grafismo">
+                    <div class="destaque gradiente icone exemplo">
+                        <p>
+                            Imagine, por exemplo, uma sala de espera de um consultório com espaço para 20 pacientes. O
+                            local
+                            é grande devido ao fato de três médicos de diferentes especialidades atenderem pacientes
+                            ali.
+                            Para dar conta da demanda diária, três secretários atuam no consultório, cada um auxiliando
+                            um
+                            médico e respectivos pacientes. Conforme ilustra a figura a seguir, o espaço contém várias
+                            poltronas, televisão etc.
+                        </p>
+                        <figure class="my-5">
+                            <img src="img/figura_02.png"
+                                class="img-fluid mx-auto p-2 mb-3 d-block ilustracao radius print" alt="Imagem">
+                            <figcaption class="figure-caption text-center text-white">Sala de espera de consultório
+                                médico <br>
+                                Fonte: https://www.vivadecora.com.br/foto/156919/sala-de-espera-com-poltronas-cinzas
+                                Acesso em: 4 set. 2019
+                            </figcaption>
+                        </figure>
+                        <p>
+                            Agora, imagine a sala mencionada em um dia movimentado. Além do atendimento às pessoas,
+                            ainda há
+                            o atendimento telefônico. Muito provavelmente, o volume de movimentação de informações pode
+                            gerar ruído.
+                        </p>
+                    </div>
+                </div>
+                <a role="button" href="" target="_blank" class="bt-objeto d-block mx-auto my-5 shadow radius no-print">
+                    <span class="camada-blur"></span>
+                    <span class="sr-only">Acesse</span>
+                </a>
+                <p>
+                    O importante é a manutenção do atendimento ao cliente, seja externo, seja interno, de modo que a
+                    qualidade seja mantida. Quando medidas são planejadas, aplicadas, validadas, testadas e adaptadas, o
+                    ambiente passa por manutenção, e a qualidade do atendimento pode ser ampliada. Caso os ruídos não
+                    sejam
+                    minimizados, a empresa pode sofrer consequências. O atendimento aos clientes pode deixar de ser
+                    eficaz
+                    e, algumas vezes, não ser bem avaliado em uma pesquisa de satisfação, por exemplo. A dinâmica das
+                    equipes também depende da qualidade da comunicação e da redução dos ruídos. Além disso, as
+                    interferências nos processos de comunicação nas organizações representam um dos problemas mais
+                    significativos, impactando diretamente os resultados operacionais.
+                </p>
+                <div class="grafismo">
+                    <div class="destaque gradiente icone importante">
+                        <p>
+                            As interferências devem ser compreendidas como problemas que estão diretamente relacionados
+                            à
+                            dificuldade de transmitir a mensagem, a tarefa ou as mudanças de processos. Por envolver
+                            pessoas
+                            diferentes, em contextos diferenciados (entre setores, por exemplo), muitas vezes, a
+                            informação
+                            pode ser modificada do ponto de origem até o destino. Alguma etapa pode ser perdida nesse
+                            processo. Portanto, como profissional de secretariado, considere a precisão nos dados
+                            registrados em documentos, na redação de <i>e-mails</i>, nas informações repassadas por
+                            telefone etc.
+                        </p>
+                    </div>
+                </div>
+                <p>Quais são então os fatores que podem contribuir para a existência dos ruídos?</p>
+                <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Ambiente desorganizado
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <h4 class="sr-only print">Ambiente desorganizado</h4>
+                                <p>
+                                    Espaços muito barulhentos e desorganizados (por exemplo, com vozes em excesso e
+                                    pequenas
+                                    reuniões ocorrendo em locais com outras pessoas trabalhando) podem dificultar a
+                                    circulação das informações. O mesmo acontece em um ambiente virtual com volume
+                                    excessivo
+                                    de <i>e-mails</i>, ausência de organização na divulgação das informações e acesso a
+                                    muitas
+                                    páginas na <i>web</i>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Falta de organização no tempo de divulgação das mensagens
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <h4 class="sr-only print">Falta de organização no tempo de divulgação das mensagens
+                                </h4>
+                                <p>Organizar o tempo de divulgação da mensagem pressupõe dois fatores: duração da
+                                    mensagem e momento (<i>timing</i>) de compartilhamento. Por exemplo, pense em uma
+                                    reunião
+                                    na empresa com duração de quatro horas. O evento inicia às 14h e termina às 18h.
+                                    Considere que os colaboradores da empresa finalizam o expediente às 18h. Sendo
+                                    assim, muitas informações serão repassadas, mas, entre elas, uma se destaca como a
+                                    mais importante e deve ser entendida por todos. Qual seria então o melhor momento
+                                    para divulgar a informação: às 14h ou às 18h? O ideal é organizar a fala de uma
+                                    forma que as informações mais importantes sejam compartilhadas nos momentos de maior
+                                    atenção. Quanto mais próximo do fim da reunião, mais cansados os participantes
+                                    estarão. Portanto, reserve os momentos iniciais para organizar e planejar a fala e
+                                    compartilhar as informações mais importantes. Considere também retomar a informação
+                                    mais importante (ou as informações mais importantes) no fim do evento. Assim,
+                                    reduzem-se as chances de interferência e falta de comunicação. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Inadequação da linguagem
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <h4 class="sr-only print">Inadequação da linguagem </h4>
+                                <p>A forma de repassar uma mensagem tem relação direta com o tipo de linguagem
+                                    utilizado. O uso de termos técnicos pode ser fundamental em algumas situações, mas,
+                                    em outros momentos, talvez não seja tão eficaz. Por isso, é preciso conhecer o
+                                    receptor e o canal a ser utilizado. Com essas informações, você, como profissional
+                                    técnico em secretariado, reduzirá as chances de ruído na comunicação.
+
+                                    Imagine que você atua na secretaria de uma escola bilíngue (português e inglês). O
+                                    diretor da escola é natural da Inglaterra e muitos dos pais dos alunos são
+                                    estrangeiros (de origem turca, alemã e japonesa) que vieram trabalhar no Brasil e
+                                    utilizam a língua inglesa para se comunicar. O diretor também fala inglês e não sabe
+                                    se comunicar muito bem em português. Então, um dos pais estrangeiros liga para a
+                                    secretaria. O profissional que atende ao telefone necessariamente precisará saber a
+                                    língua inglesa, caso contrário, o processo de comunicação pode ser difícil e até
+                                    impossível. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="titulo6"> Mensagem</h3>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-7 col-lg-7	col-xl-7 col-xxl-7">
+                        <p>
+                            A mensagem representa o objeto central nos processos de comunicação. É aquela informação que
+                            parte do emissor e deve chegar até o receptor, sendo decodificada, interpretada e entendida por
+                            este, assim atendendo ao objetivo de comunicação daquele. Portanto, a mensagem representa o
+                            conteúdo, ou seja, as informações que estão sendo transmitidas.
+                        </p>
+                        <p>Para a prática, observe as seguintes situações e indique o elemento que ilustra a mensagem:</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                        <img class="img-fluid d-block no-print figura-3" src="img/img4.png">
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
+            </div>
         </section>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
-        <!--Jquery-->
-        <script src="../assets/js/jquery-3.6.0.min.js"></script>
-        <!--Áudio customizado-->
-        <script src="../assets/js/audio-player.js"></script>
-        <!--Splide - slideshow-->
-        <script src="../assets/js/splide.min.js"></script>
-        <!--Prog'n'roll - barra de progresso conforme rola a página-->
-        <script src="../assets/js/prognroll.min.js"></script>
-        <!--Scripts gerais-->
-        <script src="../assets/js/geral.js"></script>
+        <!-- Paginação-->
+        <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <ul class="pagination">
 
-        <script>
-            $(function() {
-                $("body").prognroll();
-            });
-        </script>
+            </ul>
+        </footer>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../assets/js/prognroll.min.js"></script>
+    <!--Scripts gerais-->
+    <script src="../assets/js/geral.js"></script>
 
-        <!-- Handtalk -->
-        <script>
-            var scriptElem=document.createElement("script");
-            scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
-            scriptElem.charset="UTF-8",
-            scriptElem.onload=function(){
+    <script>
+        $(function () {
+            $("body").prognroll();
+        });
+    </script>
+
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
                 window.ht = new HT({
-                    token:"bf5b7efb148a829a126a0e0c9fd533bf",
-                    align:"top",
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
                     videoEnabled: true,
-                    ytEmbedReplace: true,           
-                    mobileConfig:{align:"right",
-                                    actionsAlign:"top",
-                                    customButtonStyle:{
-                                        borderRadius:"6px",
-                                        size:"38px",
-                                        horizontalMargin:"13px",
-                                        bottomMargin:"140px",
-                                        rightMargin:"40px"}
-                                    }
-                    });        
-                $('.ht-skip').attr("aria-hidden","true")
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
             },
-        document.body.appendChild(scriptElem);
-        
-        </script>
-    </body>
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
 </html>
