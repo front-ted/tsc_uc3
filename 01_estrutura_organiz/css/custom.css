@@ -115,30 +115,6 @@ body {
     border: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .bg-escuro .accordion-body p {
     color: #fff;
 }
@@ -224,15 +200,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 820px) {
     .painel-1 {
         display: flex;
@@ -261,11 +228,6 @@ body {
     }
 
 }
-
-
-
-
-
 
 
 

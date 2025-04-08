@@ -1,3 +1,18 @@
+body {
+    background: url('../img/bg_parallax1.png') 0% 0.5%,
+        url('../img/bg_parallax2.png') 0% 14%,
+        url('../img/bg_parallax3.png') 0% 29.5%,
+        url('../img/bg_parallax4.png') 0% 52%,
+        url('../img/bg_parallax5.png') 0% 73%,
+        url('../img/bg_parallax6.png') 0% 93%,
+        url('../img/bg.jpg') fixed;
+
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+
+}
+
+
+
 .figura-1 {
     margin-left: 20%;
 }
@@ -99,10 +114,6 @@
     margin-left: 11%;
 }
 
-
-
-
-
 .card-fig2 {
     border: 1pt solid #92ACCE;
     border-radius: 20px;
@@ -114,6 +125,7 @@
     background: #fff;
     border-radius: 4px;
     margin-top: 25%;
+    height: 940px;
 }
 
 
@@ -127,37 +139,53 @@
     margin-left: 60%;
 }
 
+.texto2 h5 {
+    color: #207893;
+}
+
+.texto2 {
+    padding: 0px 25px 5px 5px;
+    margin-top: -34%;
+}
+
+.marcador-azul li {
+    background: url('../img/marcador2.png') no-repeat left top 13px / 10px;
+    list-style: none;
+    padding-left: 30px;
+}
+
+.marcador-verde li {
+    background: url('../img/marcador.png') no-repeat left top 13px / 10px;
+    list-style: none;
+    padding-left: 30px;
+}
+
+.figura-5 {
+    margin-top: 0;
+}
+
+.texto-pensando {
+    margin-top: 5%;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.texto-branco{
+.texto-branco {
     color: #fff;
 }
 
-.bg-escuro .card-fig p{
+.bg-escuro .card-fig p {
     color: #000;
 }
-.bg-escuro .card-fig li{
+
+.bg-escuro .card-fig li {
+    color: #000;
+}
+
+.bg-escuro .card-fig2 p {
+    color: #000;
+}
+
+.bg-escuro .card-fig2 li {
     color: #000;
 }
 
@@ -231,20 +259,33 @@
     filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.15));
 }
 
+@media screen and (max-width: 1440px) {
+body {
+    background: url('../img/bg_parallax1.png') 0% 0.5%,
+        url('../img/bg_parallax2.png') 0% 14%,
+        url('../img/bg_parallax3.png') 0% 29.5%,
+        url('../img/bg_parallax4.png') 0% 52%,
+        url('../img/bg_parallax5.png') 0% 73%,
+        url('../img/bg_parallax6.png') 0% 93%,
+        url('../img/bg.jpg') fixed;
 
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 15%, 15%, 15%, 15%, 15%, 15%, cover ;
 
-
-@media screen and (max-width: 1024px) {
-    body{
-        overflow-x: hidden;
-    }
+}
 }
 
 
 
 
-
-
+@media screen and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+        background:
+            url('../img/bg.jpg') fixed;
+        background-size: cover;
+    }
+}
 
 
 
@@ -275,8 +316,37 @@
         margin-top: 35%;
     }
 
+    .card-fig2 {
+        border: 1pt solid #92ACCE;
+        border-radius: 20px;
+        box-shadow: 2px 2px 0 #207893;
+        padding: 158px 20px 30px 5px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 700px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 25%;
+        height: 1088px;
+    }
 
+    .img-lado {
+        display: block;
+        margin: 0px auto 35px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: -64%;
+        margin-left: 60%;
+    }
 
+    .figura-5 {
+        margin-top: 0;
+    }
+
+    .texto-pensando {
+        margin-top: 1%;
+    }
 
 }
 
@@ -293,6 +363,37 @@
         margin-top: -10%;
     }
 
+    .card-fig2 {
+        border: 1pt solid #92ACCE;
+        border-radius: 20px;
+        box-shadow: 2px 2px 0 #207893;
+        padding: 158px 20px 30px 5px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 700px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 25%;
+        height: 879px;
+    }
+
+    .img-lado {
+        display: block;
+        margin: 0px auto 35px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: -66%;
+        margin-left: 56%;
+    }
+
+    .figura-5 {
+        margin-top: 0;
+    }
+
+    .texto-pensando {
+        margin-top: 6%;
+    }
 }
 
 
@@ -349,6 +450,40 @@
         margin-top: 43%;
     }
 
+    .marcador-azul li {
+        background: url('../img/marcador2.png') no-repeat left top 8px / 10px;
+        list-style: none;
+        padding-left: 30px;
+    }
+
+    .marcador-verde li {
+        background: url('../img/marcador.png') no-repeat left top 8px / 10px;
+        list-style: none;
+        padding-left: 30px;
+    }
+
+    .card-fig2 {
+        border: 1pt solid #92ACCE;
+        border-radius: 20px;
+        box-shadow: 2px 2px 0 #207893;
+        padding: 158px 20px 30px 20px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 700px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 25%;
+        height: 845px;
+    }
+
+    .figura-5 {
+        margin-top: unset;
+    }
+
+    .texto-pensando {
+        margin-top: 5%;
+    }
+}
 
 
 
@@ -356,15 +491,95 @@
 
 
 
+
+
+
+
+@media screen and (max-width: 414px) {
+
+    .card-fig2 {
+        border: 1pt solid #92ACCE;
+        border-radius: 20px;
+        box-shadow: 2px 2px 0 #207893;
+        padding: 158px 20px 30px 20px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 700px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 25%;
+        height: 874px;
+    }
+
+    .img-lado {
+        display: block;
+        margin: 0px auto 35px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: -62%;
+        margin-left: 53%;
+    }
 
 }
 
 
+@media screen and (max-width: 390px) {
+    .img-lado {
+        display: block;
+        margin: 0px auto 35px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: -69%;
+        margin-left: 48%;
+    }
+
+    .card-fig2 {
+        border: 1pt solid #92ACCE;
+        border-radius: 20px;
+        box-shadow: 2px 2px 0 #207893;
+        padding: 158px 20px 30px 20px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 700px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 25%;
+        height: 915px;
+    }
+
+}
 
 @media screen and (max-width: 375px) {
     .figura-3 {
         margin-top: 8%;
         margin-left: unset;
+    }
+
+
+    .card-fig2 {
+        border: 1pt solid #92ACCE;
+        border-radius: 20px;
+        box-shadow: 2px 2px 0 #207893;
+        padding: 149px 14px 28px 5px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 700px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 25%;
+        height: 897px;
+    }
+
+    .img-lado {
+        display: block;
+        margin: 0px auto 35px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: -75%;
+        margin-left: 50%;
     }
 
 }
