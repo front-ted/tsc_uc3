@@ -58,15 +58,74 @@
     margin-right: 15%;
 }
 
-.figura-4{
+.figura-4 {
     margin-top: -10%;
 }
 
-.margem-abaixo{
+.margem-abaixo {
     margin-bottom: 10%;
 }
 
 
+.card-fig {
+    border: 1pt solid #207893;
+    box-shadow: 2px 2px 0 #207893;
+    padding: 158px 20px 30px 20px;
+    margin: 40px auto;
+    position: relative;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 25%;
+}
+
+.corner {
+    width: 94px;
+    height: 94px;
+    background: url("../img/dest_canto.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-topo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: -48%;
+    margin-left: 11%;
+}
+
+
+
+
+
+.card-fig2 {
+    border: 1pt solid #92ACCE;
+    border-radius: 20px;
+    box-shadow: 2px 2px 0 #207893;
+    padding: 158px 20px 30px 20px;
+    margin: 40px auto;
+    position: relative;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 25%;
+}
+
+
+.img-lado {
+    display: block;
+    margin: 0px auto 35px auto;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: -53%;
+    margin-left: 60%;
+}
 
 
 
@@ -74,6 +133,33 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.texto-branco{
+    color: #fff;
+}
+
+.bg-escuro .card-fig p{
+    color: #000;
+}
+.bg-escuro .card-fig li{
+    color: #000;
+}
 
 .bg-escuro .accordion-body p {
     color: #fff;
@@ -148,7 +234,11 @@
 
 
 
-
+@media screen and (max-width: 1024px) {
+    body{
+        overflow-x: hidden;
+    }
+}
 
 
 
@@ -173,7 +263,17 @@
         margin-top: unset;
     }
 
-
+    .card-fig {
+        border: 1pt solid #207893;
+        box-shadow: 2px 2px 0 #207893;
+        padding: 158px 20px 30px 20px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 700px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 35%;
+    }
 
 
 
@@ -188,6 +288,7 @@
     .figura-1 {
         margin-left: 15%;
     }
+
     .figura-4 {
         margin-top: -10%;
     }
@@ -220,9 +321,42 @@
         margin-top: 5%;
         gap: 50px;
     }
-    .figura-4{
+
+    .figura-4 {
         margin-top: 2%;
     }
+
+    .img-topo {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: -67%;
+        margin-left: -4%;
+    }
+
+
+    .card-fig {
+        border: 1pt solid #207893;
+        box-shadow: 2px 2px 0 #207893;
+        padding: 158px 20px 30px 20px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 700px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 43%;
+    }
+
+
+
+
+
+
+
+
+
 }
 
 
