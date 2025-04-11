@@ -603,9 +603,13 @@ body {
     }
 
 
-    .carousel-control-prev,
+
+    .carousel-control-prev {
+        left: -34px;
+    }
+
     .carousel-control-next {
-        display: none;
+        right: -38px;
     }
 
     .painel-imagens {
@@ -628,6 +632,9 @@ body {
         font-weight: normal;
     }
 
+    .margem-figure {
+        margin-top: -9%;
+    }
 
     .painel-audicao {
         display: flex;
