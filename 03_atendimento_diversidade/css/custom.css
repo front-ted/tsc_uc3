@@ -137,11 +137,44 @@ body {
     width: 589px;
 }
 
+.texto-margem {
+    margin-top: 15%;
+}
 
+.painel-imagens {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+#carousel3 {
+    width: 545px;
+    height: 410px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.15);
+    border: solid 1pt #92ACCE;
+    margin: auto;
+}
 
+#carousel3 img{
+    padding: 20px;
+}
 
-
+.texto-slide2 {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    width: 545px;
+    height: 50px;
+    background-color: #92ACCE;
+    margin-top: 66%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+} 
 
 
 
@@ -188,6 +221,11 @@ body {
 
 .bg-escuro .tab-content li {
     color: #fff;
+}
+
+.bg-escuro .carousel-control-prev,
+.bg-escuro .carousel-control-next {
+    background-color: transparent;
 }
 
 
@@ -453,6 +491,44 @@ body {
         margin-top: 8%;
     }
 
+    .carousel {
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+
+    .texto-margem {
+        margin-top: 30%;
+    }
+
+    .texto-slide {
+        position: absolute;
+        z-index: 2;
+        margin-top: 67%;
+        text-align: center;
+        color: #fff;
+        font-weight: normal;
+        width: 330px;
+    }
+
+    .carousel p {
+        font-size: .65em;
+    }
+
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .painel-imagens {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 
