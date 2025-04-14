@@ -227,6 +227,239 @@ body {
     margin-top: -11%;
 }
 
+.texto-lei {
+    margin-top: 2%;
+}
+
+/* painel gaitinha diferente */
+
+[data-accordion-element-content] {
+    height: auto;
+    overflow: hidden;
+    transition: height .5s;
+}
+
+.card2 {
+    width: 800px;
+    margin: 50px auto;
+    border-radius: 2px;
+    background: #207893;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+article {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    transition: all .3s;
+    background: #195B70;
+    margin-top: unset;
+    margin-bottom: unset;
+
+    &.selected {
+        transform: scale(1.1);
+        box-shadow: 0 0 5px rgba(2, 2, 2, 0.4);
+        z-index: 2;
+    }
+}
+
+
+.card2 h1 {
+    position: relative;
+    background: #207893;
+    padding: 20px 75px 20px 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    overflow: hidden;
+    text-transform: none;
+    text-align: unset;
+    transition: background .3s;
+    margin-bottom: 0.5em;
+
+    &:hover,
+    .selected & {
+        cursor: pointer;
+        background: transparent;
+    }
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -1px;
+        margin-right: 30px;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        transition: transform .3s;
+    }
+
+    &:before {
+        transform: rotate(0deg);
+        animation: close-line-one-in .8s forwards;
+
+        .selected & {
+            animation: close-line-one-out .8s forwards;
+        }
+    }
+
+    &:after {
+        transform: rotate(90deg);
+        animation: close-line-two-in .8s forwards;
+
+        .selected & {
+            animation: close-line-two-out .8s forwards;
+        }
+    }
+
+}
+
+.content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all ease-out .4s .1s;
+
+    .selected & {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .collapsed & {
+        display: none;
+    }
+}
+
+.card2 p {
+    padding: 25px 30px 40px;
+    background: #195b70;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+
+@keyframes close-line-one-out {
+
+    0%,
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(50px);
+    }
+
+    76% {
+        transform: translateX(50px) translateY(50px);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes close-line-one-in {
+
+    0%,
+    20% {
+        transform: rotate(45deg);
+    }
+
+    60% {
+        transform: translateX(50px) translateY(50px) rotate(45deg);
+    }
+
+    61% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes close-line-two-out {
+
+    0%,
+    50% {
+        transform: rotate(90deg);
+    }
+
+    75% {
+        transform: translateY(-50px) rotate(90deg);
+    }
+
+    76% {
+        transform: translateY(-50px) translateX(50px) rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes close-line-two-in {
+    0% {
+        transform: rotate(135deg);
+    }
+
+    50% {
+        transform: translateY(-50px) translateX(50px) rotate(135deg);
+    }
+
+    51% {
+        transform: translateY(-50px) rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+/* painel gaitinha diferente */
+
+.texto-baby {
+    margin-top: 3%;
+}
+
+.figura-painel-2 {
+    margin-top: 10%;
+}
+
+.figura-painel-4 {
+    margin-top: 9%;
+}
+
+
+.nav-tabs .nav-link {
+    padding: 10px 40px;
+    border-radius: 8px 8px 0 0;
+    font-weight: bold;
+    color: #fff;
+    border-width: 3px;
+    border-bottom: unset;
+    margin-bottom: -2px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -439,6 +672,30 @@ body {
     .figura-9 {
         margin-top: 5%;
     }
+
+    .card2 {
+        width: 700px;
+        margin: 50px auto;
+        border-radius: 2px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+
+    .figura-painel-2 {
+        margin-top: 22%;
+    }
+
+    .figura-painel-4 {
+        margin-top: 22%;
+    }
+
+
+
+
+
+
+
+
+
 }
 
 @media screen and (max-width: 770px) {
@@ -480,7 +737,38 @@ body {
     .figura-9 {
         margin-top: -8%;
     }
+
+    .texto-lei {
+        margin-top: 7%;
+    }
+
+    .card2 {
+        width: 650px;
+        margin: 50px auto;
+        border-radius: 2px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+
+    .texto-baby {
+        margin-top: 0%;
+    }
+
+    .figura-painel-2 {
+        margin-top: 32%;
+    }
+
+
+
+
+
+
+
 }
+
+
+
+
+
 
 
 
@@ -520,6 +808,25 @@ body {
         margin-top: 3%;
     }
 
+    .card2 {
+        width: 400px;
+        margin: 50px auto;
+        border-radius: 2px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+
+    .texto-baby {
+        margin-top: 3%;
+    }
+
+
+    .figura-painel-1,
+    .figura-painel-2,
+    .figura-painel-3,
+    .figura-painel-4 {
+        margin-top: 0%;
+        margin-bottom: 8%;
+    }
 }
 
 
@@ -656,8 +963,24 @@ body {
         margin-top: 0%;
     }
 
+    .texto-lei {
+        margin-top: 10%;
+    }
 
+    .card2 {
+        width: 350px;
+        margin: 50px auto;
+        border-radius: 2px;
+        background: #207893;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+
+    article {
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
 }
+
 
 
 
@@ -706,6 +1029,12 @@ body {
         font-weight: normal;
     }
 
+    .card2 {
+        width: 300px;
+        margin: 50px auto;
+        border-radius: 2px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
 
 }
 
