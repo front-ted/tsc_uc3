@@ -1,7 +1,21 @@
 body {
-    background: url('../img/backg.jpg');
-    background-attachment: fixed;
-    background-size: cover;
+    background: url('../img/elem_paral_01.png') 100% 0.5%,
+        url('../img/elem_paral_02.png') 100% 13%,
+        url('../img/elem_paral_03.png') 100% 22%,
+        url('../img/elem_paral_03.png') 100% 27%,
+        url('../img/elem_paral_04.png') 95% 33%,
+        url('../img/elem_paral_03.png') 100% 38%,
+        url('../img/elem_paral_03.png') 100% 49%,
+        url('../img/elem_paral_05.png') 98% 56%,
+        url('../img/elem_paral_06.png') 98% 64%,
+        url('../img/elem_paral_07.png') 98% 74%,
+        url('../img/elem_paral_08.png') 98% 81%,
+        url('../img/elem_paral_03.png') 100% 90%,
+
+        url('../img/bg.jpg') fixed;
+
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+
 }
 
 .texto-diferente2 {
@@ -12,9 +26,6 @@ body {
     margin-right: 15%;
     font-weight: bold;
 }
-
-
-
 
 
 .custom-accordion .icon-on-top {
@@ -231,194 +242,6 @@ body {
     margin-top: 2%;
 }
 
-/* painel gaitinha diferente */
-
-[data-accordion-element-content] {
-    height: auto;
-    overflow: hidden;
-    transition: height .5s;
-}
-
-.card2 {
-    width: 800px;
-    margin: 50px auto;
-    border-radius: 2px;
-    background: #207893;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-}
-
-article {
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    transition: all .3s;
-    background: #195B70;
-    margin-top: unset;
-    margin-bottom: unset;
-
-    &.selected {
-        transform: scale(1.1);
-        box-shadow: 0 0 5px rgba(2, 2, 2, 0.4);
-        z-index: 2;
-    }
-}
-
-
-.card2 h1 {
-    position: relative;
-    background: #207893;
-    padding: 20px 75px 20px 30px;
-    font-size: 20px;
-    line-height: 30px;
-    color: #fff;
-    overflow: hidden;
-    text-transform: none;
-    text-align: unset;
-    transition: background .3s;
-    margin-bottom: 0.5em;
-
-    &:hover,
-    .selected & {
-        cursor: pointer;
-        background: transparent;
-    }
-
-    &:before,
-    &:after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 50%;
-        margin-top: -1px;
-        margin-right: 30px;
-        width: 20px;
-        height: 2px;
-        background: #fff;
-        transition: transform .3s;
-    }
-
-    &:before {
-        transform: rotate(0deg);
-        animation: close-line-one-in .8s forwards;
-
-        .selected & {
-            animation: close-line-one-out .8s forwards;
-        }
-    }
-
-    &:after {
-        transform: rotate(90deg);
-        animation: close-line-two-in .8s forwards;
-
-        .selected & {
-            animation: close-line-two-out .8s forwards;
-        }
-    }
-
-}
-
-.content {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all ease-out .4s .1s;
-
-    .selected & {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    .collapsed & {
-        display: none;
-    }
-}
-
-.card2 p {
-    padding: 25px 30px 40px;
-    background: #195b70;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
-}
-
-
-@keyframes close-line-one-out {
-
-    0%,
-    50% {
-        transform: translateX(0);
-    }
-
-    75% {
-        transform: translateX(50px);
-    }
-
-    76% {
-        transform: translateX(50px) translateY(50px);
-    }
-
-    100% {
-        transform: rotate(45deg);
-    }
-}
-
-@keyframes close-line-one-in {
-
-    0%,
-    20% {
-        transform: rotate(45deg);
-    }
-
-    60% {
-        transform: translateX(50px) translateY(50px) rotate(45deg);
-    }
-
-    61% {
-        transform: translateX(50px);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes close-line-two-out {
-
-    0%,
-    50% {
-        transform: rotate(90deg);
-    }
-
-    75% {
-        transform: translateY(-50px) rotate(90deg);
-    }
-
-    76% {
-        transform: translateY(-50px) translateX(50px) rotate(90deg);
-    }
-
-    100% {
-        transform: rotate(135deg);
-    }
-}
-
-@keyframes close-line-two-in {
-    0% {
-        transform: rotate(135deg);
-    }
-
-    50% {
-        transform: translateY(-50px) translateX(50px) rotate(135deg);
-    }
-
-    51% {
-        transform: translateY(-50px) rotate(90deg);
-    }
-
-    100% {
-        transform: rotate(90deg);
-    }
-}
-
-/* painel gaitinha diferente */
 
 .texto-baby {
     margin-top: 3%;
@@ -444,33 +267,27 @@ article {
     margin-right: 5px;
 }
 
+.nav li {
+    font-size: .85em;
 
+}
 
+.nav-item button {
+    height: 71px;
+}
 
+.nav-tabs .nav-link {
+    padding: 10px 25px;
+    border-radius: 8px 8px 0 0;
+    font-weight: bold;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.tab-content {
+    border-width: 3px;
+    border-style: solid;
+    padding: 40px;
+    border-radius: 0 15px 15px 15px;
+}
 
 .bg-escuro .accordion-body p {
     color: #fff;
@@ -531,6 +348,10 @@ article {
     border-radius: 10px;
 }
 
+.bg-escuro .card-fig p{
+    color: #000;
+}
+
 .bt-objeto::after {
     content: 'espera';
     display: block;
@@ -559,27 +380,52 @@ article {
     filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.15));
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
     body {
-        background: url('../img/backg.jpg');
-        background-attachment: fixed;
-        background-size: cover;
+        background: url('../img/elem_paral_01.png') 100% 0.5%,
+            url('../img/elem_paral_02.png') 100% 13%,
+            url('../img/elem_paral_03.png') 100% 21.5%,
+            url('../img/elem_paral_03.png') 100% 27%,
+            url('../img/elem_paral_04.png') 98% 33%,
+            url('../img/elem_paral_03.png') 100% 38%,
+            url('../img/elem_paral_03.png') 100% 49%,
+            url('../img/elem_paral_05.png') 98% 56%,
+            url('../img/elem_paral_06.png') 98% 63%,
+            url('../img/elem_paral_07.png') 98% 73%,
+            url('../img/elem_paral_08.png') 98% 80.5%,
+            url('../img/elem_paral_03.png') 100% 89%;
+
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+        background-size: 18%, 17%, 19%, 19%, 15%, 19%, 19%, 16%, 17%, 19%, 15%, 19%;
     }
 }
+
+@media screen and (max-width: 1400px) {
+    body {
+        background: url('../img/elem_paral_01.png') 100% 0.5%,
+            url('../img/elem_paral_02.png') 100% 13%,
+            url('../img/elem_paral_03.png') 100% 21.5%,
+            url('../img/elem_paral_03.png') 100% 26.5%,
+            url('../img/elem_paral_04.png') 98% 33%,
+            url('../img/elem_paral_03.png') 100% 38%,
+            url('../img/elem_paral_03.png') 100% 49%,
+            url('../img/elem_paral_05.png') 98% 56%,
+            url('../img/elem_paral_06.png') 98% 63%,
+            url('../img/elem_paral_07.png') 98% 73%,
+            url('../img/elem_paral_08.png') 98% 79.8%,
+            url('../img/elem_paral_03.png') 100% 88%;
+
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+        background-size: 18%, 17%, 17%, 17%, 15%, 17%, 17%, 16%, 17%, 15%, 15%, 15%;
+    }
+}
+
 
 @media screen and (max-width: 1300px) {
     body {
         background: none;
     }
 }
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 1024px) {
@@ -604,11 +450,6 @@ article {
     }
 
 }
-
-
-
-
-
 
 
 @media screen and (max-width: 820px) {
@@ -687,15 +528,6 @@ article {
     .figura-painel-4 {
         margin-top: 22%;
     }
-
-
-
-
-
-
-
-
-
 }
 
 @media screen and (max-width: 770px) {
@@ -742,37 +574,7 @@ article {
         margin-top: 7%;
     }
 
-    .card2 {
-        width: 650px;
-        margin: 50px auto;
-        border-radius: 2px;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-    }
-
-    .texto-baby {
-        margin-top: 0%;
-    }
-
-    .figura-painel-2 {
-        margin-top: 32%;
-    }
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 700px) {
@@ -828,10 +630,6 @@ article {
         margin-bottom: 8%;
     }
 }
-
-
-
-
 
 @media screen and (max-width: 500px) {
     .custom-accordion .icon-on-top {
@@ -909,8 +707,6 @@ article {
         font-size: .65em;
     }
 
-
-
     .carousel-control-prev {
         left: -34px;
     }
@@ -966,46 +762,7 @@ article {
     .texto-lei {
         margin-top: 10%;
     }
-
-    .card2 {
-        width: 350px;
-        margin: 50px auto;
-        border-radius: 2px;
-        background: #207893;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-    }
-
-    article {
-        margin-top: 35px;
-        margin-bottom: 20px;
-    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 414px) {}
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 390px) {
@@ -1027,13 +784,6 @@ article {
     #carousel3 p {
         font-size: 1em;
         font-weight: normal;
-    }
-
-    .card2 {
-        width: 300px;
-        margin: 50px auto;
-        border-radius: 2px;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     }
 
 }
