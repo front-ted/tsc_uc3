@@ -1,9 +1,11 @@
-body {
-    background: url('../img/backg.jpg');
-    background-attachment: fixed;
+.pagina .bloco-1{
+    background: url('../img/bg.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0%;
+    padding-top: 3%;
+    padding-bottom: 5%;
 }
-
 
 .card-fig {
     border: 1pt solid #207893;
