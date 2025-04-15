@@ -1,20 +1,84 @@
-window.addEventListener('load', function(){ 
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
+// window.addEventListener('load', function(){ 
+//     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+//     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+//       return new bootstrap.Tooltip(tooltipTriggerEl)
+//     })
 
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-      return new bootstrap.Popover(popoverTriggerEl)
-    })
+//     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+//     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+//       return new bootstrap.Popover(popoverTriggerEl)
+//     })
 
-    $('.preloader').fadeOut(300);
+//     $('.preloader').fadeOut(300);
 
-    $('.botao').click(function(){
-      $(this).addClass('visitado');
+//     $('.botao').click(function(){
+//       $(this).addClass('visitado');
+//     });
+// })
+
+
+// ****** Fabi: Modifiquei o codigo para as popover abrirem uma por vez e fechar ao clicar em outro botão.
+// ***** O codigo anterior segue acima comentado.
+
+// inicio 
+window.addEventListener('load', function () {
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl, { trigger: "manual" });
+  });
+
+  let activePopover = null;
+
+  popoverTriggerList.forEach(function (popoverTriggerEl) {
+    popoverTriggerEl.addEventListener("click", function (event) {
+      event.stopPropagation(); // Impede o fechamento imediato
+
+      var popoverInstance = bootstrap.Popover.getInstance(popoverTriggerEl);
+
+      // Se houver um popover ativo e for diferente do atual, fecha-o antes de abrir o novo
+      if (activePopover && activePopover !== popoverTriggerEl) {
+        bootstrap.Popover.getInstance(activePopover)?.hide();
+      }
+
+      // Alterna o popover clicado
+      if (popoverTriggerEl.getAttribute("aria-describedby")) {
+        popoverInstance.hide();
+        activePopover = null;
+      } else {
+        popoverInstance.show();
+        activePopover = popoverTriggerEl;
+      }
     });
-})
+  });
+
+  // Fecha qualquer popover ao clicar fora
+  document.addEventListener("click", function () {
+    if (activePopover) {
+      bootstrap.Popover.getInstance(activePopover)?.hide();
+      activePopover = null;
+    }
+  });
+
+  // Fecha todos os popovers ao fechar o modal
+  document.querySelector('.modal')?.addEventListener("hidden.bs.modal", function () {
+    popoverList.forEach(function (popover) {
+      popover.hide();
+    });
+    activePopover = null;
+  });
+
+  $('.preloader').fadeOut(300);
+
+  $('.botao').click(function () {
+    $(this).addClass('visitado');
+  });
+});
+// fim
 
 // reposicionamento do botao do menu
 
