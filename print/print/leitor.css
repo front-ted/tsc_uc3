@@ -398,9 +398,9 @@ li{
 	margin-bottom:0.8em;
 	list-style-image:url(../images/marcador.png);
 }
-ol li{
+/* ol li{
 	list-style-image:none;
-}
+} */
 
 button, a {
   outline:none !important
@@ -716,7 +716,7 @@ table.text-left.align-middle td {
 .destaque.gradiente{background: transparent;}
 
 ul li{list-style-type: disc !important;}
-ol li{list-style-type: auto !important;}
+ol li{list-style-type: decimal !important;}
 ol[type="a"] li{list-style-type: lower-alpha !important;}
 
 .bt-tooltip{text-decoration: underline;}

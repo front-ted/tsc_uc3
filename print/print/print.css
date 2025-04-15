@@ -432,7 +432,7 @@
   }
 
   ol li {
-    list-style-type: auto !important;
+    list-style-type: decimal !important;
   }
 
   ol[type="a"] li {
@@ -442,6 +442,7 @@
   .bt-tooltip {
     text-decoration: underline;
   }
+
 
   .pagina ol {
     display: block;
