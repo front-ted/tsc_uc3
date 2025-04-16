@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documento sem título</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Francisco Fischer Pioner</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">278970800.000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Francisco Fischer Pioner</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<style>
+	html,body{
+		width:100%;
+		height:100%;
+		
+	}
+	#container{
+		border:20px red solid;
+		width:400px;
+		height:500px;
+		margin:auto;
+		transition:ease-in 200ms;			
+	}
+	#hq{
+		width:400px;
+		height:500px;
+		background-color:lime;
+		transition:ease-in 200ms;
+		transform:scale(1,1);
+		transform-origin:0 0;
+		
+	}
+</style>
+<body onResize="changeman()" onLoad="changeman()">
+
+
+<div id="container">
+	<div id="hq">
+    </div>
+</div>
+<a href="#" onClick="changeman()">teste</a>
+</body>
+</html>
+<script>
+	var initialState = 800;
+	
+	function changeman(){
+		console.log("iS="+initialState);
+		var newHeight = window.innerHeight;
+		console.log("newWidth="+newHeight);
+		var diff = newHeight/initialState;
+		console.log("diff="+diff);
+		var ne = diff/0.8;
+		console.log("ne="+ne);
+		var hq = document.getElementById('hq');
+		var container = document.getElementById('container');
+		hq.style.transform = "scale("+ne+","+ne+")";		
+		console.log(hq.clientWidth);
+		console.log(hq.clientHeight);
+		container.style.width = hq.clientWidth*ne+"px";
+		container.style.height = hq.clientHeight*ne+"px"; 
+	
+	}
+</script>

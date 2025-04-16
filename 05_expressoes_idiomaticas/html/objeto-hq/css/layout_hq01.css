@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+#hq{
+	position:relative;
+	padding:10px;
+	
+	border:1px solid lightgray;
+	width:1050px;
+	height:1120px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:beige;	
+	/*transform:scale(0.5,0.5);
+	transform-origin:left top;*/
+}
+
+
+#hq > #q01{
+	width:349px;
+	height:386px;	
+	left:10px;
+	top:10px;
+	
+}
+#hq > #q02{
+	width:347px;
+	height:386px;
+	left:384px;
+	top:10px;
+}
+
+#hq > #q03{
+	width:284px;
+	height:386px;
+	left:758px;
+	top:10px;	
+}
+
+#hq > #q04{
+	width:1033px;
+	height:258px;
+	left:10px;
+	top:400px;
+	
+}
+
+#hq > #q05{
+	width:492px;
+	height:391px;
+	left:10px;
+	top:665px;		
+}
+#hq > #q05 > .legenda{
+	max-width:400px;
+}
+#hq > #q05 > .legenda.es{
+	max-width:320px;
+}
+#hq > #q05 > .legenda.en{
+	max-width:320px;
+}
+#hq > #q05 > a.btEn{
+	right:180px;
+}
+#hq > #q05 > a.btEs{
+	right:230px;
+}
+
+#hq > #q06{
+	width:701px;
+	height:391px;
+	left:340px;
+	top:665px;
+				
+}
+#hq > #q06 > .legenda{
+	margin-left:190px;
+}
+.legenda.es.q06{
+	margin-left:190px !important;
+}
+footer > audio{
+	display:none;
+}
+@media screen and (max-width:1024px){
+	#hq{
+		transform:scale(0.85,0.85);
+		transform-origin:left top;
+		margin-bottom:-200px;
+	}
+}
+
+@media screen and (max-width:780px){	
+	header h1, header h3{
+		font-size:1.1em;
+	}
+	header h2{
+		font-size:1.6em;
+	}
+	#hq{
+		transform:scale(1,1);
+		transform-origin:left top;
+		margin-bottom:inherit;
+	}
+  .quadro{
+	  position:relative;
+	  display:block !important;
+	  top:inherit !important;
+	  left:inherit !important;
+	  margin:0 auto !important;
+	  margin-top:10px !important;
+	  max-width:100%;
+	    }
+ #hq{
+	 margin:0 auto;
+	 width:100%;
+	 padding:0;
+	 height:100%;
+ }
+ #hq > #q04,#hq > #q05{
+		height:400px !important;
+	}
+ 
+		#hq > #q05 > .legenda{
+			max-width:inherit !important;
+		}
+		#hq > #q05 > .legenda.es{
+			max-width:inherit !important;
+		}
+		#hq > #q05 > .legenda.en{
+			max-width:inherit !important;
+		}
+		#hq > #q05 > a.btEn{
+			right:0 !important;
+		}
+		#hq > #q05 > a.btEs{
+			right:49px !important;
+		}
+ 		#hq > #q06 > .legenda{
+			margin-left:inherit !important;
+		}
+		.legenda.es.q06{
+			margin-left:inherit !important;
+		}
+}

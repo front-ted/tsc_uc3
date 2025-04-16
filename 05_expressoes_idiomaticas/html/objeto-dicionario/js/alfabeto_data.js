@@ -1,0 +1,94 @@
+// JavaScript Document
+//palavras com A
+	var dicVocabularioP01 = new Array();
+		dicVocabularioP01.push({pt:"A",es:'a',audio_es:'A.mp3',en:'ei',audio_en:'A.mp3'});
+		dicVocabularioP01.push({pt:"B",es:'be',audio_es:'B.mp3',en:'bi',audio_en:'B.mp3'});
+		dicVocabularioP01.push({pt:"C",es:'ce',audio_es:'C.mp3',en:'ci',audio_en:'C.mp3'});
+		dicVocabularioP01.push({pt:"D",es:'de',audio_es:'D.mp3',en:'di',audio_en:'D.mp3'});
+		dicVocabularioP01.push({pt:"E",es:'e',audio_es:'E.mp3',en:'i',audio_en:'E.mp3'});
+		dicVocabularioP01.push({pt:"F",es:'efe',audio_es:'F.mp3',en:'éf',audio_en:'F.mp3'});
+		dicVocabularioP01.push({pt:"G",es:'ge',audio_es:'G.mp3',en:'dji',audio_en:'G.mp3'});
+		dicVocabularioP01.push({pt:"H",es:'hache',audio_es:'H.mp3',en:'eitch',audio_en:'H.mp3'});
+		dicVocabularioP01.push({pt:"I",es:'i',audio_es:'I.mp3',en:'ai',audio_en:'I.mp3'});
+		dicVocabularioP01.push({pt:"J",es:'jota',audio_es:'J.mp3',en:'djei',audio_en:'J.mp3'});
+		dicVocabularioP01.push({pt:"K",es:'ka',audio_es:'K.mp3',en:'kei',audio_en:'K.mp3'});
+		dicVocabularioP01.push({pt:"L",es:'ele',audio_es:'L.mp3',en:'el',audio_en:'L.mp3'});
+		dicVocabularioP01.push({pt:"M",es:'eme',audio_es:'M.mp3',en:'em',audio_en:'M.mp3'});
+		dicVocabularioP01.push({pt:"N",es:'ene /Ñ eñe',audio_es:'N.mp3',en:'en',audio_en:'N.mp3'});
+		dicVocabularioP01.push({pt:"O",es:'o',audio_es:'O.mp3',en:'ou',audio_en:'O.mp3'});
+		dicVocabularioP01.push({pt:"P",es:'pe',audio_es:'P.mp3',en:'pi',audio_en:'P.mp3'});
+		dicVocabularioP01.push({pt:"Q",es:'cu',audio_es:'Q.mp3',en:'quiu',audio_en:'Q.mp3'});
+		dicVocabularioP01.push({pt:"R",es:'erre',audio_es:'R.mp3',en:'ar',audio_en:'R.mp3'});
+		dicVocabularioP01.push({pt:"S",es:'ese',audio_es:'S.mp3',en:'es',audio_en:'S.mp3'});
+		dicVocabularioP01.push({pt:"T",es:'te',audio_es:'T.mp3',en:'ti',audio_en:'T.mp3'});
+		dicVocabularioP01.push({pt:"U",es:'u',audio_es:'U.mp3',en:'iu',audio_en:'U.mp3'});
+		dicVocabularioP01.push({pt:"V",es:'uve',audio_es:'V.mp3',en:'vi',audio_en:'V.mp3'});
+		dicVocabularioP01.push({pt:"W",es:'uve doble',audio_es:'W.mp3',en:'dãbliu',audio_en:'W.mp3'});
+		dicVocabularioP01.push({pt:"X",es:'equis',audio_es:'X.mp3',en:'ecs',audio_en:'X.mp3'});
+		dicVocabularioP01.push({pt:"Y",es:'ye/i griega',audio_es:'Y.mp3',en:'uai',audio_en:'Y.mp3'});
+		dicVocabularioP01.push({pt:"Z",es:'zeta',audio_es:'Z.mp3',en:'zi',audio_en:'Z.mp3'});
+
+	var dicVocabularioP02 = new Array();
+		dicVocabularioP02.push({pt:"A",otan:'Alpha',audio_otan:'perdidos_y_encontrados.mp3'});
+		dicVocabularioP02.push({pt:"B",otan:'Bravo',audio_otan:'aeropuerto.mp3'});
+		dicVocabularioP02.push({pt:"C",otan:'Charlie',audio_otan:'agencia_de_viajes.mp3'});
+		dicVocabularioP02.push({pt:"D",otan:'Delta',audio_otan:'aduana.mp3'});
+		dicVocabularioP02.push({pt:"E",otan:'Echo',audio_otan:'abrocharse.mp3'});
+		dicVocabularioP02.push({pt:"F",otan:'Foxtrot ou Foz',audio_otan:'sala_de_equipaje.mp3'});
+		dicVocabularioP02.push({pt:"G",otan:'Golf',audio_otan:'asiento.mp3'});
+		dicVocabularioP02.push({pt:"H",otan:'Hotel',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"I",otan:'India',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"J",otan:'Julliet',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"K",otan:'Kilo',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"L",otan:'Lima',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"M",otan:'Mike',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"N",otan:'November',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"O",otan:'Oscar',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"P",otan:'Papa',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"Q",otan:'Quebec',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"R",otan:'Romeo',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"S",otan:'Sierra',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"T",otan:'Tango',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"U",otan:'Uniform',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"V",otan:'Victor',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"W",otan:'Whiskey',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"X",otan:'X-Ray',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"Y",otan:'Yankee',audio_otan:'retraso.mp3'});
+		dicVocabularioP02.push({pt:"Z",otan:'Zulu',audio_otan:'retraso.mp3'});
+
+	var dicOtanP01 = new Array();
+		dicOtanP01.push({pt:"A", en:'Alpha',audio_en:'ALPHA.mp3'});
+		dicOtanP01.push({pt:"B", en:'Bravo',audio_en:'BRAVO.mp3'});
+		dicOtanP01.push({pt:"C", en:'Charlie',audio_en:'CHARLIE.mp3'});
+		dicOtanP01.push({pt:"D", en:'Delta',audio_en:'DELTA.mp3'});
+		dicOtanP01.push({pt:"E", en:'Echo',audio_en:'ECHO.mp3'});
+		dicOtanP01.push({pt:"F", en:'Foxtrot',audio_en:'FOXTROT.mp3'});
+		dicOtanP01.push({pt:"F (alternativa)", en:'Foz',audio_en:'FOZ.mp3'});
+		dicOtanP01.push({pt:"G", en:'Golf',audio_en:'GOLF.mp3'});
+		dicOtanP01.push({pt:"H", en:'Hotel',audio_en:'HOTEL.mp3'});
+		dicOtanP01.push({pt:"I", en:'India',audio_en:'INDIA.mp3'});
+		dicOtanP01.push({pt:"J", en:'Julliet',audio_en:'JULLIET.mp3'});
+		dicOtanP01.push({pt:"K", en:'Kilo',audio_en:'KILO.mp3'});
+		dicOtanP01.push({pt:"L", en:'Lima',audio_en:'LIMA.mp3'});
+		dicOtanP01.push({pt:"M", en:'Mike',audio_en:'MIKE.mp3'});
+		dicOtanP01.push({pt:"N", en:'November',audio_en:'NOVEMBER.mp3'});
+		dicOtanP01.push({pt:"O", en:'Oscar',audio_en:'OSCAR.mp3'});
+		dicOtanP01.push({pt:"P", en:'Papa',audio_en:'PAPA.mp3'});
+		dicOtanP01.push({pt:"Q", en:'Quebec',audio_en:'QUEBEC.mp3'});
+		dicOtanP01.push({pt:"R", en:'Romeo',audio_en:'ROMEO.mp3'});
+		dicOtanP01.push({pt:"S", en:'Sierra',audio_en:'SIERRA.mp3'});
+		dicOtanP01.push({pt:"T", en:'Tango',audio_en:'TANGO.mp3'});
+		dicOtanP01.push({pt:"U", en:'Uniform',audio_en:'UNIFORM.mp3'});
+		dicOtanP01.push({pt:"V", en:'Victor',audio_en:'VICTOR.mp3'});
+		dicOtanP01.push({pt:"W", en:'Whiskey',audio_en:'WHISKEY.mp3'});
+		dicOtanP01.push({pt:"X", en:'X-Ray',audio_en:'X-RAY.mp3'});
+		dicOtanP01.push({pt:"Y", en:'Yankee',audio_en:'YANKEE.mp3'});
+		dicOtanP01.push({pt:"Z", en:'Zulu',audio_en:'ZULU.mp3'});
+
+  	var en_path = 'mp3/alfabeto/en/'
+	var es_path = 'mp3/alfabeto/es/'
+  	var otan_path = 'mp3/alfabeto/otan/'
+	var divVocabulario = new Array();
+	divVocabulario =[dicVocabularioP01, dicVocabularioP02];
+	var divOtan = new Array();
+	divOtan = [dicOtanP01];
