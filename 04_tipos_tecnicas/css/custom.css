@@ -1,11 +1,86 @@
 .pagina .bloco-1 {
-    background: url('../img/bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url('../img/elem1.png') 0% 1%,
+        url('../img/elem2.png') 100% 95%,
+        url('../img/bg.png');
+    background-size: auto, auto, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
     margin-top: 0%;
     padding-top: 3%;
     padding-bottom: 5%;
 }
+
+.bloco-2 {
+    background: url('../img/bg2.jpg');
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: -2%;
+}
+
+.divisoria1 {
+    margin-top: -21%;
+    margin-bottom: -17%;
+}
+
+.divisoria2 {
+    margin-top: -0.5%;
+}
+
+.bloco-2 p {
+    color: #fff;
+}
+
+.bloco-2 .destaque p {
+    color: #000;
+}
+
+.bloco-2 h3,
+.bloco-2 h4 {
+    color: #fff;
+}
+
+.bloco-3 {
+    background: url('../img/elem3.png') 0% 1% fixed,
+        url('../img/elem4.png') 100% 95% fixed,
+        url('../img/bg3.png');
+    background-size: auto, auto, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    margin-top: -3%;
+    padding-top: 6%;
+    padding-bottom: 5%;
+
+}
+
+.bloco-4 {
+    background-color: #207893;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top: 20px solid #185A6E;
+    border-bottom: 20px solid #185A6E;
+    border-left: none;
+    border-right: none;
+}
+
+.bloco-4 p {
+    color: #fff;
+}
+
+.bloco-4 h3 {
+    color: #fff;
+}
+
+.bloco-5 {
+    background: url('../img/bg3.png') fixed;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+
+
+
+
+
 
 .card-fig {
     border: 1pt solid #207893;
@@ -141,6 +216,12 @@
     padding-left: 30px;
 }
 
+.marcador-azul-bola li {
+    background: url('../img/marcador.png') no-repeat left top 10px / 17px;
+    list-style: none;
+    padding-left: 30px;
+}
+
 .painel-eletronicos {
     display: flex;
     flex-direction: row;
@@ -242,11 +323,11 @@
     margin-top: 25%;
 }
 
-.mbottom{
+.mbottom {
     margin-bottom: 13%;
 }
 
-.painel-pilares{
+.painel-pilares {
     background: url('../img/info_pilares.png');
     width: 506px;
     height: 514px;
@@ -256,32 +337,61 @@
     margin-bottom: 10%;
 }
 
-.botao-ambiental{
+.botao-ambiental {
     background: url('../img/info_pilares_bt1.png');
     width: 119px;
     height: 119px;
     border: none;
     position: absolute;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 24%;
+    margin-left: 5.5%;
 }
 
-.botao-ambiental:hover{
+.botao-ambiental:hover {
     transform: scale(1.1);
     border: none;
 }
 
+.botao-social {
+    background: url('../img/info_pilares_bt2.png');
+    width: 119px;
+    height: 119px;
+    border: none;
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 20%;
+}
 
+.botao-social:hover {
+    transform: scale(1.1);
+    border: none;
+}
 
+.botao-economica {
+    background: url('../img/info_pilares_bt3.png');
+    width: 119px;
+    height: 119px;
+    border: none;
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 35%;
+}
 
+.botao-economica:hover {
+    transform: scale(1.1);
+    border: none;
+}
 
+.marcador-azul-bola li {
+    background: url('../img/marcador.png') no-repeat left top 10px / 17px;
+    list-style: none;
+    padding-left: 30px;
+}
 
-
-
-
-
-
-
+.feedback {
+    width: 40%;
+    margin-bottom: 2%;
+}
 
 
 .bg-escuro .accordion-body p {
@@ -362,12 +472,6 @@
 
 
 
-
-
-
-
-
-
 @keyframes shake {
     0% {
         transform: translateX(0);
@@ -398,15 +502,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1440px) {
     .timeline {
         display: flex;
@@ -421,7 +516,39 @@
         width: 65px;
         height: auto;
     }
+
+    .pagina .bloco-1 {
+        background: url(../img/elem1.png) 0% 1%, url(../img/elem2.png) 100% 95%, url(../img/bg.png);
+        background-size: 16%, 15%, cover;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        margin-top: 0%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+    }
+
+    .bloco-3 {
+        background: url(../img/elem3.png) 0% 1% fixed, url(../img/elem4.png) 100% 95% fixed, url(../img/bg3.png);
+        background-size: 14%, 13%, cover;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        margin-top: -3%;
+        padding-top: 6%;
+        padding-bottom: 5%;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -439,18 +566,50 @@
         height: auto;
     }
 
+    .pagina .bloco-1 {
+        background: url(../img/elem1.png) 0% 1%, url(../img/elem2.png) 100% 95%, url(../img/bg.png);
+        background-size: 15%, 15%, cover;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        margin-top: 0%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+    }
 
-
-
-
-
-
+    .bloco-3 {
+        background: url(../img/elem3.png) 0% 1% fixed, url(../img/elem4.png) 100% 95% fixed, url(../img/bg3.png);
+        background-size: 14%, 13%, cover;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        margin-top: -3%;
+        padding-top: 6%;
+        padding-bottom: 5%;
+    }
 }
 
+
+
+
 @media screen and (max-width: 1300px) {
-    body {
-        background: none;
+    .pagina .bloco-1 {
+        background:
+            url('../img/bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 0%;
+        padding-top: 3%;
+        padding-bottom: 5%;
     }
+
+    .bloco-3 {
+        background:
+            url('../img/bg3.png') fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -3%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -486,14 +645,6 @@
         margin-left: -46%;
     }
 }
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 820px) {
     .card-fig {
@@ -584,8 +735,37 @@
         height: auto;
     }
 
-    .figura-3{
+    .figura-3 {
         margin-top: 14%;
+    }
+
+
+    .botao-ambiental {
+        margin-top: 28%;
+        margin-left: 6.5%;
+    }
+
+    .botao-social {
+        margin-top: 28%;
+        margin-left: 23.5%;
+    }
+
+    .botao-economica {
+        margin-top: 28%;
+        margin-left: 41%;
+    }
+
+    .divisoria2 {
+        margin-top: -1.5%;
+    }
+
+    .bloco-3 {
+        background: url(../img/bg3.png) fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -3%;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 }
 
@@ -649,19 +829,36 @@
         font-size: 1.2em;
         margin-top: 25%;
     }
-    .figura-3{
+
+    .figura-3 {
         margin-top: unset;
     }
+
+    .botao-ambiental {
+        margin-top: 30%;
+        margin-left: 6.5%;
+    }
+
+    .botao-social {
+        margin-top: 30%;
+        margin-left: 25.5%;
+    }
+
+    .botao-economica {
+        margin-top: 30%;
+        margin-left: 43.5%;
+    }
+
+    .marcador-azul-bola li {
+        background: url(../img/marcador.png) no-repeat left top 10px / 15px;
+        list-style: none;
+        padding-left: 30px;
+    }
+
+    .divisoria2 {
+        margin-top: -2.5%;
+    }
 }
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 760px) {
@@ -715,9 +912,6 @@
         margin-top: 31%;
     }
 
-
-
-
 }
 
 
@@ -752,22 +946,7 @@
         width: 66px;
     }
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 500px) {
@@ -852,6 +1031,61 @@
         font-size: 1.2em;
         margin-top: 10%;
     }
+
+    .painel-pilares {
+        transform: scale(0.75);
+        margin-left: -20%;
+        margin-top: -10%;
+        margin-bottom: -5%;
+    }
+
+    .botao-ambiental {
+        margin-top: 44%;
+        margin-left: 10.5%;
+    }
+
+    .botao-social {
+        margin-top: 44%;
+        margin-left: 38%;
+    }
+
+    .botao-economica {
+        margin-top: 44%;
+        margin-left: 66%;
+    }
+
+    .marcador-azul-bola li {
+        background: url(../img/marcador.png) no-repeat left top 5px / 17px;
+        list-style: none;
+        padding-left: 30px;
+    }
+
+    .coluna-2 {
+        margin-top: 20%;
+    }
+
+    .divisoria1 {
+        margin-top: -28%;
+        margin-bottom: -17%;
+    }
+
+    .bloco-2 {
+        margin-top: -7%;
+    }
+
+    .divisoria2 {
+        margin-top: -5.5%;
+    }
+
+    .bloco-3 {
+        background: url(../img/bg3.png) fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -7%;
+        padding-top: 6%;
+        padding-bottom: 5%;
+    }
+
 }
 
 @media screen and (max-width: 414px) {
@@ -874,6 +1108,22 @@
         font-size: 0.75em;
         margin-left: 10px;
     }
+
+    .painel-pilares {
+        transform: scale(0.7);
+        margin-left: -27%;
+        margin-top: -10%;
+        margin-bottom: -5%;
+    }
+
+    .divisoria1 {
+        margin-top: -27%;
+        margin-bottom: -17%;
+    }
+
+    .divisoria2 {
+        margin-top: -6.5%;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -881,5 +1131,12 @@
         transform: scale(0.43);
         margin-left: -84%;
         margin-top: -68%;
+    }
+
+    .painel-pilares {
+        transform: scale(0.65);
+        margin-left: -32%;
+        margin-top: -20%;
+        margin-bottom: -8%;
     }
 }
