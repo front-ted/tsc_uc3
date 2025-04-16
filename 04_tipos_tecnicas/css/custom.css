@@ -192,7 +192,7 @@
     flex-direction: column;
     gap: 0px;
     font-family: Arial, sans-serif;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 .step {
@@ -232,14 +232,44 @@
     font-size: 1em;
 }
 
+.texto-diferente {
+    color: #4095ae;
+    font-size: 1.2em;
+    margin-top: 31%;
+}
 
+.figura-avatar {
+    margin-top: 25%;
+}
 
+.mbottom{
+    margin-bottom: 13%;
+}
 
+.painel-pilares{
+    background: url('../img/info_pilares.png');
+    width: 506px;
+    height: 514px;
+    border: none;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
 
+.botao-ambiental{
+    background: url('../img/info_pilares_bt1.png');
+    width: 119px;
+    height: 119px;
+    border: none;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 5%;
+}
 
-
-
-
+.botao-ambiental:hover{
+    transform: scale(1.1);
+    border: none;
+}
 
 
 
@@ -296,6 +326,10 @@
 
 .bg-escuro .card-fig p {
     color: #000;
+}
+
+.bg-escuro .text {
+    color: #fff;
 }
 
 .bt-objeto::after {
@@ -373,9 +407,21 @@
 
 
 
+@media screen and (max-width: 1440px) {
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        font-family: Arial, sans-serif;
+        max-width: 900px;
+    }
 
-
-
+    .number1,
+    .number2 {
+        width: 65px;
+        height: auto;
+    }
+}
 
 
 
@@ -386,6 +432,19 @@
         background-attachment: fixed;
         background-size: cover;
     }
+
+    .number1,
+    .number2 {
+        width: 65px;
+        height: auto;
+    }
+
+
+
+
+
+
+
 }
 
 @media screen and (max-width: 1300px) {
@@ -512,6 +571,22 @@
     .figura-2 {
         margin-top: 58%;
     }
+
+    .text {
+        margin-left: 10px;
+        font-family: figtree;
+        font-size: 0.9em;
+    }
+
+    .number1,
+    .number2 {
+        width: 70px;
+        height: auto;
+    }
+
+    .figura-3{
+        margin-top: 14%;
+    }
 }
 
 @media screen and (max-width: 770px) {
@@ -561,6 +636,21 @@
         background: url(../img/checkmark.png) no-repeat left top 7px / 17px;
         list-style: none;
         padding-left: 30px;
+    }
+
+    .text {
+        margin-left: 10px;
+        font-family: figtree;
+        font-size: 0.8em;
+    }
+
+    .texto-diferente {
+        color: #4095ae;
+        font-size: 1.2em;
+        margin-top: 25%;
+    }
+    .figura-3{
+        margin-top: unset;
     }
 }
 
@@ -612,10 +702,18 @@
         padding-left: 30px;
     }
 
+    .text {
+        margin-left: 10px;
+        font-family: figtree;
+        font-size: 0.8em;
+    }
 
 
-
-
+    .texto-diferente {
+        color: #4095ae;
+        font-size: 1.2em;
+        margin-top: 31%;
+    }
 
 
 
@@ -639,6 +737,22 @@
         align-items: center;
         gap: 25px;
     }
+
+    .text {
+        font-size: 0.8em;
+        margin-left: 10px;
+    }
+
+    .timeline {
+        gap: 20px;
+    }
+
+    .number2,
+    .number1 {
+        width: 66px;
+    }
+
+
 
 }
 
@@ -724,7 +838,20 @@
         padding-left: 30px;
     }
 
+    .text {
+        font-size: 0.7em;
+        margin-left: 10px;
+    }
 
+    .figura-avatar {
+        margin-top: 13%;
+    }
+
+    .texto-diferente {
+        color: #4095ae;
+        font-size: 1.2em;
+        margin-top: 10%;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -741,6 +868,11 @@
         transform: scale(0.43);
         margin-left: -77%;
         margin-top: -68%;
+    }
+
+    .text {
+        font-size: 0.75em;
+        margin-left: 10px;
     }
 }
 
