@@ -39,7 +39,7 @@
 		dicVocabularioP05.push({pt:"Elevador",es:'Ascensor ',audio_es:'ascensor.mp3',en:'Elevator',audio_en:'elevator.mp3'});
 		dicVocabularioP05.push({pt:"Enjoo",es:'Mareo',audio_es:'mareo.mp3',en:'Sickness / nausea',audio_en:'sicknesnausea.mp3'});
 		dicVocabularioP05.push({pt:"Escala",es:'Escala',audio_es:'escala.mp3',en:'Layover / stopover',audio_en:'layover_stopover_.mp3'});
-		dicVocabularioP05.push({pt:"Estacionamento",es:'Aparcamiento/Estacionamiento/Parking',audio_es:'aparcamiento.mp3',en:'Parking ',audio_en:'parking.mp3'});
+		dicVocabularioP05.push({pt:"Estacionamento",es:'Aparcamiento/Estacionamiento /Parking',audio_es:'aparcamiento.mp3',en:'Parking ',audio_en:'parking.mp3'});
 		dicVocabularioP05.push({pt:"Etiqueta de bagagem ",es:'Etiqueta de equipaje',audio_es:'etiqueta_de_equipaje.mp3',en:'Luggage tag',audio_en:'luggage_tag.mp3'});
 		dicVocabularioP05.push({pt:"Excesso de peso na bagagem ",es:'Exceso de equipaje ',audio_es:'exceso_de_equipaje.mp3',en:'Overweight / Excess baggage',audio_en:'overweight_excess_baggage.mp3'});
 		dicVocabularioP05.push({pt:"Férias",es:'Vacaciones',audio_es:'vacaciones.mp3',en:'Vacation ',audio_en:'vocation_.mp3'});

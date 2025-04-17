@@ -37,12 +37,16 @@ html,
 body {
 	widtH: 100%;
 	height: 100%;
-	background-color: #fff;
 }
 
 body {
+	background: url('img/capa_bg.png');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	font-size: 20px;
 	color: #000;
+
 }
 
 .otan {
@@ -147,7 +151,6 @@ a.botao:hover {
 
 header {
 	background-color: #7DA5C8;
-	box-shadow: 0px 5px 0px lightgray;
 }
 
 #logo-senac {
@@ -232,7 +235,7 @@ header h3{
 	font-size:1.5em;
 }*/
 
-footer {
+/* footer {
 	clear: both;
 	position: fixed;
 	font-size: 1.8em;
@@ -256,14 +259,15 @@ footer a:hover {
 	color: cyan;
 	text-decoration: underline;
 	transition: 200ms ease-in;
-}
+} */
 
 .container {
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
-	margin-top: 35px;
+	padding-top: 0;
+	margin-top: 2%;
 }
 
 /* .container h1 {
@@ -295,8 +299,8 @@ footer a:hover {
 	padding: 10px;
 	text-align: right;
 	font-size: 2.0em;
-	/*border:1px solid #fff;*/
-	margin: 1px;
+	border: 1px solid #92acce;
+
 }
 
 .head.pt {
@@ -323,7 +327,19 @@ footer a:hover {
 .word {
 	/*width:280px;*/
 	padding: 10px;
-	/*border:1px solid #fff;*/
+	border: 1px solid #92acce;
+
+}
+
+.sem-margem .word {
+	/*width:280px;*/
+	padding: 10px;
+	border: 1px !important;
+	margin: 1px;
+}
+
+.sem-margem .head {
+	border: 1px !important;
 	margin: 1px;
 }
 
@@ -346,6 +362,8 @@ footer a:hover {
 	-o-transition: 200ms ease-in;
 	transition: 200ms ease-in;
 }
+
+
 
 .word {
 	position: relative;
@@ -371,10 +389,10 @@ footer a:hover {
 nav {
 	position: relative;
 	padding: 10px;
-	background-color: rgba(0, 0, 0, 0.80);
+	background-color: #345877;
 	color: white;
 	font-size: 20px;
-	margin-top: -15px;
+	margin-top: -20px;
 	text-align: left;
 	overflow: hidden;
 	text-indent: 20px;
@@ -528,7 +546,21 @@ a,
 }
 
 
+.botao-fechar {
+	background: url('../img/bt_fechar.png') no-repeat;
+	width: 187px;
+	height: 73px;
+	border: none;
+	margin-top: -5%;
+	padding-bottom: 2%;
+}
 
+.botao-fechar:hover {
+	background: url('../img/bt_fechar_hv.png');
+	width: 187px;
+	height: 73px;
+	border: none;
+}
 
 
 
@@ -542,6 +574,13 @@ a,
 		margin-top: -2.5%;
 	}
 
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1400px) {
+	body {
+		background: unset;
+		background-color: #f0efef;
+	}
 }
 
 
@@ -565,6 +604,20 @@ a,
 	.margem2 {
 		margin-left: inherit;
 		margin-right: inherit;
+	}
+
+	body {
+		background: unset;
+		background-color: #f0efef;
+	}
+
+	.container {
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		padding-top: 0;
+		margin-top: 4%;
 	}
 }
 
@@ -661,8 +714,8 @@ a,
 		width: 100%;
 	}
 
-	.fig-otan{
-		margin-top: 2%;
+	.fig-otan {
+		margin-top: 21%;
 	}
 }
 
@@ -734,6 +787,7 @@ a,
 
 	.container {
 		width: 91%;
+		margin-top: 9%;
 	}
 
 	.centro .head.en.col,
