@@ -392,7 +392,7 @@ nav {
 	background-color: #345877;
 	color: white;
 	font-size: 20px;
-	margin-top: -20px;
+	margin-top: -1px;
 	text-align: left;
 	overflow: hidden;
 	text-indent: 20px;
@@ -562,7 +562,14 @@ a,
 	border: none;
 }
 
+.margem-botao {
+	margin-top: 2%;
+	padding-bottom: 2%;
+}
 
+.margem-texto {
+	margin-bottom: 2%;
+}
 
 
 
@@ -619,6 +626,13 @@ a,
 		padding-top: 0;
 		margin-top: 4%;
 	}
+
+	.container h2 {
+		margin-left: 0px;
+	   font-size: 1.8em;
+	   margin-bottom: 20px;
+	   margin-top: 20px;
+   }
 }
 
 
@@ -633,6 +647,10 @@ a,
 	.margem2 {
 		margin-left: 6%;
 		margin-right: 0%;
+	}
+
+	.container {
+		overflow-x: hidden !important;
 	}
 }
 
@@ -689,21 +707,21 @@ a,
 	.word.pt {
 		background-image: url(img/brazil.png);
 		background-size: 25px;
-		background-position: 10px center;
+		background-position: 10px 15px;
 		background-repeat: no-repeat;
 	}
 
 	.word.es {
 		background-image: url(img/spain.png), url(img/audio.png);
 		background-size: 25px;
-		background-position: 10px center, 98% center;
+		background-position: 10px 15px, 98% center;
 		background-repeat: no-repeat;
 	}
 
 	.word.en {
 		background-image: url(img/usa.png), url(img/audio.png);
 		background-size: 25px;
-		background-position: 10px center, 98% center;
+		background-position: 10px 15px, 98% center;
 		background-repeat: no-repeat;
 	}
 
@@ -727,6 +745,8 @@ a,
 	.word.blank {
 		display: none;
 	}
+
+
 }
 
 @media screen and (max-width:580px) {
@@ -737,7 +757,8 @@ a,
 	}
 
 	.container.header-tecnicos {
-		width: 96%;
+		width: 100%;
+		padding: unset;
 
 	}
 

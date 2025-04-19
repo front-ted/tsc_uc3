@@ -1,18 +1,21 @@
 ﻿<!doctype html>
-<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office"
+        xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 -->
-<link href="animate.css" rel="stylesheet">
-<link href="../../senacloader/sncload.css" rel="stylesheet">
+        <link href="animate.css" rel="stylesheet">
+        <link href="../../senacloader/sncload.css" rel="stylesheet">
+        <link href="../boot/css/bootstrap.min.css" rel="stylesheet">
 
-<title>Dicionário de termos</title>
-<link href="dicionario.css" rel="stylesheet">
+        <title>Dicionário de termos</title>
+        <link href="dicionario.css" rel="stylesheet">
 
-<!--[if gte mso 9]><xml>
+        <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
 <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Francisco Fischer Pioner</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
 <mso:Order msdt:dt="string">161512000.000000</mso:Order>
@@ -23,43 +26,61 @@
 </head>
 
 <body onLoad="">
-	<div id="sncloader" class="over-loader"><div class="over-cell"><div id="sncload"></div></div></div>
-	<header id="cabecalho" tabindex="0" class="fadeIn animated">
-<!--        <h1>Unidade curricular 3 – Conduzir visitantes na realização de roteiros turísticos</h1>
+        <div id="sncloader" class="over-loader">
+                <div class="over-cell">
+                        <div id="sncload"></div>
+                </div>
+        </div>
+        <header id="cabecalho" tabindex="0" class="fadeIn animated">
+                <!--        <h1>Unidade curricular 3 – Conduzir visitantes na realização de roteiros turísticos</h1>
         <h2>Expressões Idiomáticas</h2>
         <h3>Inglês e Espanhol Aplicadas ao técnico em Guia de Turismo</h3>-->
-        <div class=" container header-tecnicos">
-            <div id="logo-senac"><img src="../img/logo-senac.png" alt="logo do senac"></div>
-        </div>
 
-    </header>
-    <!--<div class="balao">sou o balão</div>-->
-    <nav tabindex="0" class="animated slideInLeft">
-    	<p tabindex="0">Navegue pelas palavras e expressões clicando na letra inicial</p>
-    	<a class="linkNav" href="Javascript:" onClick="populateDict(divVocabulario[0]); setActive($(this));">A</a>
-        <a class="linkNav" href="Javascript:" onClick="populateDict(divVocabulario[1]); setActive($(this));">B</a>
-        <a class="linkNav" href="Javascript:" onClick="populateDict(divVocabulario[2]); setActive($(this));">C </a>
-        
-        <a class="linkNav" href="Javascript:" onClick="populateDict(divVocabulario[3]); setActive($(this));">D</a>
-        <a class="linkNav" href="Javascript:" onClick="populateDict(divVocabulario[4]); setActive($(this));">E F</a>
+                <div class="topo-logo">
+                        <div class="container">
+                                <div id="toggleButton" class="btn-tema_pagina no-print" aria-hidden="true"></div>
+                        </div>
+                </div>
 
-        <a class="linkNav" href="Javascript:" onClick="populateDict(divVocabulario[5]); setActive($(this));">G H I J</a>
-        K
-        <a class="linkNav" href="Javascript:" onClick="populateDict(divVocabulario[6]); setActive($(this));">L M N O P</a>
-        Q
-        <a class="linkNav" href="Javascript:" onClick="populateDict(divVocabulario[7]); setActive($(this));">R S T U V</a>
-        W X Y Z
-    </nav>
-    <div class="container sem-margem">
-    	<h1 tabindex="0" id="tituloDict">&nbsp;</h1>
-        <div class="instructions" tabindex="0">Utilize os botões para ouvir a pronúncia de cada palavra</div>
+        </header>
+        <!--<div class="balao">sou o balão</div>-->
+        <nav tabindex="0" class="animated slideInLeft">
+                <p tabindex="0">Navegue pelas palavras e expressões clicando na letra inicial</p>
+                <a class="linkNav" href="Javascript:"
+                        onClick="populateDict(divVocabulario[0]); setActive($(this));">A</a>
+                <a class="linkNav" href="Javascript:"
+                        onClick="populateDict(divVocabulario[1]); setActive($(this));">B</a>
+                <a class="linkNav" href="Javascript:" onClick="populateDict(divVocabulario[2]); setActive($(this));">C
+                </a>
 
-        <div class="row" tabindex="0">
-             <span class="spkIns">As palavras são apresentadas obedecendo a seguinte ordem: </span>
-             <div class="head pt col">Português</div> <div class="head es col">Espanhol</div> <div class="head en col">Inglês</div>
-        </div>
-        <div id="dict">
-            <!--
+                <a class="linkNav" href="Javascript:"
+                        onClick="populateDict(divVocabulario[3]); setActive($(this));">D</a>
+                <a class="linkNav" href="Javascript:" onClick="populateDict(divVocabulario[4]); setActive($(this));">E
+                        F</a>
+
+                <a class="linkNav" href="Javascript:" onClick="populateDict(divVocabulario[5]); setActive($(this));">G H
+                        I J</a>
+                K
+                <a class="linkNav" href="Javascript:" onClick="populateDict(divVocabulario[6]); setActive($(this));">L M
+                        N O P</a>
+                Q
+                <a class="linkNav" href="Javascript:" onClick="populateDict(divVocabulario[7]); setActive($(this));">R S
+                        T U V</a>
+                W X Y Z
+        </nav>
+        <div class="container sem-margem">
+                <h1 tabindex="0" id="tituloDict">&nbsp;</h1>
+                <div class="instructions margem-texto" tabindex="0">Utilize os botões para ouvir a pronúncia de cada
+                        palavra</div>
+                <div class="margem">
+                        <div class="row" tabindex="0">
+                                <span class="spkIns">As palavras são apresentadas obedecendo a seguinte ordem: </span>
+                                <div class="head pt col">Português</div>
+                                <div class="head es col">Espanhol</div>
+                                <div class="head en col">Inglês</div>
+                        </div>
+                        <div id="dict">
+                                <!--
             <div class="row">
                     <div class="word pt col" tabindex="0"><span class="spkIns">Palavra em português: </span>Por favor</div> <a role="button" title="Clique para ouvir a sua pronúncia" tabindex="0"  href="javascript:" onclick='responsiveVoice.speak("Por favor", "Spanish Latin American Female");' type='button'><div class="word es col icon-audio"><span class="spkIns">Palavra em espanhol: </span>Por favor</div></a> <a role="button" title="Clique para ouvir a sua pronúncia"  tabindex="0" href="javascript:"  onclick='playAudio("Please", "US English Female");' type='button'><div class="word en col icon-audio"><span class="spkIns">Palavra em inglês: </span>Please</div></a>
             </div>
@@ -79,35 +100,46 @@
                     <div class="word pt col" tabindex="0"><span class="spkIns">Palavra em português: </span>Muito prazer!</div> <a role="button" title="Clique para ouvir a sua pronúncia"  tabindex="0" href="javascript:" onclick='responsiveVoice.speak("Mucho gusto", "Spanish Latin American Female");' type='button'><div class="word es col icon-audio"><span class="spkIns">Palavra em espanhol: </span>Mucho gusto</div></a> <a role="button" title="Clique para ouvir a sua pronúncia" tabindex="0" href="javascript:"  onclick='responsiveVoice.speak("My pleasure", "US English Female");' type='button'><div class="word en col icon-audio"><span class="spkIns">Palavra em inglês: </span>My pleasure</div></a>
             </div>
            -->
-         </div>
-    </div>
-    <audio id="player"></audio>
-    <footer class="animated slideInUp"><a role="button" tabindex="0" href="../index.html">Voltar para tela inicial</a></footer>
-    <script src="../boot/js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/vocabulario_data.js" type="text/javascript"></script>
-    <script src="js/dicionario.js" type="text/javascript"></script>
-    <script>
-		$(document).ready(function(e) {
-        	$('#sncloader').fadeOut(50);
-			populateDict(divVocabulario[0],'Vocabulário');
-    	})
-	</script>
+                        </div>
+                </div>
+        </div>
+        <audio id="player"></audio>
+        <!-- <footer class="animated slideInUp"><a role="button" tabindex="0" href="../index.html">Voltar para tela
+                        inicial</a>
+                </footer> -->
+        <footer>
+                <a href="../index.html" class="btn btn-default botao-fechar center-block margem-botao" role="button"
+                        title="Utilize este botão para fechar a tela"></a>
+        </footer>
+
+
+        <script src="../boot/js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/vocabulario_data.js" type="text/javascript"></script>
+        <script src="js/dicionario.js" type="text/javascript"></script>
+        <script>
+                $(document).ready(function (e) {
+                        $('#sncloader').fadeOut(50);
+                        populateDict(divVocabulario[0], 'Vocabulário');
+                })
+        </script>
 </body>
+
 </html>
 <!-- Script de configuração do HANDTALK -->
-<script src='//senacrs365.sharepoint.com///senacrs365.sharepoint.com///api.handtalk.me/plugin/latest/handtalk.min.js'></script>
+<script
+        src='//senacrs365.sharepoint.com///senacrs365.sharepoint.com///api.handtalk.me/plugin/latest/handtalk.min.js'></script>
 <script>
         var ht = new
-        HT({
+                HT({
 
-                token: 'bf5b7efb148a829a126a0e0c9fd533bf',
+                        token: 'bf5b7efb148a829a126a0e0c9fd533bf',
 
-                // Habilita o tradutor de vídeos
-                videoEnabled: true,
+                        // Habilita o tradutor de vídeos
+                        videoEnabled: true,
 
-                // Habilita embeds do Youtube
-                ytEmbedReplace: true
+                        // Habilita embeds do Youtube
+                        ytEmbedReplace: true
 
-        });
+                });
 </script>
 <!-- --------------------------------------------------------------------- -->
