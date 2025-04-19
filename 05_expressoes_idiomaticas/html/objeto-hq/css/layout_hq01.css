@@ -1,145 +1,289 @@
 @charset "utf-8";
 
-#hq{
-	position:relative;
-	padding:10px;
-	
-	border:1px solid lightgray;
-	width:1050px;
-	height:1120px;
-	margin-left:auto;
-	margin-right:auto;
-	background-color:beige;	
+
+@font-face {
+	font-family: "figtree";
+	src: url("../../../../assets/fonts/Figtree-Regular.ttf");
+}
+
+@font-face {
+	font-family: "figtree-italic";
+	src: url("../../../../assets/fonts/Figtree-Italic.ttf");
+}
+
+@font-face {
+	font-family: "figtree-bold";
+	src: url("../../../../assets/fonts/Figtree-Bold.ttf");
+}
+
+@font-face {
+	font-family: "italiana";
+	src: url("../../../../assets/fonts/Italiana-Regular.ttf");
+}
+
+@font-face {
+	font-family: "figtree-bolditalic";
+	src: url("../../../../assets/fonts/Figtree-BoldItalic.ttf");
+}
+
+#hq {
+	position: relative;
+	padding: 10px;
+
+	border: 1px solid lightgray;
+	width: 1050px;
+	height: 1120px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: beige;
 	/*transform:scale(0.5,0.5);
 	transform-origin:left top;*/
 }
 
 
-#hq > #q01{
-	width:349px;
-	height:386px;	
-	left:10px;
-	top:10px;
-	
-}
-#hq > #q02{
-	width:347px;
-	height:386px;
-	left:384px;
-	top:10px;
+#hq>#q01 {
+	width: 349px;
+	height: 386px;
+	left: 10px;
+	top: 10px;
+
 }
 
-#hq > #q03{
-	width:284px;
-	height:386px;
-	left:758px;
-	top:10px;	
+#hq>#q02 {
+	width: 347px;
+	height: 386px;
+	left: 384px;
+	top: 10px;
 }
 
-#hq > #q04{
-	width:1033px;
-	height:258px;
-	left:10px;
-	top:400px;
-	
+#hq>#q03 {
+	width: 284px;
+	height: 386px;
+	left: 758px;
+	top: 10px;
 }
 
-#hq > #q05{
-	width:492px;
-	height:391px;
-	left:10px;
-	top:665px;		
-}
-#hq > #q05 > .legenda{
-	max-width:400px;
-}
-#hq > #q05 > .legenda.es{
-	max-width:320px;
-}
-#hq > #q05 > .legenda.en{
-	max-width:320px;
-}
-#hq > #q05 > a.btEn{
-	right:180px;
-}
-#hq > #q05 > a.btEs{
-	right:230px;
+#hq>#q04 {
+	width: 1033px;
+	height: 258px;
+	left: 10px;
+	top: 400px;
+
 }
 
-#hq > #q06{
-	width:701px;
-	height:391px;
-	left:340px;
-	top:665px;
-				
+#hq>#q05 {
+	width: 492px;
+	height: 391px;
+	left: 10px;
+	top: 665px;
 }
-#hq > #q06 > .legenda{
-	margin-left:190px;
+
+#hq>#q05>.legenda {
+	max-width: 400px;
 }
-.legenda.es.q06{
-	margin-left:190px !important;
+
+#hq>#q05>.legenda.es {
+	max-width: 320px;
 }
-footer > audio{
-	display:none;
+
+#hq>#q05>.legenda.en {
+	max-width: 320px;
 }
-@media screen and (max-width:1024px){
-	#hq{
-		transform:scale(0.85,0.85);
-		transform-origin:left top;
-		margin-bottom:-200px;
+
+#hq>#q05>a.btEn {
+	right: 180px;
+}
+
+#hq>#q05>a.btEs {
+	right: 230px;
+}
+
+#hq>#q06 {
+	width: 701px;
+	height: 391px;
+	left: 340px;
+	top: 665px;
+
+}
+
+#hq>#q06>.legenda {
+	margin-left: 190px;
+}
+
+.legenda.es.q06 {
+	margin-left: 190px !important;
+}
+
+footer>audio {
+	display: none;
+}
+
+:root {
+	--cor-primaria: #92acce;
+	--cor-secundaria: #207893;
+	--cor-terciaria: #002e3b;
+	--bg-gradiente-topo: var(--cor-terciaria);
+	--gradiente-topo: linear-gradient(90deg, var(--cor-terciaria) 0%, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);
+}
+
+#topo,
+.prognroll-bar {
+	background: var(--bg-gradiente-topo);
+	background: var(--gradiente-topo);
+	margin-top: 0px;
+	height: 70px;
+}
+
+.topo-logo {
+	background: url('../../../../assets/images/asset_circulo.svg') no-repeat left -25px center,
+		url('../../../../assets/images/senac_logo.svg') no-repeat right 5% center;
+	background-size: auto, 70px;
+	height: 60px;
+	margin-top: -1.5%;
+}
+
+.container h1 {
+	padding: 40px 0;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-family: 'figtree-bold';
+	color: #000;
+	text-align: center;
+}
+
+.container h3,
+.container h4,
+.container h5 {
+	margin-bottom: 50px;
+	margin-top: 50px;
+	font-weight: bold;
+	font-family: 'figtree-bold';
+}
+
+.container h2 {
+	margin-left: -30px;
+	font-size: 1.8em;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.container h3 {
+	font-size: 1.6em;
+}
+
+.container h4 {
+	font-size: 1.4em;
+}
+
+.container h5 {
+	font-size: 1.2em;
+}
+
+
+li,
+th,
+td,
+a,
+.figure-caption,
+.botao,
+.tab-pane {
+	font-family: 'figtree';
+	font-size: 1em;
+}
+
+
+
+.container p {
+	font-family: 'figtree';
+	font-size: 1em;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+	#hq {
+		transform: scale(0.85, 0.85);
+		transform-origin: left top;
+		margin-bottom: -200px;
 	}
 }
 
-@media screen and (max-width:780px){	
-	header h1, header h3{
-		font-size:1.1em;
+@media screen and (max-width:780px) {
+
+	header h1,
+	header h3 {
+		font-size: 1.1em;
 	}
-	header h2{
-		font-size:1.6em;
+
+	header h2 {
+		font-size: 1.6em;
 	}
-	#hq{
-		transform:scale(1,1);
-		transform-origin:left top;
-		margin-bottom:inherit;
+
+	#hq {
+		transform: scale(1, 1);
+		transform-origin: left top;
+		margin-bottom: inherit;
 	}
-  .quadro{
-	  position:relative;
-	  display:block !important;
-	  top:inherit !important;
-	  left:inherit !important;
-	  margin:0 auto !important;
-	  margin-top:10px !important;
-	  max-width:100%;
-	    }
- #hq{
-	 margin:0 auto;
-	 width:100%;
-	 padding:0;
-	 height:100%;
- }
- #hq > #q04,#hq > #q05{
-		height:400px !important;
+
+	.quadro {
+		position: relative;
+		display: block !important;
+		top: inherit !important;
+		left: inherit !important;
+		margin: 0 auto !important;
+		margin-top: 10px !important;
+		max-width: 100%;
 	}
- 
-		#hq > #q05 > .legenda{
-			max-width:inherit !important;
-		}
-		#hq > #q05 > .legenda.es{
-			max-width:inherit !important;
-		}
-		#hq > #q05 > .legenda.en{
-			max-width:inherit !important;
-		}
-		#hq > #q05 > a.btEn{
-			right:0 !important;
-		}
-		#hq > #q05 > a.btEs{
-			right:49px !important;
-		}
- 		#hq > #q06 > .legenda{
-			margin-left:inherit !important;
-		}
-		.legenda.es.q06{
-			margin-left:inherit !important;
-		}
+
+	#hq {
+		margin: 0 auto;
+		width: 100%;
+		padding: 0;
+		height: 100%;
+	}
+
+	#hq>#q04,
+	#hq>#q05 {
+		height: 400px !important;
+	}
+
+	#hq>#q05>.legenda {
+		max-width: inherit !important;
+	}
+
+	#hq>#q05>.legenda.es {
+		max-width: inherit !important;
+	}
+
+	#hq>#q05>.legenda.en {
+		max-width: inherit !important;
+	}
+
+	#hq>#q05>a.btEn {
+		right: 0 !important;
+	}
+
+	#hq>#q05>a.btEs {
+		right: 49px !important;
+	}
+
+	#hq>#q06>.legenda {
+		margin-left: inherit !important;
+	}
+
+	.legenda.es.q06 {
+		margin-left: inherit !important;
+	}
 }
