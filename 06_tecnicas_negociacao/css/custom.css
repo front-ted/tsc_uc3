@@ -16,10 +16,20 @@ body {
 }
 
 .figura-1 {
-    margin-top: 18%;
+    margin-top: 10%;
 }
 
+.texto-diferente{
+    color: #4095ae;
+    font-size: 1.2em;
+    margin-top: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
+.margem-texto{
+    margin-top: 5%;
+}
 
 
 
@@ -126,6 +136,13 @@ body {
 }
 
 
+@media screen and (max-width: 1024px) {
+    .margem-texto {
+        margin-top: 5%;
+    }
+}
+
+
 @media screen and (max-width: 820px) {
     .painel-1 {
         display: flex;
@@ -140,6 +157,10 @@ body {
 
     .figura-1 {
         margin-top: 32%;
+    }
+
+    .margem-texto {
+        margin-top: 2%;
     }
 
 }
@@ -157,7 +178,7 @@ body {
     }
 
     .figura-1 {
-        margin-top: 18%;
+        margin-top: 10%;
     }
 }
 
@@ -181,7 +202,17 @@ body {
         margin-top: 10%;
     }
 
+    .texto-diferente {
+        color: #4095ae;
+        font-size: 1.2em;
+        margin-top: 7%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
 
+    .margem-texto {
+        margin-top: 10%;
+    }
 }
 
 @media screen and (max-width: 414px) {}
