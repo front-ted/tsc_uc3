@@ -19,7 +19,7 @@ body {
     margin-top: 10%;
 }
 
-.texto-diferente{
+.texto-diferente {
     color: #4095ae;
     font-size: 1.2em;
     margin-top: 7%;
@@ -27,11 +27,104 @@ body {
     margin-right: 10%;
 }
 
-.margem-texto{
+.margem-texto {
     margin-top: 5%;
 }
 
+.margem {
+    margin-bottom: 16%;
+}
 
+
+
+.info-box {
+    display: flex;
+    align-items: center;
+    width: 391px;
+    height: 102px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0 20px;
+    background-size: cover;
+    background-position: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.bg-info1-a {
+    background-image: url('../img/info1_a.png');
+}
+
+.bg-info1-b {
+    background-image: url('../img/info1_b.png');
+}
+
+.info-row {
+    margin-bottom: 2rem;
+}
+
+.painel-info {
+    display: block;
+}
+
+.painel-info-mobile {
+    display: none;
+}
+
+
+.nav-tabs .nav-link {
+    padding: 10px 40px;
+    border-radius: 8px 8px 0 0;
+    font-weight: bold;
+    color: #fff;
+    border-width: 3px;
+    border-bottom: unset;
+    margin-bottom: -2px;
+    margin-right: 5px;
+}
+
+.nav li {
+    font-size: .85em;
+
+}
+
+.nav-item button {
+    height: 71px;
+}
+
+.nav-tabs .nav-link {
+    padding: 10px 25px;
+    border-radius: 8px 8px 0 0;
+    font-weight: bold;
+}
+
+.tab-content {
+    border-width: 3px;
+    border-style: solid;
+    padding: 40px;
+    border-radius: 0 15px 15px 15px;
+}
+
+.marcador-diferente {
+    background: url('../img/marcador_h5.png') no-repeat left top 0px / 32px;
+    list-style: none;
+    padding-left: 40px;
+}
+
+.marcador-azul li {
+    background: url('../img/marcador2.png') no-repeat left top 13px / 10px;
+    list-style: none;
+    padding-left: 30px;
+}
+
+.painel-conseq {
+    background: url('../img/info2_bg.png') no-repeat;
+    width: 655px;
+    height: 412px;
+    margin: auto;
+}
 
 
 
@@ -180,6 +273,17 @@ body {
     .figura-1 {
         margin-top: 10%;
     }
+
+    .bg-info1-a,
+    .bg-info1-b {
+        transform: scale(0.84);
+    }
+
+    .marcador-azul li {
+        background: url(../img/marcador2.png) no-repeat left top 8px / 10px;
+        list-style: none;
+        padding-left: 30px;
+    }
 }
 
 
@@ -212,6 +316,24 @@ body {
 
     .margem-texto {
         margin-top: 10%;
+    }
+
+    .painel-info {
+        display: none;
+    }
+
+    .painel-info-mobile {
+        display: block;
+    }
+
+    .marcador-azul li {
+        background: url('../img/marcador2.png') no-repeat left top 8px / 10px;
+        list-style: none;
+        padding-left: 25px;
+    }
+
+    .coluna-2 {
+        margin-top: -11px;
     }
 }
 
