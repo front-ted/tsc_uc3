@@ -120,6 +120,7 @@ body {
 	bottom: 60px;
 	padding-bottom: 50px;
 	margin-top: 5%;
+	text-decoration: none;
 
 }
 
@@ -134,12 +135,14 @@ a.botao {
 	border-radius: 5px;
 	margin-bottom: 3px;
 	border: none;
+	text-decoration: none;
 }
 
 a.botao:hover {
 	background-color: #a6c9d4;
 	transition: 200ms ease-in;
 	border: none !important;
+	text-decoration: none !important;
 }
 
 .container.header-tecnicos {
@@ -577,6 +580,10 @@ a,
 	margin-bottom: 2%;
 }
 
+.margem-topo{
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
 
 
 

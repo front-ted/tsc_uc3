@@ -271,17 +271,14 @@ a>label {
 
 footer {
 
-	position: fixed;
-
 	font-size: 1.8em;
 	bottom: 0;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	text-align: right;
-	background-color: black;
+	padding-top: 30px;
+	text-align:center;
 	width: inherit;
 	width: 100%;
 	z-index: 999;
+	margin-top: 50px;
 }
 
 footer a {
@@ -378,6 +375,21 @@ a,
 	margin-bottom: 30px;
 }
 
+.botao-fechar {
+	background: url('../../img/bt_fechar.png') no-repeat;
+	width: 187px;
+	height: 73px;
+	border: none;
+	margin-top: -5%;
+	padding-bottom: 2%;
+}
+
+.botao-fechar:hover {
+	background: url('../../img/bt_fechar_hv.png');
+	width: 187px;
+	height: 73px;
+	border: none;
+}
 
 
 @media screen and (max-width:1440px) {

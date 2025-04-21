@@ -1,79 +1,249 @@
 @charset "utf-8";
 
-#hq{
-	position:relative;
-	padding:10px;
-	
-	border:1px solid lightgray;
-	width:1060px;
-	height:425px;
-	margin-left:auto;
-	margin-right:auto;
-	background-color:beige;	
+@font-face {
+	font-family: "figtree";
+	src: url("../../../../assets/fonts/Figtree-Regular.ttf");
+}
+
+@font-face {
+	font-family: "figtree-italic";
+	src: url("../../../../assets/fonts/Figtree-Italic.ttf");
+}
+
+@font-face {
+	font-family: "figtree-bold";
+	src: url("../../../../assets/fonts/Figtree-Bold.ttf");
+}
+
+@font-face {
+	font-family: "italiana";
+	src: url("../../../../assets/fonts/Italiana-Regular.ttf");
+}
+
+@font-face {
+	font-family: "figtree-bolditalic";
+	src: url("../../../../assets/fonts/Figtree-BoldItalic.ttf");
+}
+
+#hq {
+	position: relative;
+	padding: 10px;
+
+	border: 1px solid lightgray;
+	width: 1060px;
+	height: 425px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: beige;
 	/*transform:scale(0.5,0.5);
 	transform-origin:left top;*/
 }
 
-#hq > #q01{
-	width:348px;
-	height:387px;	
-	left:10px;
-	top:10px;
-	
+#hq>#q01 {
+	width: 348px;
+	height: 387px;
+	left: 10px;
+	top: 10px;
+
 }
 
-#hq > #q02{
-	width:393px;
-	height:387px;
-	left:368px;
-	top:10px;
+#hq>#q02 {
+	width: 393px;
+	height: 387px;
+	left: 368px;
+	top: 10px;
 }
 
-#hq > #q03{
-	width:281px;
-	height:387px;
-	left:770px;
-	top:10px;	
+#hq>#q03 {
+	width: 281px;
+	height: 387px;
+	left: 770px;
+	top: 10px;
+}
+
+:root {
+	--cor-primaria: #92acce;
+	--cor-secundaria: #207893;
+	--cor-terciaria: #002e3b;
+	--bg-gradiente-topo: var(--cor-terciaria);
+	--gradiente-topo: linear-gradient(90deg, var(--cor-terciaria) 0%, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);
+}
+
+#topo,
+.prognroll-bar {
+	background: var(--bg-gradiente-topo);
+	background: var(--gradiente-topo);
+	margin-top: 0px;
+	height: 70px;
+}
+
+.topo-logo {
+	background: url('../../../../assets/images/asset_circulo.svg') no-repeat left -25px center,
+		url('../../../../assets/images/senac_logo.svg') no-repeat right 5% center;
+	background-size: auto, 70px;
+	height: 60px;
+	margin-top: -0.5%;
+}
+
+.container h1 {
+	padding: 40px 0;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-family: 'figtree-bold';
+	color: #000;
+	text-align: center;
+}
+
+.container h3,
+.container h4,
+.container h5 {
+	margin-bottom: 50px;
+	margin-top: 50px;
+	font-weight: bold;
+	font-family: 'figtree-bold';
+}
+
+.container h2 {
+	margin-left: -30px;
+	font-size: 1.8em;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-family: 'figtree-bold';
+}
+
+.container h3 {
+	font-size: 1.6em;
+	font-family: 'figtree-bold';
+}
+
+.container h4 {
+	font-size: 1.4em;
+	font-family: 'figtree';
+}
+
+.container h5 {
+	font-size: 1.2em;
+	font-family: 'figtree';
 }
 
 
-@media screen and (max-width:1024px){
-	#hq{
-		transform:scale(0.85,0.85);
-		transform-origin:left top;
-		margin-bottom:-200px;
-		margin-left:5%;
+li,
+th,
+td,
+a,
+.figure-caption,
+.botao,
+.tab-pane {
+	font-family: 'figtree';
+	font-size: 1em;
+}
+
+
+
+.container p {
+	font-family: 'figtree';
+	font-size: 1em;
+	margin-bottom: 30px;
+}
+
+.botao-voltar {
+	padding: 0.55%;
+	font-size: 0.55em;
+}
+
+@media screen and (max-width:1440px) {
+
+	html,
+	body {
+		background: unset;
+		background-color: #f0efef;
+		background-size: cover;
+	}
+
+	.topo-logo {
+		height: 60px;
+		margin-top: -0.7%;
 	}
 }
-@media screen and (max-width:780px){
-	header h1, header h3{
-		font-size:1.1em;
+
+
+@media screen and (max-width:1024px) {
+	#hq {
+		transform: scale(0.85, 0.85);
+		transform-origin: left top;
+		margin-bottom: -200px;
+		margin-left: 5%;
 	}
-	header h2{
-		font-size:1.6em;
+
+	.topo-logo {
+		height: 60px;
+		margin-top: -0.9%;
 	}
-	#hq{
-		transform:scale(1,1);
-		transform-origin:left top;
-		margin-bottom:inherit;
+
+	html,
+	body {
+		background: unset;
+		background-color: #f0efef;
+		background-size: cover;
 	}
-  .quadro{
-	  position:relative;
-	  display:block !important;
-	  top:inherit !important;
-	  left:inherit !important;
-	  margin:0 auto !important;
-	  margin-top:10px !important;
-	  max-width:100%;
-	    }
- #hq{
-	 margin:0 auto;
-	 width:100%;
-	 padding:0;
-	 height:100%;
- }
- #hq > #q07{
-		height:200px !important;
-		padding-bottom:30px;
+
+
+	.container h2 {
+		margin-left: 0px;
+		font-size: 1.8em;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width:820px) {
+
+	header h1,
+	header h3 {
+		font-size: 1.1em;
+	}
+
+	header h2 {
+		font-size: 1.6em;
+	}
+
+	#hq {
+		transform: scale(1, 1);
+		transform-origin: left top;
+		margin-bottom: inherit;
+	}
+
+	.quadro {
+		position: relative;
+		display: block !important;
+		top: inherit !important;
+		left: inherit !important;
+		margin: 0 auto !important;
+		margin-top: 10px !important;
+		max-width: 100%;
+	}
+
+	#hq {
+		margin: 0 auto;
+		width: 100%;
+		padding: 0;
+		height: 100%;
+	}
+
+	#hq>#q07 {
+		height: 200px !important;
+		padding-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.topo-logo {
+		height: 60px;
+		margin-top: -8.9%;
+	}
+
+	.container {
+		width: 91%;
+		margin-top: 9%;
 	}
 }
