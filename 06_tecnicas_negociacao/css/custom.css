@@ -113,6 +113,12 @@ body {
     padding-left: 40px;
 }
 
+.marcador-diferente2 {
+    background: url('../img/marcador_h5.png') no-repeat left top 0px / 27px;
+    list-style: none;
+    padding-left: 40px;
+}
+
 .marcador-azul li {
     background: url('../img/marcador2.png') no-repeat left top 13px / 10px;
     list-style: none;
@@ -125,6 +131,125 @@ body {
     height: 412px;
     margin: auto;
 }
+
+
+.botao-painel {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    overflow: visible;
+
+}
+
+.botao-positivas {
+    position: relative;
+    background: url('../img/info2_pos.png');
+    background-repeat: no-repeat;
+    width: 197px;
+    height: 183px;
+    top: 12%;
+    left: 73%;
+}
+
+.botao-positivas::before {
+    content: '';
+    position: absolute;
+    top: -13%;
+    left: -33%;
+    width: 335px;
+    height: 255px;
+    background: url('../img/info2_hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    opacity: 0;
+}
+
+.botao-positivas:hover::before {
+    opacity: 1;
+}
+
+.botao-positivas::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/info2_pos.png');
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+
+.botao-negativas {
+    position: relative;
+    background: url('../img/info2_neg.png');
+    background-repeat: no-repeat;
+    width: 213px;
+    height: 171px;
+    top: 40%;
+    left: -36%;
+}
+
+.botao-negativas::before {
+    content: '';
+    position: absolute;
+    top: -26%;
+    left: -30%;
+    width: 335px;
+    height: 255px;
+    background: url('../img/info2_hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    opacity: 0;
+}
+
+.botao-negativas:hover::before {
+    opacity: 1;
+}
+
+.botao-negativas::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/info2_neg.png');
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.card-fig {
+    border: 1pt solid #207893;
+    box-shadow: 7px 9px 0 #207893;
+    padding: 39px 20px 20px 63px;
+    margin: 40px auto;
+    position: relative;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 8%;
+}
+
+.card-fig li {
+    line-height: 2em;
+}
+
+.marcador-numeral li {
+    list-style: none;
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: left top 11px;
+}
+
+.personagem-2 {
+    margin-top: 10%;
+}
+
 
 
 
@@ -256,6 +381,13 @@ body {
         margin-top: 2%;
     }
 
+    .personagem-1 {
+        margin-top: 15%;
+    }
+
+    .personagem-2 {
+        margin-top: 16%;
+    }
 }
 
 @media screen and (max-width: 770px) {
@@ -283,6 +415,14 @@ body {
         background: url(../img/marcador2.png) no-repeat left top 8px / 10px;
         list-style: none;
         padding-left: 30px;
+    }
+
+    .personagem-1 {
+        margin-top: unset;
+    }
+
+    .personagem-2 {
+        margin-top: 25%;
     }
 }
 
@@ -335,8 +475,70 @@ body {
     .coluna-2 {
         margin-top: -11px;
     }
+
+    .painel-conseq {
+        transform: scale(0.5);
+        margin-left: -44%;
+        margin-top: -17%;
+    }
+
+    .card-fig {
+        border: 1pt solid #207893;
+        box-shadow: 7px 9px 0 #207893;
+        padding: 39px 20px 20px 30px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 700px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 8%;
+    }
+
+    .marcador-numeral li {
+        list-style: none;
+        padding-left: 30px;
+        background-repeat: no-repeat;
+        background-size: 22px;
+        background-position: left top 6px;
+    }
+
+    .personagem-2 {
+        margin-top: 10%;
+    }
 }
 
-@media screen and (max-width: 414px) {}
+@media screen and (max-width: 414px) {
+    .painel-conseq {
+        transform: scale(0.5);
+        margin-left: -44%;
+        margin-top: -17%;
+    }
+}
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 390px) {
+    .painel-conseq {
+        transform: scale(0.45);
+        margin-left: -49%;
+        margin-top: -17%;
+    }
+
+    .card-fig {
+        border: 1pt solid #207893;
+        box-shadow: 7px 9px 0 #207893;
+        padding: 39px 20px 20px 10px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 700px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .painel-conseq {
+        transform: scale(0.45);
+        margin-left: -54%;
+        margin-top: -17%;
+    }
+}
