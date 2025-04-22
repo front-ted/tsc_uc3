@@ -540,6 +540,28 @@ body {
 
     }
 
+    .botao-positivas::before {
+        content: '';
+        position: absolute;
+        top: -13%;
+        left: -40%;
+        width: 335px;
+        height: 255px;
+        background: url(../img/info2_hover.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0;
+    }
+
+    .botao-positivas {
+        position: relative;
+        background: url(../img/info2_pos.png);
+        background-repeat: no-repeat;
+        width: 197px;
+        height: 183px;
+        top: 12%;
+        left: 69%;
+    }
 
 }
 
@@ -586,7 +608,28 @@ body {
         overflow-x: hidden !important;
     }
 
+    .botao-positivas::before {
+        content: '';
+        position: absolute;
+        top: -13%;
+        left: -40%;
+        width: 335px;
+        height: 255px;
+        background: url(../img/info2_hover.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0;
+    }
 
+    .botao-positivas {
+        position: relative;
+        background: url(../img/info2_pos.png);
+        background-repeat: no-repeat;
+        width: 197px;
+        height: 183px;
+        top: 12%;
+        left: 69%;
+    }
 }
 
 
