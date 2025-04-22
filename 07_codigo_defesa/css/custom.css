@@ -32,10 +32,136 @@ body {
     margin-top: 3%;
 }
 
+.figura-1 {
+    margin-top: 4%;
+}
 
+.texto-2 {
+    margin-top: 2%;
+}
 
+.infografico-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+.infografico-1 p {
+    color: #fff;
+}
 
+.info-produtos {
+    background: url('../img/info1_1.png');
+    width: 623px;
+    height: 165px;
+    margin-bottom: 3%;
+    margin-left: 30%;
+}
+
+.texto-produtos {
+    padding-left: 35%;
+    padding-top: 4%;
+    padding-right: 2%;
+}
+
+.info-bens {
+    background: url('../img/info1_2.png');
+    width: 623px;
+    height: 164px;
+    margin-bottom: 3%;
+}
+
+.texto-bens {
+    padding-left: 7%;
+    padding-top: 4%;
+    padding-right: 27%;
+}
+
+.info-nduraveis {
+    background: url('../img/info1_3.png');
+    width: 623px;
+    height: 165px;
+    margin-bottom: 3%;
+    margin-left: 30%;
+}
+
+.texto-nduraveis {
+    padding-left: 35%;
+    padding-top: 4%;
+    padding-right: 2%;
+}
+
+.info-servico {
+    background: url('../img/info1_4.png');
+    width: 623px;
+    height: 164px;
+    margin-bottom: 3%;
+}
+
+.texto-servico {
+    padding-left: 7%;
+    padding-top: 4%;
+    padding-right: 27%;
+}
+
+.info-servico-duraveis {
+    background: url('../img/info1_5.png');
+    width: 623px;
+    height: 165px;
+    margin-bottom: 3%;
+    margin-left: 30%;
+}
+
+.texto-servico-duraveis {
+    padding-left: 35%;
+    padding-top: 2%;
+    padding-right: 2%;
+}
+
+.info-servico-nao-duraveis {
+    background: url('../img/info1_6.png');
+    width: 623px;
+    height: 164px;
+    margin-bottom: 3%;
+}
+
+.texto-servico-nao-duraveis {
+    padding-left: 7%;
+    padding-top: 4%;
+    padding-right: 27%;
+}
+
+.card-fig {
+    border: 1pt solid #207893;
+    box-shadow: 7px 9px 0 #207893;
+    padding: 39px 20px 20px 63px;
+    margin: 40px auto;
+    position: relative;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 8%;
+}
+
+.img-lateral {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: -5%;
+    margin-left: -27%;
+}
+
+.img-abaixo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: -5%;
+    margin-left: -27%;
+}
 
 
 
@@ -192,16 +318,205 @@ body {
 @media screen and (max-width: 1024px) {}
 
 
-@media screen and (max-width: 820px) {}
+@media screen and (max-width: 820px) {
+    .figura-1 {
+        margin-top: 20%;
+    }
 
-@media screen and (max-width: 770px) {}
+    .info-produtos,
+    .info-nduraveis,
+    .info-servico-duraveis {
+        margin-left: 18%;
+    }
 
 
-@media screen and (max-width: 700px) {}
-
-@media screen and (max-width: 500px) {}
 
 
-@media screen and (max-width: 390px) {}
+}
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 770px) {
+
+    .figura-1 {
+        margin-top: 4%;
+    }
+
+    .texto-2 {
+        margin-top: 7%;
+    }
+
+    .info-produtos,
+    .info-nduraveis,
+    .info-servico-duraveis {
+        margin-left: 12%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .texto-2 {
+        margin-top: 2%;
+    }
+
+    .infografico-1 {
+        transform: scale(0.55);
+        margin-top: -70%;
+        margin-left: -36%;
+        margin-bottom: -57%;
+    }
+
+    .infografico-1 p {
+        font-size: 1.1em;
+    }
+
+    .info-produtos,
+    .info-nduraveis,
+    .info-servico-duraveis {
+        margin-left: unset;
+    }
+
+    .texto-produtos {
+        padding-left: 35%;
+        padding-top: 2%;
+        padding-right: 0%;
+    }
+
+    .texto-bens {
+        padding-left: 7%;
+        padding-top: 3%;
+        padding-right: 27%;
+    }
+
+    .texto-nduraveis {
+        padding-left: 34%;
+        padding-top: 3%;
+        padding-right: 2%;
+    }
+
+    .texto-servico {
+        padding-left: 9%;
+        padding-top: 3%;
+        padding-right: 27%;
+    }
+
+    .texto-servico-duraveis {
+        padding-left: 28%;
+        padding-top: 2%;
+        padding-right: 0%;
+    }
+
+    .texto-servico-nao-duraveis {
+        padding-left: 9%;
+        padding-top: 0%;
+        padding-right: 27%;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .infografico-1 {
+        transform: scale(0.55);
+        margin-top: -70%;
+        margin-left: -26%;
+        margin-bottom: -57%;
+    }
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 414px) {
+    .infografico-1 {
+        transform: scale(0.55);
+        margin-top: -70%;
+        margin-left: -27%;
+        margin-bottom: -57%;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 390px) {
+    .infografico-1 {
+        transform: scale(0.55);
+        margin-top: -70%;
+        margin-left: -30%;
+        margin-bottom: -57%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .infografico-1 {
+        transform: scale(0.55);
+        margin-top: -70%;
+        margin-left: -36%;
+        margin-bottom: -57%;
+    }
+
+    .infografico-1 p {
+        font-size: 1.1em;
+    }
+
+    .info-produtos,
+    .info-nduraveis,
+    .info-servico-duraveis {
+        margin-left: unset;
+    }
+
+    .texto-produtos {
+        padding-left: 35%;
+        padding-top: 2%;
+        padding-right: 0%;
+    }
+
+    .texto-bens {
+        padding-left: 7%;
+        padding-top: 3%;
+        padding-right: 27%;
+    }
+
+    .texto-nduraveis {
+        padding-left: 34%;
+        padding-top: 3%;
+        padding-right: 2%;
+    }
+
+    .texto-servico {
+        padding-left: 9%;
+        padding-top: 3%;
+        padding-right: 27%;
+    }
+
+    .texto-servico-duraveis {
+        padding-left: 28%;
+        padding-top: 2%;
+        padding-right: 0%;
+    }
+
+    .texto-servico-nao-duraveis {
+        padding-left: 9%;
+        padding-top: 0%;
+        padding-right: 27%;
+    }
+
+
+
+
+
+}
