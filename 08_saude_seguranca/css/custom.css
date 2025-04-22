@@ -9,6 +9,7 @@ body {
     color: #4095ae;
     font-size: 1.2em;
     margin-top: 3%;
+    margin: 8%;
 }
 
 
@@ -22,7 +23,7 @@ body {
 .card-fig {
     border: 1pt solid #207893;
     box-shadow: 7px 9px 0 #207893;
-    padding: 40px 90px 40px 150px;
+    padding: 40px 15px 40px 150px;
     margin: 40px auto;
     position: relative;
     max-width: 850px;
@@ -37,18 +38,107 @@ body {
     max-width: 100%;
     height: auto;
     position: absolute;
-    margin-top: -11%;
-    margin-left: -35%;
+    margin-top: -2%;
+    margin-left: -41%;
 }
 
-.img-abaixo {
+.img-lateral2 {
     display: block;
     margin: 0 auto 20px auto;
     max-width: 100%;
     height: auto;
     position: absolute;
-    margin-top: -26%;
-    margin-left: 63%;
+    margin-top: -5%;
+    margin-left: -41%;
+}
+
+.table {
+    width: 85%;
+    margin: auto;
+}
+
+.marcador-azul li {
+    background: url('../img/marcador2.png') no-repeat left top 13px / 10px;
+    list-style: none;
+    padding-left: 30px;
+}
+
+.painel-sistema {
+    background: url('../img/painel_docs.png') no-repeat;
+    width: 803px;
+    height: 822px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.painel-sistema button {
+    position: absolute;
+    border: none;
+    background: transparent;
+    height: 84px;
+    width: 180px;
+}
+
+.botao-interno {
+    left: 21%;
+    top: 25%;
+}
+
+.botao-consulta {
+    left: 21%;
+    top: 43%;
+}
+
+.botao-fiscais {
+    left: 21%;
+    top: 60%;
+}
+
+.botao-relatorios {
+    left: 21%;
+    top: 78%;
+}
+
+.figura-1 {
+    margin-top: 13%;
+}
+
+.painel-normas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.botao-norma {
+    background: url('../img/bt1.png') no-repeat;
+    width: 466px;
+    height: 312px;
+    border: none;
+}
+
+.botao-norma:hover {
+    background: url('../img/bt1_hv.png') no-repeat;
+}
+
+
+.parte-1 {
+    display: flex;
+}
+
+.parte-2 {
+    display: flex;
+}
+
+.parte-3 {
+    display: flex;
+}
+
+.parte-4 {
+    display: flex;
 }
 
 
@@ -59,22 +149,65 @@ body {
 
 
 
+.img-anatomia {
+    width: 302px;
+    height: 205px;
+}
 
+.img-antro {
+    width: 303px;
+    height: 184px;
+}
 
+.img-bio {
+    width: 302px;
+    height: 184px;
+}
 
+.img-fisio {
+    width: 302px;
+    height: 227px;
+}
 
+.img-organismo {
+    width: 303px;
+    height: 186px;
+}
 
+.img-trabalho {
+    width: 302px;
+    height: 206px;
+}
 
+.img-psico {
+    width: 302px;
+    height: 296px;
+}
 
+.img-engenharia {
+    width: 302px;
+    height: 254px;
+}
 
+.img-ciencia {
+    width: 302px;
+    height: 207px;
+}
 
+.img-arq {
+    width: 303px;
+    height: 229px;
+}
 
+.img-socio {
+    width: 303px;
+    height: 203px;
+}
 
-
-
-
-
-
+.img-central {
+    width: 285px;
+    height: 255px;
+}
 
 
 
@@ -194,10 +327,44 @@ body {
         max-width: 100%;
         height: auto;
         position: absolute;
-        margin-top: -11%;
-        margin-left: -33%;
+        margin-top: 1%;
+        margin-left: -45%;
         transform: scale(0.9);
     }
+
+    .card-fig {
+        border: 1pt solid #207893;
+        box-shadow: 7px 9px 0 #207893;
+        padding: 40px 15px 40px 150px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 750px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 8%;
+    }
+
+    .img-lateral2 {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: -5%;
+        margin-left: -45%;
+        transform: scale(0.9);
+    }
+
+
+
+
+
+
+
+
+
+
+
 
     body {
         background: none;
@@ -206,29 +373,246 @@ body {
 }
 
 @media screen and (max-width: 820px) {
-    
+    .card-fig {
+        border: 1pt solid #207893;
+        box-shadow: 7px 9px 0 #207893;
+        padding: 40px 15px 40px 150px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 620px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 8%;
+    }
+
+    .img-lateral {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: 9%;
+        margin-left: -51%;
+        transform: scale(0.8);
+    }
+
+    .img-lateral2 {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: -2%;
+        margin-left: -51%;
+        transform: scale(0.8);
+    }
+
+
+    .painel-sistema {
+        transform: scale(0.9);
+        margin-left: -2%;
+        margin-top: -4%;
+    }
+
+
+    .figura-1 {
+        margin-top: 38%;
+    }
+
+    .parte-1,
+    .parte-2,
+    .parte-3,
+    .parte-4 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.8);
+    }
+
+
+
+
+
 
 
 
 }
 
 @media screen and (max-width: 770px) {
+    .card-fig {
+        border: 1pt solid #207893;
+        box-shadow: 7px 9px 0 #207893;
+        padding: 40px 15px 40px 150px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 620px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 8%;
+    }
 
-    
+    .img-lateral {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: -5%;
+        margin-left: -49%;
+        transform: scale(0.7);
+    }
+
+    .img-lateral2 {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: -9%;
+        margin-left: -51%;
+        transform: scale(0.7);
+    }
+
+    .marcador-azul li {
+        background: url(../img/marcador2.png) no-repeat left top 8px / 10px;
+        list-style: none;
+        padding-left: 30px;
+    }
+
+
+    .painel-sistema {
+        transform: scale(0.8);
+        margin-left: -8%;
+        margin-top: -4%;
+    }
+
+    .figura-1 {
+        margin-top: 13%;
+    }
+
+
+
 
 }
 
 
 @media screen and (max-width: 700px) {
-   
+
+    .card-fig {
+        border: 1pt solid #207893;
+        box-shadow: 7px 9px 0 #207893;
+        padding: 113px 15px 40px 20px;
+        margin: 40px auto;
+        position: relative;
+        max-width: 620px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 33%;
+    }
+
+
+    .img-lateral {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: -76%;
+        margin-left: -9%;
+        transform: scale(0.7);
+    }
+
+    .img-lateral2 {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: -82%;
+        margin-left: -15%;
+        transform: scale(0.7);
+    }
+
+    .table {
+        width: 85%;
+        margin: auto;
+    }
+
+
+    .painel-sistema {
+        transform: scale(0.5);
+        margin-left: -35%;
+        margin-top: -37%;
+        margin-bottom: -29%;
+    }
+
+    .parte-1,
+    .parte-2,
+    .parte-3,
+    .parte-4 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .painel-normas {
+        transform: scale(0.7);
+        margin-left: -3%;
+        margin-top: -3%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
+
+
 }
 
 @media screen and (max-width: 500px) {
-   
 
+    .marcador-azul li {
+        background: url('../img/marcador2.png') no-repeat left top 8px / 10px;
+        list-style: none;
+        padding-left: 25px;
+    }
 
+    .painel-sistema {
+        transform: scale(0.5);
+        margin-left: -57%;
+        margin-top: -47%;
+    }
 
+    .img-lateral2 {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: -77%;
+        margin-left: -10%;
+        transform: scale(0.7);
+    }
+
+    .painel-normas {
+        transform: scale(0.7);
+        margin-left: -3%;
+        margin-top: -3%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
 }
+
+
 
 
 
@@ -239,7 +623,23 @@ body {
 
 
 @media screen and (max-width: 414px) {
-  
+    .painel-sistema {
+        transform: scale(0.5);
+        margin-left: -63%;
+        margin-top: -47%;
+        margin-bottom: -39%;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -251,9 +651,18 @@ body {
 
 
 @media screen and (max-width: 390px) {
-   
+    .painel-sistema {
+        transform: scale(0.48);
+        margin-left: -73%;
+        margin-top: -47%;
+        margin-bottom: -46%;
+    }
 }
 
 @media screen and (max-width: 375px) {
-   
+    .painel-sistema {
+        transform: scale(0.45);
+        margin-left: -77%;
+        margin-top: -61%;
+    }
 }
