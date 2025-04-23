@@ -1,0 +1,4 @@
+body{
+    word-wrap: break-word !important;
+    overflow-x: unset !important;
+}

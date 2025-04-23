@@ -1,125 +1,509 @@
 <!doctype html>
 <html lang="pt-br">
-    <head>
-        <!-- Inserir o tíutlo do conhecimento na tag title -->
-        <title>Referências</title>
-        <!-- Meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS v5.0.2 -->
-        <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="../assets/fa/css/all.min.css">
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="../assets/css/animate.min.css" />
-        <!-- hover.css https://ianlunn.github.io/Hover/ -->
-        <link rel="stylesheet" href="../assets/css/hover-min.css" />
-        <!--Splide - slideshow-->
-        <link rel="stylesheet" href="../assets/css/splide.min.css">
-        <!-- Preloader -->
-        <link rel="stylesheet" href="../assets/css/preloader.css">
-        <!-- Áudio customizado -->
-        <link rel="stylesheet" href="../assets/css/player.css">
-        <!-- Estilos do template -->
-        <link rel="stylesheet" href="../assets/css/cores.css">
-        <link rel="stylesheet" href="../print/print/print.css">
-        <link rel="stylesheet" href="../assets/css/template.css">
-    
-    </head>
-    <body class="bg-claro referencias">
-        <!-- Preloader OBRIGATÓRIO -->
-        <div class="preloader">
-            <div class="anim"></div>
-            <p>Aguarde enquanto o conteúdo é carregado.</p>
-        </div>
-        <!-- Marca d'água OBRIGATÓRIA -->
-        <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Referências</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <header id="topo">
-            <div class="topo-logo">
-                <div class="container">
-                    <h1 id="nome-curso" class="only-print">Técnico em Secretariado</h1> 
-                    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()" aria-hidden="true"></div>     
-                </div>
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../assets/css/splide.min.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../assets/css/cores.css">
+    <link rel="stylesheet" href="../print/print/print.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="custom.css">
+
+</head>
+
+<body class="bg-claro referencias">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Técnico em Secretariado</h1>
+                <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"
+                    aria-hidden="true"></div>
             </div>
-        </header>
-        <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
-        <section id="booklet">  
-            <div class="layer-preta no-print"></div>       
-            <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
-            <section class="paginas">
-                <div class="pagina container">
-                    <h2>Referências</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <h3>h3 - Subtítulo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <h3>h3 - Subtítulo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <h3>h3 - Subtítulo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
-                </div> 
-            </section>
-            <!-- Paginação-->
-            <footer class="text-center no-print d-flex justify-content-center mx-auto">
-                <ul class="pagination">
-    
-                </ul>
-            </footer>   
+        </div>
+    </header>
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <div class="layer-preta no-print"></div>
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <section class="paginas">
+            <div class="pagina container">
+                <h2>Referências</h2>
+                <h3>
+                    Estrutura organizacional e suas inter-relações: conceito, organograma (distribuição das áreas e
+                    funções
+                    administrativas e operacionais)
+                </h3>
+                <p>CURY, Antônio. <b>Organização e métodos</b>: uma visão holística. 9. ed. São Paulo: Atlas, 2017.</p>
+                <p>
+                    MARQUES, José Roberto. O que é gestão horizontal e vertical e suas principais características.
+                    <b>Instituto
+                        Brasileiro de Coaching</b>, 4 jun. 2019. Disponível em:
+                    https://www.ibccoaching.com.br/portal/o-que-e-gestao-horizontal-e-vertical-e-suas-principais-caracteristicas/.
+                    Acesso em: 1º out. 2019.
+                </p>
+                <p>
+                    OLIVEIRA, Djalma de Pinho Rebouças de. <b>Estrutura organizacional</b>: uma abordagem para
+                    resultados e
+                    competitividade. 3. ed. São Paulo: Atlas, 2014.
+                </p>
+                <p>
+                    SILVA, José Roberto Andrade e. <b>Gestão de negócios</b>: planejamento e organização para a
+                    indústria. São
+                    Paulo: Érica, 2018.
+                </p>
+                <h3>Elementos de comunicação: contexto, emissor, receptor, canal, mensagem, ruídos e <i>feedback</i>
+                </h3>
+                <p> MAXIMIANO, Antonio Cesar Amaru. <b>Introdução à administração</b>. São Paulo: Atlas, 2011.</p>
+                <h3>
+                    Atendimento à diversidade humana: definição e legislação relativos a gênero (LGBTI), mobilidade
+                    reduzida,
+                    idosos, gestantes, raça e etnia, obesidade e pessoas com deficiência (PCDs)
+                </h3>
+                <p>
+                    AMPUDIA, Ricardo. O que é deficiência visual? <b>Nova Escola</b>, 1º ago. 2011. Disponível em:
+                    https://novaescola.org.br/conteudo/270/deficiencia-visual-inclusao. Acesso em: 11 out. 2019.
+                </p>
+                <p>
+                    ARRUDA, Agnes. Combater a gordofobia não é romantizar a obesidade. <b>Revista Trip</b>,12 abr. 2023.
+                    Disponível
+                    em: https://revistatrip.uol.com.br/trip/combater-a-gordofobia-nao-e-romantizar-a-obesidade. Acesso
+                    em:
+                    25 abr. 2024.
+                </p>
+                <p>
+                    BRASIL. <b>Lei nº 10.741, de 1º de outubro de 2003</b>. Dispõe sobre o Estatuto do Idoso e dá outras
+                    providências. Brasília, DF: Presidência da República, 2003. Disponível em:
+                    http://www.planalto.gov.br/ccivil_03/leis/2003/l10.741.htm. Acesso em: 11 out. 2019.
+                </p>
+                <p>
+                    BRASIL. <b>Lei nº 10.048, de 8 de novembro de 2000</b>. Dá prioridade de atendimento às pessoas que
+                    especifica,
+                    e dá outras providências. Brasília, DF: Presidência da República, 2000. Disponível em:
+                    http://www.planalto.gov.br/ccivil_03/leis/l10048.htm. Acesso em: 11 out. 2019.
+                </p>
+                <p>
+                    BRASIL. <b>Lei nº 10.098, de 19 de dezembro de 2000</b>. Estabelece normas gerais e critérios
+                    básicos para a
+                    promoção da acessibilidade das pessoas portadoras de deficiência ou com mobilidade reduzida, e dá
+                    outras
+                    providências. Brasília, DF: Presidência da República, 2000. Disponível em:
+                    https://www.planalto.gov.br/ccivil_03/leis/l10098.htm. Acesso em: 1° out. 2019.
+                </p>
+                <p>
+                    BRASIL. <b>Lei nº 11.635, de 27 de dezembro de 2007</b>.Institui o Dia Nacional de Combate à
+                    Intolerância
+                    Religiosa. Brasília, DF: Presidência da República, 2007. Disponível em:
+                    https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11635.htm. Acesso em: 24 set. 2024.
+                </p>
+                <p>
+                    BRASIL. Ministério do Desenvolvimento Social e Agrário. <b>Garantia da utilização do nome social
+                        para as
+                        pessoas travestis e transexuais</b>. Brasília, DF: Governo Federal, [s. d.]. Disponível em:
+                    https://www.mds.gov.br/webarquivos/publicacao/assistencia_social/Folders/cartilha_nome_social.pdf.
+                    Acesso em: 30 set. 2019.
+                </p>
+                <p>
+                    BRASIL. Ministério Público Federal. Procuradoria Federal dos Direitos do Cidadão. <b>O Ministério
+                        Público e
+                        a igualdade de direitos para LGBTI</b>: conceitos e legislação. Procuradoria Federal dos
+                    Direitos do
+                    Cidadão, Ministério Público do Estado do Ceará. 2. ed., rev. e atual. Brasília: MPF, 2017.
+                    Disponível
+                    em:
+                    http://www.mpf.mp.br/atuacao-tematica/pfdc/midiateca/nossas-publicacoes/o-ministerio-publico-e-a-igualdade-de-direitos-para-lgbti-2017.
+                    Acesso em: 30 set. 2019.
+                </p>
+                <p>
+                    BRASIL. Serviços Estaduais. <b>Adquirir Carteira de Identificação da Pessoa com Transtorno do
+                        Espectro
+                        Autista (Ciptea)</b>. [Brasília], 12 dez. 2021. Disponível em:
+                    https://www.gov.br/pt-br/servicos-estaduais/adquirir-carteira-de-identificacao-da-pessoa-com-transtorno-do-espectro-autista-ciptea.
+                    Acesso em: 19 set. 2024.
+                </p>
+                <p>
+                    CADEIRA de Rodas Motorizada Elétrica E4 ULX Ortobras Dobrável. <b>Ortoponto</b>, c2025. Disponível
+                    em:
+                    https://www.ortoponto.com.br/produto/cadeira-de-rodas-motorizada-eletrica-e4-ulx-ortobras-dobravel-666.
+                    Acesso em: 1º out. 2019.
+                </p>
+                <p>
+                    CENTOFANTI, Marcella. Gordofobia – a causa invisível. <b>Você RH</b>, 14 ago. 2023. Disponível em:
+                    https://vocerh.abril.com.br/diversidade/gordofobia-a-causa-invisivel. Acesso em: 30 abr. 2024.
+                </p>
+                <p>
+                    CORDÕES de girassol são usados para identificar autistas que precisam de auxílio em MT.<b>G1</b>, 18
+                    jun.
+                    2021. Disponível em:
+                    https://g1.globo.com/mt/mato-grosso/noticia/2021/06/18/cordoes-de-girassol-sao-usados-para-identificar-autistas-que-precisam-de-auxilio-em-mt.ghtml.
+                    Acesso em: 19 set. 2024.
+                </p>
+                <p>
+                    DESTEFANE, Victor Passarelli. <b>Cordões e seus significados</b>. São Paulo, SP: Coletivo Autista da
+                    USP, [s.
+                    d.]. Disponível em:
+                    https://www.ee.usp.br/wp-content/uploads/2023/11/Cartilha-sobre-os-significados-dos-Cordoes-1.pdf.
+                    Acesso em: 19 set. 2024.
+                </p>
+                <p>FERRAZ, Carolina Valença; LEITE, Glauber Salomão. <b>Direito à diversidade</b>. São Paulo: Atlas,
+                    2015.</p>
+                <p>
+                    MARQUES, Marília; ALVES, Pedro. Travestis e transexuais podem usar nome social em carteira de
+                    identidade
+                    no DF; saiba como funciona. <b>G1</b>: Distrito Federal, 12 set. 2019. Disponível em:
+                    https://g1.globo.com/df/distrito-federal/noticia/2019/09/12/travestis-e-transexuais-podem-usar-nome-social-em-carteira-de-identidade-no-df-saiba-como-funciona.ghtml.
+                    Acesso em: 19 set. 2024.
+                </p>
+                <p>
+                    PARANÁ. Defensoria Pública do Estado do Paraná. <b>Luta contra a Intolerância Religiosa também é
+                        trabalho
+                        da Defensoria Pública</b>. Curitiba, 21 jan. 2023. Disponível em:
+                    https://www.defensoriapublica.pr.def.br/Noticia/Luta-contra-Intolerancia-Religiosa-tambem-e-trabalho-da-Defensoria-Publica.
+                    Acesso em: 19 set. 2024.
+                </p>
+                <p>
+                    PICOZZI Maria Eny Leandro; ELLIOT, Ligia Gomes (org.). <b>Surdos</b>: facetas da inclusão. São
+                    Paulo: Pimenta
+                    Cultural, 2021. 160p.
+                </p>
+                <p>
+                    PORTAL BRASIL. <b>Respeito à diversidade é uma forma de promover a inclusão</b>. Disponível em:
+                    http://www.brasil.gov.br/cidadania-e-justica/2009/11/respeito-a-diversidade-e-uma-forma-de-promover-inclusao.
+                    Acesso em: 11 maio 2017.
+                </p>
+                <p>
+                    SÃO PAULO (Município). Câmara Municipal de São Paulo. <b>Manual dos Direitos Pessoa com Autismo</b>.
+                    São Paulo,
+                    2021. Disponível em:
+                    https://www.saopaulo.sp.leg.br/escoladoparlamento/wp-content/uploads/sites/5/2021/11/Manual-dos-Direitos-da-Pessoa-com-Autismo.pdf.
+                    Acesso em: 19 set. 2024.
+                </p>
+                <p>
+                    SERASA EXPERIAN. <b>As Pessoas com Deficiência no Mundo do Trabalho</b>. Disponível em:
+                    https://www.serasaexperian.com.br/quem-somos/publicacoes/Manual_Serasa_Experian_de_Inclusao_Social.pdf.
+                    Acesso em: 15 mar. 2017.
+                </p>
+                <p>
+                    TUDO o que você precisa saber sobre o autismo: um panorama sobre esse transtorno. <b>Hospital Santa
+                        Mônica</b>,
+                    22 jul. 2019. Disponível em:
+                    https://hospitalsantamonica.com.br/tudo-o-que-voce-precisa-saber-sobre-o-autismo-um-panorama-sobre-esse-transtorno-2/.
+                    Acesso em: 19 set. 2024.
+                </p>
+                <h3>Tipos e técnicas de atendimento: presencial, eletrônico, telefônico e impresso</h3>
+                <p>
+                    ABRANTES, Letícia. Tipos de atendimento ao cliente: conheça as principais formas de contato com o
+                    público. <b>Rock Content</b>. Disponível em: https://rockcontent.com/blog/tipos-de-atendimento/.
+                    Acesso em: 30
+                    set. 2019.
+                </p>
+                <p>
+                    DONDA, Daniel. <b>Guia prático de implementação da LGPD</b>: conheça estratégias e soluções para
+                    adequar sua
+                    empresa em conformidade com a Lei. São Paulo: Labrador, 2020. P.18.
+                </p>
+                <p>
+                    MAIA, Fernanda Landolfi; OLIVEIRA, Vanderleia Stece de. <b>Secretariado em pauta</b>: técnicas de
+                    assessoria e
+                    métodos de organização. Curitiba: Intersaberes, 2015. P. 110,111.
+                </p>
+                <p>
+                    MARQUES, José Roberto. Instituto Brasileiro de Coaching. <b>Dicas e técnicas para um bom atendimento
+                        ao
+                        cliente</b>. Disponível em:
+                    https://www.ibccoaching.com.br/portal/coaching-carreira/dicas-e-tecnicas-para-um-bom-atendimento-ao-cliente/.
+                    Acesso em: 30 set. 2019.
+                </p>
+                <p>
+                    PORTAL EDUCAÇÃO. <b>Roteiro de Comunicação no atendimento presencial, telefônico e virtual</b>.
+                    Disponível em:
+                    https://www.portaleducacao.com.br/conteudo/artigos/turismo-e-hotelaria/roteiro-de-comunicacao-no-atendimento-presencial-telefonico-e-virtual/39847.
+                    Acesso em: 30 set. 2019.
+                </p>
+                <p> ROBBINS, Stephen P. <b>Administração</b>: mudanças e perspectivas. 4. ed. São Paulo: Saraiva, 2003.
+                </p>
+                <p>
+                    SUPERSECRETÁRIAS ao telefone. <b>Supersecretária Executiva</b>. Disponível em:
+                    http://www.supersecretariaexecutiva.com.br/secretariado/super-secretarias-ao-telefone. Acesso em: 2
+                    out.
+                    2019.
+                </p>
+                <h3>Expressões idiomáticas básicas em inglês e espanhol para atendimento</h3>
+                <p>
+                    ASSUMPÇÃO, Sônia; FERREIRA, Fernanda Ferreira de. <b>Inglês para secretárias</b>: um guia prático
+                    para
+                    secretárias, assessoras e assistentes. Rio de Janeiro: Alta Books, 2018. 168 p.
+                </p>
+                <p>
+                    HARRISSON, Jeremy. <b>Phrasal verbs</b>: explicações gramaticais em português e exercícios em
+                    inglês. São
+                    Paulo: SBS, 2002.
+                </p>
+                <p>MASCULL, Bill. <b>Business vocabular in use</b>. Cambridge: Cambridge University Press, 2002.</p>
+                <p>
+                    SINGLETON, Ken. <b>Problem structures</b>: explicações gramaticais em português e exercícios em
+                    inglês. São
+                    Paulo: SBS, 2004.
+                </p>
+                <p>VOCABULÁRIO. <i>In</i>: Oxford Advanced Learner’s Dictionary. 10. ed. Oxford: Oxford University
+                    Press, 2020.</p>
+                <h3>
+                    Técnicas de negociação e administração de conflitos: definição, tipos, características, níveis,
+                    áreas,
+                    consequência e resolução
+                </h3>
+                <p>
+                    ACUFF, F. L. <b>Como negociar qualquer coisa com qualquer pessoa em qualquer lugar do mundo</b>. 2.
+                    ed. São
+                    Paulo: Senac, 2004.
+                </p>
+                <p>
+                    ALVES, Flávia. Gestão de conflitos: transformando conflitos organizacionais em oportunidades. <b>RH
+                        Portal</b>.
+                    Disponível em: https://www.rhportal.com.br/artigos-rh/conflitos-transformando-em-oportunidades/.
+                    Acesso
+                    em: 19 set. 2019.
+                </p>
+                <p>
+                    BERG, Ernesto Artur. Administração de conflitos (Parte II). <b>Administradores</b>, 1º maio 2006.
+                    Disponível
+                    em: http://www.administradores.com.br/artigos/tecnologia/administracao-de-conflitos-parte-ii/12144/.
+                    Acesso em: 18 set. 2019.
+                </p>
+                <p>CARVALHAL, Eugenio do <i>et al</i>. <b>Negociação e administração de conflitos</b>. 2. ed. Rio de
+                    Janeiro: FGV, 2009.</p>
+                <p>CARVALHAL, E. do <i>et al</i>. <b>Negociação e administração de conflitos</b>. 2. ed. Rio de Janeiro:
+                    FGV, 2010.</p>
+                <p>
+                    CHIAVENATO, Idalberto. <b>Gestão de pessoas</b>: e o novo papel dos recursos humanos nas
+                    organizações. 4ª
+                    reimpressão. Rio de Janeiro: Elsevier, 2004.
+                </p>
+                <p>GOLEMAN, Daniel. <b>O poder da inteligência emocional</b>. Rio de Janeiro: Campus, 2002.</p>
+                <p>MALDONADO, M. T. <b>O bom conflito</b>. São Paulo: Integrare, 2008.</p>
+                <p>MARTINELLI, Dante P.; ALMEIDA, Ana Paula de. <b>Negociação e solução de conflitos</b>. São Paulo:
+                    Atlas, 1998.</p>
+                <p>
+                    MIRANDA, Maria Bernadete. Características do conflito e mediação nas empresas. <b>Estado de
+                        Direito</b>.
+                    Disponível em: http://estadodedireito.com.br/caracteristicas-conflito-e-mediacao-nas-empresas/.
+                    Acesso
+                    em: 19 set. 2019.
+                </p>
+                <p>
+                    NASCIMENTO, Eunice Maria; EL SAYED, Kassem Mohamed. Administração de conflitos. <i>In</i>: <b>Gestão
+                        do Capital
+                        Humano</b>. Coleção Gestão Empresarial – FAE Business School. Curitiba: Gazeta do Povo, 2002. v.
+                    V.
+                </p>
+                <p>
+                    RAMOS, Lilian. Tipos de conflitos dentro da organização (Como identificar?). <b>TI
+                        Especialistas</b>, 11 set.
+                    2013. Disponível em: https://www.tiespecialistas.com.br/tipos-conflitos-organizacao-identificar/.
+                    Acesso
+                    em: 19 set. 2019.
+                </p>
+                <p>
+                    REIS, Joel; MAZULO, Roseli. <b>Gestão de imagem</b>: propósito, plano de carreira e êxito
+                    profissional. São
+                    Paulo: Senac, 2017.
+                </p>
+                <p>
+                    RESOLUÇÃO de conflitos nas mãos do secretariado. <b>Insight Company</b>. Disponível em:
+                    http://www.insightcompany.com.br/novidades/artigos/resolucao-de-conflitos-nas-maos-do-secretariado/.
+                    Acesso em: 19 set. 2019.
+                </p>
+                <p>ROBBINS S. P. <b>Comportamento organizacional</b>. 8. ed. Rio de Janeiro: LTC, 1994.</p>
+                <p>ROBBINS S. P. <b>Comportamento organizacional</b>. 14. ed. São Paulo: Pearson Prentice Hall, 2010.
+                </p>
+                <p>
+                    SILVA, Sandra. <b>Ideias para compartilhar com o mundo</b>. Disponível em:
+                    http://sandrasilva.com.br/conflitos-em-times-ageis-ajudando-times-a-entender-e-identificar-niveis-de-conflitos/.
+                    Acesso em: 11 out. 2019.
+                </p>
+                <p>
+                    STEELE, P.; MURPHY, J.; RUSSIL, R. <b>Negócio fechado</b>: a arte de negociar. São Paulo:
+                    Makron-McgrawHill,1995.
+                </p>
+                <h3>Código de Defesa do Consumidor: conceito e aplicabilidade</h3>
+                <p>
+                    BRASIL. <b>Lei nº 8.078, de 11 de setembro de 1990</b>. Dispõe sobre a proteção do consumidor e dá
+                    outras
+                    providências. Brasília, DF: Presidência da República, 1990. Disponível em:
+                    http://www.planalto.gov.br/ccivil_03/leis/l8078.htm. Acesso em: 28 out. 2019.
+                </p>
+                <p>
+                    CAETANO, Fabiano. Garantia legal e contratual. Quais as diferenças previstas no Código de Defesa do
+                    Consumidor? <b>Jusbrasil</b>, 2016. Disponível em:
+                    https://fabianocaetano.jusbrasil.com.br/artigos/300511762/garantia-legal-e-
+                    contratual-quais-as-diferencas-previstas-no-codigo-de-defesa-do-consumidor. Acesso em: 24 set. 2019.
+                </p>
+                <p> DOROW, Renildo. <b>Direito empresarial e do consumidor</b>. Indaial: Uniasselvi, 2013.</p>
+                <p>
+                    LUZARDO, Sílvio. <b>Meu cliente, meu amigo</b>: a excelência no atendimento. 2. ed. rev. e ampl.
+                    Florianópolis:
+                    S. Luzardo, 2008.
+                </p>
+                <p>
+                    MARQUES, Claudia Lima. A atualização do CDC em matéria de crédito e superendividamento. <b>Consultor
+                        Jurídico (ConJur)</b>, 3 jul. 2021. Disponível em:
+                    https://www.conjur.com.br/2021-jul-03/lima-marques-atualizacao-cdc-materia-credito-superendividamento/#:~:text=A%20Lei%2014.181%2F2021%20atualiza,preven%C3%A7%C3%A3o%20e%20do%20tratamento%20do.
+                    Acesso em: 25 set. 2024.
+                </p>
+                <p>
+                    MESQUITA, Renato. Por que é tão importante entender o Código de Defesa do Consumidor? <b>Saia do
+                        Lugar</b>.
+                    Disponível em: https://saiadolugar.com.br/codigo-de-defesa-do-consumidor/. Acesso em: 24 set. 2019.
+                </p>
+                <p>
+                    NERY JÚNIOR, Nelson <i>et. al</i>. <b>Código Brasileiro de Defesa do Consumidor comentado pelos
+                        autores do
+                        anteprojeto</b>. 4. ed. Rio de Janeiro: Forense Universitária, 1995.
+                </p>
+                <h3>
+                    Saúde e Segurança no Trabalho: ações que auxiliam na preservação da saúde física e mental e
+                    qualidade de
+                    vida no trabalho; legislação (NR 26 – Sinalização de Segurança e NR 17 – Ergonomia)
+                </h3>
+                <p>
+                    ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. <b>ABNT NBR 9050</b>: acessibilidade a edificações,
+                    mobiliário,
+                    espaços e equipamentos urbanos. Rio de Janeiro: ABNT, 2020.
+                </p>
+                <p>
+                    ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. <b>ABNT NBR ISO 45001</b>: sistemas de gestão de saúde e
+                    segurança
+                    ocupacional: requisitos com orientação para uso. Rio de Janeiro: ABNT, 2018.
+                </p>
+                <p>
+                    BRASIL. <b>Norma Regulamentadora 17</b> – Ergonomia. Brasília, 2018. Disponível em:
+                    https://enit.trabalho.gov.br/portal/images/Arquivos_SST/SST_NR/NR-17.pdf. Acesso em: 15 set. 2019.
+                </p>
+                <p>
+                    BRASIL. <b>Norma Regulamentadora 26</b> – Sinalização de segurança. Brasília, 2015. Disponível em:
+                    https://enit.trabalho.gov.br/portal/images/Arquivos_SST/SST_NR/NR-26.pdf. Acesso em: 15 set. 2019.
+                </p>
+                <p>CHIAVENATO, Idalberto. <b>Recursos humanos</b>. Rio de Janeiro: Elsevier, 2009.</p>
+                <p>
+                    COUTO, H. A. <b>Como implantar ergonomia na empresa</b>: a prática dos comitês de ergonomia. Belo
+                    Horizonte:
+                    Casa da Imagem, 2002.
+                </p>
+                <p>COUTO, H. A. <b>Ergonomia aplicada ao trabalho</b>: conteúdo básico. Belo Horizonte: Ergo, 2007.</p>
+                <p>DUL, Jan; WEERDMEESTER, Bernard. <b>Ergonomia Prática</b>. 3. ed. São Paulo: Blucher, 2004.</p>
+                <p>GIL, A. C. <b>Gestão de pessoas</b>: enfoque nos papéis profissionais. São Paulo: Atlas, 2009.</p>
+                <p>
+                    GRANDJEAN, Etienne. <b>Manual de Ergonomia</b>: Adaptando o Trabalho ao Homem. 5. ed. Porto Alegre:
+                    Bookman,
+                    1998.
+                </p>
+                <p> IIDA, Itiro; BUARQUE, Lia. <b>Ergonomia</b>: Projeto e Produção. 3. ed. rev. São Paulo: Blucher,
+                    2016.</p>
+                <p>IlDA, Itiro. <b>Ergonomia</b>: Projeto e Produção. São Paulo: Blucher, 1990.</p>
+                <p>
+                    ORGANIZAÇÃO INTERNACIONAL DO TRABALHO. <b><i>Site</i> da OIT</b>, c1996-2025. A
+                    OIT é uma agência especializada das Nações Unidas. Disponível em:
+                    https://www.ilo.org/pt-pt/regions-and-countries/americas/brasil/conheca-oit/oit-no-brasil. Acesso
+                    em: 25
+                    set. 2024.
+                </p>
+                <p>
+                    POSTURA reta no computador. <b>Blogue Diário da Adry</b>, 11 mar. 2013. Disponível em:
+                    http://diariodaadrys2.blogspot.com/2013/03/postura-reta-no-computador.html. Acesso em: 25 set. 2024.
+                </p>
+
+
+                <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
+            </div>
         </section>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
-        <!--Jquery-->
-        <script src="../assets/js/jquery-3.6.0.min.js"></script>
-        <!--Áudio customizado-->
-        <script src="../assets/js/audio-player.js"></script>
-        <!--Splide - slideshow-->
-        <script src="../assets/js/splide.min.js"></script>
-        <!--Prog'n'roll - barra de progresso conforme rola a página-->
-        <script src="../assets/js/prognroll.min.js"></script>
-        <!--Scripts gerais-->
-        <script src="../assets/js/geral.js"></script>
+        <!-- Paginação-->
+        <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <ul class="pagination">
 
-        <script>
-            var splide = new Splide( '.splide', {
-                type   : 'slide',
-                perPage: 2,
-                trimSpace: false,
-                focus  : 'center'
-            } );
+            </ul>
+        </footer>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../assets/js/prognroll.min.js"></script>
+    <!--Scripts gerais-->
+    <script src="../assets/js/geral.js"></script>
 
-            splide.mount();
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'slide',
+            perPage: 2,
+            trimSpace: false,
+            focus: 'center'
+        });
 
-            $(function() {
-                $("body").prognroll();
-            });
-        </script>
+        splide.mount();
 
-        <!-- Handtalk -->
-        <script>
-            var scriptElem=document.createElement("script");
-            scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
-            scriptElem.charset="UTF-8",
-            scriptElem.onload=function(){
+        $(function () {
+            $("body").prognroll();
+        });
+    </script>
+
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
                 window.ht = new HT({
-                    token:"bf5b7efb148a829a126a0e0c9fd533bf",
-                    align:"top",
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
                     videoEnabled: true,
-                    ytEmbedReplace: true,           
-                    mobileConfig:{align:"right",
-                                    actionsAlign:"top",
-                                    customButtonStyle:{
-                                        borderRadius:"6px",
-                                        size:"38px",
-                                        horizontalMargin:"13px",
-                                        bottomMargin:"140px",
-                                        rightMargin:"40px"}
-                                    }
-                    });        
-                $('.ht-skip').attr("aria-hidden","true")
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
             },
-        document.body.appendChild(scriptElem);
-        
-        </script>
-    </body>
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
 </html>
