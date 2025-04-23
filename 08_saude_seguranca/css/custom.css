@@ -146,18 +146,6 @@ body {
     margin-left: 8%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .img-anatomia {
     width: 302px;
     height: 205px;
@@ -347,25 +335,6 @@ body {
     padding: 40px;
     border-radius: 0 15px 15px 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .bg-escuro .accordion-body p {
     color: #fff;
@@ -803,15 +772,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 414px) {
     .painel-sistema {
         transform: scale(0.5);
@@ -820,24 +780,7 @@ body {
         margin-bottom: -39%;
     }
 
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
 
 
 @media screen and (max-width: 390px) {
