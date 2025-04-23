@@ -1,7 +1,8 @@
 body {
-    background: url('../img/BG.jpg') no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background: url('../img/bg_elem.png') 100% 0.5%,
+        url('../img/bg.jpg') fixed;
+    background-size: auto, cover;
+    background-repeat: no-repeat, no-repeat;
 }
 
 
@@ -140,6 +141,14 @@ body {
 .parte-4 {
     display: flex;
 }
+
+.espaco-marcador li {
+    margin-left: 8%;
+}
+
+
+
+
 
 
 
@@ -301,8 +310,43 @@ body {
     background: url('../img/painel_bt7_hv.png') no-repeat;
 }
 
+.marcador-quadrado li {
+    background: url('../img/checkmark.png') no-repeat left top 10px / 17px;
+    list-style: none;
+    padding-left: 30px;
+}
 
+.nav-tabs .nav-link {
+    padding: 10px 40px;
+    border-radius: 8px 8px 0 0;
+    font-weight: bold;
+    color: #fff;
+    border-width: 3px;
+    border-bottom: unset;
+    margin-bottom: -2px;
+    margin-right: 5px;
+}
 
+.nav li {
+    font-size: .85em;
+}
+
+.nav-item button {
+    height: 71px;
+}
+
+.nav-tabs .nav-link {
+    padding: 10px 25px;
+    border-radius: 8px 8px 0 0;
+    font-weight: bold;
+}
+
+.tab-content {
+    border-width: 3px;
+    border-style: solid;
+    padding: 40px;
+    border-radius: 0 15px 15px 15px;
+}
 
 
 
@@ -418,11 +462,21 @@ body {
     filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.15));
 }
 
-@media screen and (max-width: 1440px) {}
+@media screen and (max-width: 1440px) {
+
+    body {
+        background: url('../img/bg_elem.png') 100% 0.5%,
+            url('../img/bg.jpg') fixed;
+        background-size: 17%, cover;
+        background-repeat: no-repeat, no-repeat;
+    }
+}
 
 @media screen and (max-width: 1400px) {
     body {
-        background: none;
+        background: url('../img/bg_elem.png') 100% 0.5%;
+        background-size: 15%;
+        background-repeat: no-repeat;
     }
 }
 
@@ -464,17 +518,6 @@ body {
         margin-left: -45%;
         transform: scale(0.9);
     }
-
-
-
-
-
-
-
-
-
-
-
 
     body {
         background: none;
@@ -612,7 +655,11 @@ body {
         margin-top: 13%;
     }
 
-
+    .marcador-quadrado li {
+        background: url(../img/checkmark.png) no-repeat left top 7px / 17px;
+        list-style: none;
+        padding-left: 30px;
+    }
 
 
 }
@@ -704,6 +751,12 @@ body {
         align-items: center;
     }
 
+    .marcador-quadrado li {
+        background: url('../img/checkmark.png') no-repeat left top 10px / 17px;
+        list-style: none;
+        padding-left: 30px;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -712,6 +765,12 @@ body {
         background: url('../img/marcador2.png') no-repeat left top 8px / 10px;
         list-style: none;
         padding-left: 25px;
+    }
+
+    .marcador-quadrado li {
+        background: url(../img/checkmark.png) no-repeat left top 5px / 17px;
+        list-style: none;
+        padding-left: 30px;
     }
 
     .painel-sistema {
