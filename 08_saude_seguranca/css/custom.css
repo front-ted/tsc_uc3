@@ -209,6 +209,116 @@ body {
     height: 255px;
 }
 
+.painel-placas {
+    background: url(../img/painel_bg.png) no-repeat;
+    width: 961px;
+    height: 546px;
+    margin: 30px auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.botao-vermelha {
+    background: url('../img/painel_bt1.png') no-repeat;
+    width: 190px;
+    height: 193px;
+    border: none;
+}
+
+.botao-vermelha:hover {
+    background: url('../img/painel_bt1_hv.png') no-repeat;
+}
+
+.botao-laranja {
+    background: url('../img/painel_bt2.png') no-repeat;
+    width: 190px;
+    height: 193px;
+    border: none;
+}
+
+.botao-laranja:hover {
+    background: url('../img/painel_bt2_hv.png') no-repeat;
+}
+
+.botao-amarela {
+    background: url('../img/painel_bt3.png') no-repeat;
+    width: 190px;
+    height: 193px;
+    border: none;
+}
+
+.botao-amarela:hover {
+    background: url('../img/painel_bt3_hv.png') no-repeat;
+}
+
+.botao-verde {
+    background: url('../img/painel_bt4.png') no-repeat;
+    width: 190px;
+    height: 193px;
+    border: none;
+}
+
+.botao-verde:hover {
+    background: url('../img/painel_bt4_hv.png') no-repeat;
+}
+
+.botao-azul {
+    background: url('../img/painel_bt5.png') no-repeat;
+    width: 190px;
+    height: 193px;
+    border: none;
+}
+
+.botao-azul:hover {
+    background: url('../img/painel_bt5_hv.png') no-repeat;
+}
+
+.botao-violeta {
+    background: url('../img/painel_bt6.png') no-repeat;
+    width: 190px;
+    height: 193px;
+    border: none;
+}
+
+.botao-violeta:hover {
+    background: url('../img/painel_bt6_hv.png') no-repeat;
+}
+
+.botao-branca {
+    background: url('../img/painel_bt7.png') no-repeat;
+    width: 190px;
+    height: 193px;
+    border: none;
+}
+
+.botao-branca:hover {
+    background: url('../img/painel_bt7_hv.png') no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -434,7 +544,16 @@ body {
 
 
 
-
+    .painel-placas {
+        display: flex;
+        background: unset;
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 
@@ -559,6 +678,7 @@ body {
         align-content: center;
         justify-content: center;
         align-items: center;
+        transform: unset;
     }
 
     .painel-normas {
@@ -572,6 +692,17 @@ body {
         margin-bottom: 3%;
     }
 
+    .painel-placas {
+        display: flex;
+        background: unset;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
