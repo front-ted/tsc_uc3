@@ -733,3 +733,24 @@ body {
         margin-top: -17%;
     }
 }
+
+.hq .botao {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #6882a3;
+  border-color: #6882a3;
+  color: white;
+}
+.hq .botao:hover {
+  background-color: #92acce;
+  border-color: #92acce;
+  color: white;
+}
+.hq .corpo {
+    border: 2px solid #6882a3
+}
+
+.hq {
+    max-width: 550px;
+    margin: 0 auto;
+}
