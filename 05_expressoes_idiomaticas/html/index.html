@@ -58,13 +58,12 @@
 	<!-- <header class="text-center animated fadeIn" tabindex="0"><h1>Recepcionar e atender clientes internos e externos relacionados à gestão</h1></header> -->
 
 
-
-	<span class="spkIns">Utilize a tecla tab para navegar no conteúdo!</span>
+	<span class="spkIns" tabindex="0">Utilize a tecla tab para navegar no conteúdo!</span>
 	<div class="container">
 
-		<div id="r01" class="row text-center animated fadeIn">
+		<div id="r01" class="row text-center animated fadeIn" aria-hidden="true">
 			<h2 tabindex="0">Expressões idiomáticas básicas em inglês e espanhol para atendimento</h2>
-			<p>
+			<p tabindex="0">
 				No atendimento ao público, o uso de expressões idiomáticas pode tornar a comunicação mais natural e
 				acolhedora. Este material apresenta algumas expressões básicas em inglês e espanhol que podem ser úteis
 				em diferentes situações de interação, ajudando a transmitir cordialidade, clareza e profissionalismo.
@@ -82,39 +81,48 @@
             </div>
         </div>
         -->
-
 	</div>
 
-	</div>
-	<div id="r03" class="text-center animated fadeInUp" role="tooltip">
-		<span id='menu' tabindex="0" class="spkIns">Menu de conteúdos</span>
+	
+	<div id="r03" class="text-center animated fadeInUp" role="tooltip" aria-hidden="false">
 		<p tabindex="0">Escolha qual conteúdo deseja visualizar:</p>
 		<div class="botoes-r3">
-			<a tabindex="0" href="Javascript:" id="btObs" aria-controls="r04" aria-expanded="false"
-				title="utilize para exibir a tela de Orientações" role="button"></a>
+			<a tabindex="0" href="Javascript:" id="btObs" aria-controls="r04" role="button">
+				<span class="sr-only">Introdução</span></a>
 
-			<a id="btAlf" href="objeto-dicionario/alfabeto.html"></a>
+			<a id="btAlf" href="objeto-dicionario/alfabeto.html">
+				<span class="sr-only">Alfabeto</span>
+			</a>
 
-			<a id="btDic" href="objeto-dicionario/vocabulario.html"></a>
+			<a id="btDic" href="objeto-dicionario/vocabulario.html">
+				<span class="sr-only">Vocabulário</span>
+			</a>
 
-			<a id="btCor" href="objeto-dicionario/calendario.html"></a>
+			<a id="btCor" href="objeto-dicionario/calendario.html">
+				<span class="sr-only">Calendário</span>
+			</a>
 
-			<a id="btSit" href="objeto-dicionario/situacoes.html"></a>
+			<a id="btSit" href="objeto-dicionario/situacoes.html">
+				<span class="sr-only">Situações profissionais</span>
+			</a>
 
-			<a id="btDia" href="objeto-hq/index.html"></a>
+			<a id="btDia" href="objeto-hq/index.html">
+				<span class="sr-only">Diálogos</span>
+			</a>
 
-			<a tabindex="0" href="Javascript:" id="btCred" aria-controls="r05" aria-expanded="false"
-				title="utilize para exibir a tela de créditos" role="button"></a>
+			<a tabindex="0" href="Javascript:" id="btCred" aria-controls="r05" role="button">
+				<span class="sr-only">Referências</span>
+			</a>
 		</div>
 
 	</div>
 
-	<div id="r04" class="text-center" role="tooltip">
+	<div id="r04" class="text-center" role="tooltip" aria-hidden="true">
 		<div id='obs' tabindex="0">
-			<p>Na América Latina – grupo de países do qual o Brasil faz parte –, uma das línguas mais faladas é o
+			<p tabindex="0">Na América Latina – grupo de países do qual o Brasil faz parte –, uma das línguas mais faladas é o
 				espanhol. Portanto, é importante conhecer, mesmo que basicamente, a língua espanhola. O inglês, por sua
 				vez, é a língua universal, falada em praticamente todo o mundo.</p>
-			<p>
+			<p tabindex="0">
 				O domínio das línguas espanhola e inglesa é essencial para o profissional de secretariado, pois amplia
 				significativamente suas oportunidades de atuação em um mercado de trabalho globalizado. O conhecimento
 				dessas línguas facilita a comunicação com clientes e parceiros internacionais, permite o acesso a
@@ -129,13 +137,13 @@
 			</p>
 			<div class="grafismo">
 				<div class="destaque gradiente icone nota">
-					<p>
+					<p tabindex="0">
 						O técnico em secretariado, no dia a dia profissional, precisa conhecer algumas expressões
 						idiomáticas que facilitem a comunicação entre ele e os clientes atendidos.
 					</p>
 				</div>
 			</div>
-			<p class="espaco">
+			<p class="espaco" tabindex="0">
 				Sendo assim, neste conteúdo, serão abordadas as principais expressões idiomáticas traduzidas para os
 				idiomas
 				espanhol e inglês dentro de um contexto profissional. O material está dividido em expressões de
@@ -144,7 +152,7 @@
 				<b>diálogos</b>. Esses itens contêm dicas de
 				aprendizagem que podem ajudá-lo a melhorar sua pronúncia e seu vocabulário.
 			</p>
-			<ul class="marcador-padrao">
+			<ul class="marcador-padrao" tabindex="0">
 				<li>Pratique as pronúncias traduzidas ouvindo-as por meio dos botões de áudio.</li>
 				<li>Simule diálogos e frases para aprimorar o seu vocabulário.</li>
 				<li>Faça pesquisas extras conforme a sua necessidade.</li>
@@ -152,11 +160,13 @@
 			<img class="img-responsive center-block imagem-1" src="img/img1.png">
 		</div>
 		<a id="btCancelarObs" href="Javascript:" role="button" title="utilize este botão para fechar a tela"></a>
+
 	</div>
+	
 
 	<div id="r05" class="texto-referencias" role="tooltip">
 		<div id='cred' tabindex="0">
-			<div class="container">
+			<div class="container" tabindex="0">
 				<h3>Referências</h3>
 				<p>
 					ASSUMPÇÃO, Sônia; FERREIRA, Fernanda. <b>Inglês para secretárias</b>: um guia prático para
