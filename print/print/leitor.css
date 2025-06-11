@@ -692,7 +692,6 @@ table.text-left.align-middle th {
   border: 1px solid black !important;
   padding: 8px !important;
   text-align: left !important;
-  width: 50% !important;
   display: table-cell !important;
   font-weight: bold !important;
 }
@@ -701,7 +700,6 @@ table.text-left.align-middle td {
   border: 1px solid black !important;
   padding: 8px !important;
   text-align: left !important;
-  width: 50% !important;
 }
 .figure-caption{
   margin-top: 10px;

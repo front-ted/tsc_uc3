@@ -398,7 +398,6 @@
     border: 1px solid black !important;
     padding: 8px !important;
     text-align: left !important;
-    width: 50% !important;
     display: table-cell !important;
   }
 
@@ -406,7 +405,6 @@
     border: 1px solid black !important;
     padding: 8px !important;
     text-align: left !important;
-    width: 50% !important;
   }
 
   .figure-caption {
