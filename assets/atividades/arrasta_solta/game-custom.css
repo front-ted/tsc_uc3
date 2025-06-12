@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
     text-align: center;
     font-size: 16px;
-    text-transform: uppercase;
     padding: 5px;
     cursor: pointer;
     border-width: 3px;
@@ -21,9 +20,9 @@
 
 .card:hover {
     transform: scale(1.03);
-    box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
-    -webkit-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
-    -moz-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.47);
 }
 
 .game-descricao-img {
@@ -31,7 +30,7 @@
 }
 
 .game-itens-container {
-    margin: 0 !important; 
+    margin: 0 !important;
     padding: 25px 0;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -39,6 +38,7 @@
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
 .game-descricao-img img {
     width: 150px;
     position: absolute;
@@ -52,8 +52,10 @@
     line-height: initial;
     text-align: center;
 }
+
 .game-body .slot {
-    min-height: 100px;
+    min-height: 150px;
+    transition: min-height 0.3s ease;
     height: auto;
     width: 100%;
     background-color: transparent;
@@ -72,7 +74,12 @@
     display: block;
     margin-top: -10px;
 }
-.game-body .slot .card{
+
+.game-body .slot.full {
+    min-height: 555px;
+}
+
+.game-body .slot .card {
     color: #fff;
     background: #4ba69d;
     border-color: #4ba69d;
@@ -81,7 +88,8 @@
 .game-titulo p {
     padding-bottom: 0px;
     margin-bottom: 0px;
-  }
+}
+
 .game-titulo {
     padding: 10px;
     text-align: center;
@@ -95,6 +103,7 @@
     z-index: 2;
     position: relative;
 }
+
 .ui-droppable p {
     font-size: 18px;
 }
@@ -107,6 +116,7 @@
     flex-wrap: wrap;
     margin: 25px 0;
 }
+
 #content-game {
     max-width: 928px;
     margin: auto;
@@ -124,25 +134,66 @@
     display: none;
 }
 
+/*í­cones do feedback*/
+.fa-times {
+    color: #cd6667;
+}
+.fa-check {
+    color: #28afb2;
+}
+.fa-check, .fa-times {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
 @media (max-width:560px) {
+
     /* #bgmodal-acerto .modal-content{
         margin-top: -200%;
     }
     #bgmodal-erro .modal-content{
         margin-top: -200%;
     } */
-    #slots .col-12.col-md-4.mt-3.mb-3{
+    #slots .col-12.col-md-4.mt-3.mb-3 {
         margin-bottom: 5px !important;
         margin-top: 5px !important;
     }
-    #slots .row, #cardPile{
+
+    #slots .row,
+    #cardPile {
         padding-top: 5px !important;
         margin-bottom: 5px !important;
     }
-    .game-body .slot, .game-titulo{
+
+    .game-body .slot,
+    .game-titulo {
         max-width: 100%;
     }
+
     .card {
         display: inline;
     }
+}
+
+@media screen and (orientation: landscape) {
+
+    .card {
+        display: inline-block;
+        height: auto;
+        margin: 5px;
+        width: 188px;
+        border-radius: 10px;
+        background-position: center;
+        background-size: 152px;
+        background-repeat: no-repeat;
+        text-align: center;
+        font-size: 16px;
+        padding: 5px;
+        cursor: pointer;
+        border-width: 3px;
+        border-style: solid;
+        font-weight: bold;
+        transition: all .4s;
+    }
+
 }

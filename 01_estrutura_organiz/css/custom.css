@@ -37,6 +37,12 @@ body {
     background: url('../img/bt2_hv.png');
 }
 
+.img-zoom::after {
+    
+    bottom: -12%;
+    
+}
+
 .botao-operacional {
     background: url('../img/bt3.png');
     width: 213px;
@@ -47,8 +53,6 @@ body {
 .botao-operacional:hover {
     background: url('../img/bt3_hv.png');
 }
-
-
 
 .painel-2 {
     background: url('../img/info.png') no-repeat;
@@ -156,7 +160,6 @@ body {
     color: #fff;
 }
 
-
 .bt-objeto::after {
     content: 'espera';
     display: block;
@@ -184,6 +187,7 @@ body {
     border-radius: 20px;
     filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.15));
 }
+
 
 @media screen and (max-width: 1400px) {
     body {

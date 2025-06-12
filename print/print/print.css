@@ -38,11 +38,6 @@
     padding-right: unset;
   }
 
-  .pagina li {
-    display: list-item !important;
-    list-style: circle !important;
-  }
-
   *,
   *:before,
   *:after,
@@ -398,6 +393,7 @@
     border: 1px solid black !important;
     padding: 8px !important;
     text-align: left !important;
+    width: 50% !important;
     display: table-cell !important;
   }
 
@@ -405,6 +401,7 @@
     border: 1px solid black !important;
     padding: 8px !important;
     text-align: left !important;
+    width: 50% !important;
   }
 
   .figure-caption {
@@ -430,7 +427,7 @@
   }
 
   ol li {
-    list-style-type: decimal !important;
+    list-style-type: auto !important;
   }
 
   ol[type="a"] li {
@@ -441,33 +438,34 @@
     text-decoration: underline;
   }
 
-
-  .pagina ol {
-    display: block;
-    list-style-type: decimal !important;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 40px;
+  .citacao {
+    padding-left: 16.5%;
+    line-height: normal;
   }
 
-  .pagina ul {
-    display: block;
-    list-style-type: circle !important;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 40px;
+  .citacao * {
+    font-size: .9em;
   }
 
-  .texto-borda {
-    border: #969494 2px solid !important;
-    padding: 10px;
+  .borda-impresso {
+    border: #000 3px solid;
+    padding: 2%;
   }
 
+  .imprime-90 {
+    width: 90% !important;
+  }
 
+  .imprime-70 {
+    width: 70% !important;
+  }
 
+  .imprime-50 {
+    width: 50% !important;
+  }
+
+  .imprime-40 {
+    width: 40% !important;
+  }
 
 }

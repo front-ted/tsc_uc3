@@ -25,11 +25,18 @@
     src: url("../fonts/Figtree-BoldItalic.ttf");
 }
 
+@font-face {
+    font-family: "permanent-maker";
+    src: url("../fonts/PermanentMarker-Regular.ttf");
+}
+
+
 body {
     position: relative;
     height: auto;
     overflow-x: hidden;
     font-size: 20px;
+    padding-bottom: 3%;
 }
 
 .bg-fundo {
@@ -109,11 +116,16 @@ li,
 th,
 td,
 a,
-.figure-caption,
 .botao,
 .tab-pane {
     font-family: figtree;
     font-size: 1em;
+}
+
+.figure-caption {
+    font-family: figtree;
+    font-size: 0.7em;
+    color: #000;
 }
 
 b,
@@ -189,7 +201,7 @@ table {
 thead th {
     color: #fff;
     padding: 5px 20px;
-    border-right: 5px solid #fff;
+    border-right: 5px solid var(--cor-primaria);
 }
 
 thead th:last-child {
@@ -202,6 +214,7 @@ td {
     border-bottom-width: 3px;
     padding: 10px 20px;
     line-height: 20px;
+    background-color: #fff;
 }
 
 tbody td:first-child {
@@ -222,6 +235,13 @@ tbody td:first-child {
     padding-left: 40px;
 }
 
+.accordion-button i {
+    margin-right: 0.5rem;
+    font-weight: bold;
+    /* ou o valor que preferir */
+}
+
+
 .accordion-item,
 .accordion-item:first-of-type {
     background: transparent;
@@ -239,7 +259,7 @@ tbody td:first-child {
 
 .accordion-body {
     margin-left: 20px;
-    border-left: 3px solid #1e8cb1;
+    border-left: 3px solid #92acce;
 }
 
 /*slideshow - carousel*/
@@ -261,6 +281,7 @@ tbody td:first-child {
     opacity: 1;
     bottom: -22px;
     border: none;
+    background-color: transparent;
 }
 
 .carousel-control-prev {
@@ -286,7 +307,6 @@ tbody td:first-child {
     border-style: solid;
     border-radius: 100%;
     opacity: 1;
-    background-color: #fff;
 }
 
 /*splide carousel*/
@@ -473,7 +493,7 @@ tbody td:first-child {
     background: #fff;
 }
 
-.bt-objeto::before {
+/* .bt-objeto::before {
     content: '';
     background: url('../images/selo-presencialidade.png') no-repeat;
     background-size: contain;
@@ -484,7 +504,7 @@ tbody td:first-child {
     top: 10px;
     position: absolute;
     z-index: 4;
-}
+} */
 
 /*modais*/
 .modal-header {
@@ -568,6 +588,7 @@ tbody td:first-child {
     border-style: solid;
     padding: 40px;
     border-radius: 0 25px 25px 25px;
+    background-color: #fff;
 }
 
 .nav-tabs .nav-link {
@@ -901,9 +922,14 @@ tbody td:first-child {
 .bg-escuro p,
 .bg-escuro li,
 .bg-escuro figcaption,
-.bg-escuro .tab-content,
-.bg-escuro .modal-body * {
+.bg-escuro .tab-content {
     color: #fff;
+}
+
+.bg-escuro .modal-body {
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.98;
 }
 
 .bg-escuro .destaque *,
@@ -964,26 +990,34 @@ tbody td:first-child {
 
 /*CITAÇÃO*/
 .citacao {
-    padding-left: 20%;
+    padding-left: 16.5%;
+    line-height: normal;
 }
 
 .citacao * {
-    font-size: .8em;
+    font-size: .9em;
 }
 
 /*REFERÊNCIAS*/
-.referencias #booklet {
+/* .referencias #booklet {
     background-image: url('../images/elemento_dir.png'), url('../images/elemento_esq.png');
     background-size: 10%;
     background-repeat: no-repeat;
     background-position: right top, left bottom;
-}
+} */
 
 .referencias h2,
 .referencias h3,
 .referencias h4 {
     font-family: italiana;
 }
+
+.referencias p {
+    overflow-wrap: break-word;
+    font-family: figtree;
+    font-size: 1em;
+}
+
 
 /*MARCADORES - LISTA*/
 .marcador-padrao li {
@@ -1264,6 +1298,154 @@ tbody td:first-child {
 
 /*FIM SAIBA MAIS*/
 
+/* PAINEL CLICÁVEL ILUSTRADO */
+.painel-materiais .botoes {
+    width: 893px;
+    height: 405px;
+    margin: 30px auto;
+    padding-top: 405px;
+    position: relative;
+}
+
+
+.painel-materiais button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    transition: all .4s;
+}
+
+
+.painel-materiais button:hover {
+    transform: scale(1.1);
+}
+
+
+.painel-materiais .bt1 {
+    width: 337px;
+    height: 340px;
+    background: url('../img-painel-ilustrado/painel1.png');
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+
+.painel-materiais .bt2 {
+    width: 313px;
+    height: 303px;
+    background: url('../img-painel-ilustrado/painel2.png');
+    z-index: 2;
+    top: 0;
+    right: 0;
+}
+
+
+.painel-materiais .bt3 {
+    width: 178px;
+    height: 263px;
+    background: url('../img-painel-ilustrado/painel3.png');
+    z-index: 3;
+    top: 45px;
+    left: 275px;
+}
+
+
+.painel-materiais .bt4 {
+    width: 164px;
+    height: 225px;
+    background: url('../img-painel-ilustrado/painel4.png');
+    z-index: 3;
+    top: 65px;
+    right: 195px;
+}
+
+
+.painel-materiais .bt5 {
+    width: 131px;
+    height: 213px;
+    background: url('../img-painel-ilustrado/painel5.png');
+    z-index: 3;
+    top: 80px;
+    right: 320px;
+}
+
+
+.painel-materiais .bt6 {
+    width: 202px;
+    height: 95px;
+    background: url('../img-painel-ilustrado/painel6.png');
+    z-index: 3;
+    bottom: 45px;
+    left: 90px;
+}
+
+
+.painel-materiais .bt7 {
+    width: 255px;
+    height: 154px;
+    background: url('../img-painel-ilustrado/painel7.png');
+    z-index: 3;
+    bottom: 25px;
+    right: 40px;
+}
+
+
+.painel-materiais .bt8 {
+    width: 125px;
+    height: 139px;
+    background: url('../img-painel-ilustrado/painel8.png');
+    z-index: 3;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+.painel-materiais .aba {
+    background: #fff;
+    border-radius: 30px;
+    border: 3px solid #92ACCE;
+    padding: 50px;
+    padding-top: 100px;
+    margin-top: -200px;
+    display: none;
+    transition: all .4s;
+}
+
+
+.painel-materiais .aba1 {
+    display: block;
+}
+
+
+/* FIM PAINEL CLICÁVEL ILUSTRADO */
+
+.selo-presencialidade {
+    width: 65%;
+}
+
+.destaque {
+    border-radius: 25px;
+    margin: 50px 0;
+    padding: 40px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1440px) {
+    .referencias {
+        background:
+            url('../images/elemento_dir.png') 0% 0% fixed,
+            url('../images/elemento_esq.png') 100% 0% fixed,
+            var(--gradiente-referencias);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 15%, 15%, cover;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     h2 {
         margin-left: 0;
@@ -1277,8 +1459,17 @@ tbody td:first-child {
         right: -30px;
     }
 
-    .referencias #booklet {
-        background-image: none;
+    .referencias {
+        background: var(--gradiente-referencias);
+    }
+
+}
+
+@media (max-width: 980px) {
+    .painel-materiais .aba {
+        margin-top: 50px;
+        padding-top: 50px;
+        display: block;
     }
 }
 
@@ -1291,7 +1482,8 @@ tbody td:first-child {
     a,
     .figure-caption,
     .botao,
-    .tab-pane {
+    .tab-pane,
+    .citacao * {
         font-size: .8em;
     }
 
@@ -1303,18 +1495,14 @@ tbody td:first-child {
         font-size: 5vw;
     }
 
-    .citacao * {
-        font-size: .7em;
-    }
-
     .topo-logo {
-        background-size: auto, 14%;
+        background-size: auto, 10%;
     }
 
     .destaque.icone {
         margin-top: 90px;
         padding-left: 40px;
-        padding-top: 80px;
+        padding-top: 50px;
     }
 
     .destaque.icone::before {
@@ -1363,4 +1551,18 @@ tbody td:first-child {
         right: 0;
         margin: auto;
     }
+
+    .carousel-control-next {
+        right: -18px;
+    }
+
+    .carousel-control-prev {
+        left: -18px;
+    }
+
+    .selo-presencialidade {
+        width: 40%;
+        margin-bottom: 6%;
+    }
+
 }

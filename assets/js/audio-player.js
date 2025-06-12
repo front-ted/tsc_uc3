@@ -34,79 +34,97 @@
 
 */
 
+
+
 AudioPlayer = {
-    init: function(){
-        //aqui eu verifico se existem estruturas de player com a classe .sesc-audio-player, e então trato as funcionalidades da cada player          
-        Array.from(document.querySelectorAll('.audio-player')).forEach(function(el){
+    init: function () {
+        // Verifica todos os players com a classe .audio-player
+        Array.from(document.querySelectorAll('.audio-player')).forEach(function (el) {
             let btPlay = el.querySelector('.btn-play');
             let btPause = el.querySelector('.btn-pause');
             let seek = el.querySelector('input');
             let audio = el.querySelector('audio');
             let timestamp = el.querySelector('.timestamp');
+            let wrapper = el.closest('.bg-wrapper'); // Encontra o wrapper para girar o círculo
 
             audio.stopUpdate = false;
 
-            audio.updateSeek = function(){
-                if(!this.stopUpdate)
+            audio.updateSeek = function () {
+                if (!this.stopUpdate)
                     seek.value = audio.currentTime;
             }
 
-            audio.updateTimestamp = function(){
+            audio.updateTimestamp = function () {
                 let min = Math.floor(this.currentTime / 60);
                 let sec = Math.floor(this.currentTime % 60);
                 let totmin = Math.floor(this.duration / 60);
                 let totsec = Math.floor(this.duration % 60);
 
-                let stringmin = min<=9?'0'+min:min;
-                let stringsec = sec<=9?'0'+sec:sec;
-                let stringtotmin = totmin<=9?'0'+totmin:totmin;
-                let stringtotsec = totsec<=9?'0'+totsec:totsec;
-                timestamp.innerHTML = stringmin+':'+stringsec+'/'+ stringtotmin+':'+stringtotsec
+                let stringmin = min <= 9 ? '0' + min : min;
+                let stringsec = sec <= 9 ? '0' + sec : sec;
+                let stringtotmin = totmin <= 9 ? '0' + totmin : totmin;
+                let stringtotsec = totsec <= 9 ? '0' + totsec : totsec;
+
+                timestamp.innerHTML = stringmin + ':' + stringsec + '/' + stringtotmin + ':' + stringtotsec;
             }
 
-            audio.addEventListener('loadeddata', function(){
+            audio.addEventListener('loadeddata', function () {
                 seek.max = audio.duration;
-                audio.updateTimestamp()
+                audio.updateTimestamp();
             })
 
-            btPlay.addEventListener('click', function(){
+            btPlay.addEventListener('click', function () {
                 audio.play();
             })
 
-            btPause.addEventListener('click', function(){
+            btPause.addEventListener('click', function () {
                 audio.pause();
-            })  
+            })
 
-            seek.addEventListener('input', function(){
+            seek.addEventListener('input', function () {
                 audio.stopUpdate = true;
             })
 
-            seek.addEventListener('change', function(){
-                console.log('change to:', this.value)
-                audio.currentTime = parseFloat(this.value);  
-                audio.stopUpdate = false;             
+            seek.addEventListener('change', function () {
+                audio.currentTime = parseFloat(this.value);
+                audio.stopUpdate = false;
             })
 
-            audio.addEventListener('timeupdate', function(){
+            audio.addEventListener('timeupdate', function () {
                 this.updateSeek();
                 this.updateTimestamp();
             })
 
-            audio.addEventListener('play', function(){
+            audio.addEventListener('play', function () {
                 audio.playing = true;
+                if (wrapper) wrapper.classList.add('rotating');
             })
 
-            audio.addEventListener('pause', function(){
+            audio.addEventListener('pause', function () {
                 audio.playing = false;
+                if (wrapper) wrapper.classList.remove('rotating');
             })
 
-            audio.addEventListener('ended', function(){
+            audio.addEventListener('ended', function () {
                 audio.currentTime = 0;
                 audio.playing = false;
+                if (wrapper) wrapper.classList.remove('rotating');
             })
 
         })
-
     }
 }
-AudioPlayer.init()
+
+AudioPlayer.init();
+
+
+const audio = document.getElementById('audioPodcast');
+
+// Escuta o fechamento de qualquer modal
+document.addEventListener('hidden.bs.modal', function () {
+    if (audio && !audio.paused) {
+        audio.pause();
+        audio.currentTime = 0; // opcional: reinicia o áudio
+    }
+});
+
